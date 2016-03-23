@@ -15,6 +15,7 @@
     CHEQUE_STOP_PAYMENT_RANGE,
     CHEQUE_STOP_PAYMENT_SINGLE_CANCEL,
     CHEQUE_STOP_PAYMENT_RANGE_CANCEL,
+
     MINI_STATEMENT,
     REMITTANCE_REQUEST,
     REMITTANCE_DISBURSEMENT
@@ -26,6 +27,8 @@ const sub_folder = "city";
 const bank_name = "City Bank";
 
 window.onload = function myfunction() {
+
+
     document.getElementsByTagName("h1")[0].innerHTML = bank_name;
     var formSelect = <HTMLSelectElement>document.getElementById('receiptSelectForm');
     Object.keys(Receipts)
