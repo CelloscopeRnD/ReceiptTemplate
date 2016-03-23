@@ -22,8 +22,11 @@
 
 const general_template = "template.html";
 const ministatement_template = "miniStatementTemplate.html";
+const sub_folder = "city";
+const bank_name = "City Bank";
 
 window.onload = function myfunction() {
+    document.getElementsByTagName("h1")[0].innerHTML = bank_name;
     var formSelect = <HTMLSelectElement>document.getElementById('receiptSelectForm');
     Object.keys(Receipts)
         .slice(0, Object.keys(Receipts).length / 2)
@@ -36,9 +39,9 @@ window.onload = function myfunction() {
     var submitButton = <HTMLButtonElement>document.querySelectorAll("button[type='submit']")[0];
     submitButton.onclick = function () {
         if (<any>formSelect.value == Receipts.MINI_STATEMENT) {
-            window.location.href = `http://${window.location.host}/templates/city/${ministatement_template}?${formSelect.value}`;
+            window.location.href = `http://${window.location.host}/templates/${sub_folder}/${ministatement_template}?${formSelect.value}`;
         } else {
-            window.location.href = `http://${window.location.host}/templates/city/${general_template}?${formSelect.value}`;
+            window.location.href = `http://${window.location.host}/templates/${sub_folder}/${general_template}?${formSelect.value}`;
         }
     }
 
