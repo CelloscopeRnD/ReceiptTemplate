@@ -14,35 +14,8 @@
         savingsAccountType: string,
         transactionCode: string,
         transactionDate: string,
-        userId: string
-
-
-        //cardBrand: string,
-        //cardNumber: string,
-        //cardType: string,
-        //charge: string,
-        //chequeAmount: string,
-        //chequeLeafNumber: string,
-        //chequeLostReason: string,
-        //depositAmount: string,
-        //depositAmountInWords: string,
-        //dpsAccountType: string,
-        //linkAccountNumber: string,
-        //maturityAmount: string,
-        //maturityDate: string,
-        //noOfLeave: string,
-        //photo: string,
-        //principalAmount: string,
-        //productTenor: string,
-        //profitRate: string,
-        //receiverAccountName: string,
-        //receiverName: string,
-        //requestId: string,
-        //retrieveFrom: string,
-        //statement: Array<Array<any>>
-        //termDepositAccountType: string,
-        //withdrawAmount: string,
-        //withdrawsAmountInWords: string
+        userId: string,
+        photo: string
     };
     export interface ATM_DEBIT_CARD_CANCEL {
         accountName: string,
@@ -188,35 +161,8 @@
         savingsAccountType: string,
         transactionCode: string,
         transactionDate: string,
-        userId: string
-
-
-        //balanceAmount: string,
-        //balanceAmountInWords: string,
-        //cardBrand: string,
-        //cardNumber: string,
-        //cardType: string,
-        //charge: string,
-        //chequeAmount: string,
-        //chequeLeafNumber: string,
-        //chequeLostReason: string,
-        //dpsAccountType: string,
-        //linkAccountNumber: string,
-        //maturityAmount: string,
-        //maturityDate: string,
-        //noOfLeave: string,
-        //photo: string,
-        //principalAmount: string,
-        //productTenor: string,
-        //profitRate: string,
-        //receiverAccountName: string,
-        //receiverName: string,
-        //requestId: string,
-        //retrieveFrom: string,
-        //statement: Array<Array<any>>
-        //termDepositAccountType: string,
-        //withdrawAmount: string,
-        //withdrawsAmountInWords: string
+        userId: string,
+        photo: string
     };
     export interface CASH_WITHDRAW {
         accountName: string,
@@ -234,34 +180,8 @@
         transactionDate: string,
         userId: string,
         withdrawAmount: string,
-        withdrawsAmountInWords: string
-
-
-        //balanceAmount: string,
-        //balanceAmountInWords: string,
-        //cardBrand: string,
-        //cardNumber: string,
-        //cardType: string,
-        //chequeAmount: string,
-        //chequeLeafNumber: string,
-        //chequeLostReason: string,
-        //depositAmount: string,
-        //depositAmountInWords: string,
-        //dpsAccountType: string,
-        //linkAccountNumber: string,
-        //maturityAmount: string,
-        //maturityDate: string,
-        //noOfLeave: string,
-        //photo: string,
-        //principalAmount: string,
-        //productTenor: string,
-        //profitRate: string,
-        //receiverAccountName: string,
-        //receiverName: string,
-        //requestId: string,
-        //retrieveFrom: string,
-        //statement: Array<Array<any>>
-        //termDepositAccountType: string,
+        withdrawsAmountInWords: string,
+        photo: string
     };
     export interface CHEQUE_BOOK_DELIVERY {
         accountName: string,
@@ -537,34 +457,8 @@
         printDate: string,
         productTenor: string,
         transactionDate: string,
-        userId: string
-
-
-        //accountNumber: string,
-        //balanceAmount: string,
-        //balanceAmountInWords: string,
-        //cardBrand: string,
-        //cardNumber: string,
-        //cardType: string,
-        //charge: string,
-        //chequeAmount: string,
-        //chequeLeafNumber: string,
-        //chequeLostReason: string,
-        //depositAmountInWords: string,
-        //noOfLeave: string,
-        //photo: string,
-        //principalAmount: string,
-        //profitRate: string,
-        //receiverAccountName: string,
-        //receiverName: string,
-        //requestId: string,
-        //retrieveFrom: string,
-        //savingsAccountType: string,
-        //statement: Array<Array<any>>
-        //termDepositAccountType: string,
-        //transactionCode: string,
-        //withdrawAmount: string,
-        //withdrawsAmountInWords: string
+        userId: string,
+        photo: string
     };
     export interface FIXED_DEPOSIT {
         accountName: string,
@@ -584,32 +478,8 @@
         productTenor: string,
         termDepositAccountType: string,
         transactionDate: string,
-        userId: string
-
-
-        //accountNumber: string,
-        //balanceAmount: string,
-        //balanceAmountInWords: string,
-        //cardBrand: string,
-        //cardNumber: string,
-        //cardType: string,
-        //charge: string,
-        //chequeAmount: string,
-        //chequeLeafNumber: string,
-        //chequeLostReason: string,
-        //depositAmountInWords: string,
-        //dpsAccountType: string,
-        //noOfLeave: string,
-        //photo: string,
-        //receiverAccountName: string,
-        //receiverName: string,
-        //requestId: string,
-        //retrieveFrom: string,
-        //savingsAccountType: string,
-        //statement: Array<Array<any>>
-        //transactionCode: string,
-        //withdrawAmount: string,
-        //withdrawsAmountInWords: string
+        userId: string,
+        photo: string
     };
     export interface FUND_TRANSFER {
         accountName: string,
@@ -630,32 +500,8 @@
         termDepositAccountType: string,
         transactionCode: string,
         transactionDate: string,
-        userId: string
-
-
-        //accountNumber: string,
-        //balanceAmount: string,
-        //balanceAmountInWords: string,
-        //cardBrand: string,
-        //cardNumber: string,
-        //cardType: string,
-        //charge: string,
-        //chequeAmount: string,
-        //chequeLeafNumber: string,
-        //chequeLostReason: string,
-        //dpsAccountType: string,
-        //maturityAmount: string,
-        //noOfLeave: string,
-        //photo: string,
-        //principalAmount: string,
-        //productTenor: string,
-        //profitRate: string,
-        //receiverName: string,
-        //requestId: string,
-        //retrieveFrom: string,
-        //statement: Array<Array<any>>
-        //withdrawAmount: string,
-        //withdrawsAmountInWords: string
+        userId: string,
+        photo: string
     };
     export interface MINI_STATEMENT {
         accountNumber: string,
@@ -670,37 +516,8 @@
         savingsAccountType: string,
         statement: Array<Array<string>>
         transactionCode: string,
-        userId: string
-
-
-        //accountName: string,
-        //balanceAmount: string,
-        //balanceAmountInWords: string,
-        //cardBrand: string,
-        //cardNumber: string,
-        //cardType: string,
-        //charge: string,
-        //chequeAmount: string,
-        //chequeLeafNumber: string,
-        //chequeLostReason: string,
-        //depositAmountInWords: string,
-        //dpsAccountType: string,
-        //linkAccountNumber: string,
-        //maturityAmount: string,
-        //maturityDate: string,
-        //noOfLeave: string,
-        //photo: string,
-        //principalAmount: string,
-        //productTenor: string,
-        //profitRate: string,
-        //receiverAccountName: string,
-        //receiverName: string,
-        //requestId: string,
-        //retrieveFrom: string,
-        //termDepositAccountType: string,
-        //transactionDate: string,
-        //withdrawAmount: string,
-        //withdrawsAmountInWords: string
+        userId: string,
+        photo: string
     };
     export interface REMITTANCE_DISBURSEMENT {
         user: string,
@@ -720,6 +537,7 @@
 
         idType: string,
         idNumber: string,
+        photo: string,
         printDate: string
     };
     export interface REMITTANCE_REQUEST {
@@ -753,36 +571,7 @@
         printDate: string,
         savingsAccountType: string,
         transactionDate: string,
-        userId: string
-
-
-        //balanceAmount: string,
-        //balanceAmountInWords: string,
-        //cardBrand: string,
-        //cardNumber: string,
-        //cardType: string,
-        //charge: string,
-        //chequeAmount: string,
-        //chequeLeafNumber: string,
-        //chequeLostReason: string,
-        //depositAmountInWords: string,
-        //dpsAccountType: string,
-        //linkAccountNumber: string,
-        //maturityAmount: string,
-        //maturityDate: string,
-        //noOfLeave: string,
-        //photo: string,
-        //principalAmount: string,
-        //productTenor: string,
-        //profitRate: string,
-        //receiverAccountName: string,
-        //receiverName: string,
-        //requestId: string,
-        //retrieveFrom: string,
-        //statement: Array<Array<any>>
-        //termDepositAccountType: string,
-        //transactionCode: string,
-        //withdrawAmount: string,
-        //withdrawsAmountInWords: string
+        userId: string,
+        photo: string
     };
 }

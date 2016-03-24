@@ -13,44 +13,11 @@ module MockupData {
         "customerName": "Md. Arif Gazi",
         "mobileNo": "01617877595",
         "printDate": "19-JAN-2016 13:13:15 PM",
+        "photo":"",
         "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)"
-
-
-        //"cardBrand": "VISA",
-        //"cardNumber": "1234 1234 1234 1234",
-        //"cardType": "ATM",
-        //"charge": "BDT 7.50",
-        //"chequeAmount": "BDT 10,000.00",
-        //"chequeLeafNumber": "123 456 789 123",
-        //"chequeLostReason": "Lost",
-        //"depositAmount": "BDT 3,000.00",
-        //"depositAmountInWords": "THREE THOUSAND ONLY",
-        //"dpsAccountType": "DPS", "linkAccountNumber": "2005246987526",
-        //"maturityAmount": "BDT 2,26,047.00",
-        //"maturityDate": "19-JAN-2021",
-        //"noOfLeave": "10",
-        //"photo": "",
-        //"principalAmount": "BDT 1,00,000.00",
-        //"productTenor": "5 Years",
-        //"profitRate": "8.85% (Yearly)",
-        //"receiverAccountName": "SUJON PATWARY",
-        //"receiverName": "Asadul Haque",
-        //"requestId": "12346",
-        //"retrieveFrom": "From Lost",
-        //"statement": [
-        //    ["Date", "Description", "Deposit", "Withdraw", "Balance"],
-        //    ["15-Dec-2016", "FT-School Fee", "", "500.00", "4500.00"],
-        //    ["14-Dec-2016", "DEP Cash", "1500.00", "", "6000.00"],
-        //    ["14-Dec-2016", "WDL-Cash", "", "2000.00", "4000.00"],
-        //    ["13-Dec-2016", "FT-Other Bank", "", "2000.00", "2000.00"],
-        //    ["12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00"]
-        //],
-        //"termDepositAccountType": "TERM DEPOSIT",
-        //"withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        //"withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var atmDebitCardCancel: JsonContracts.ATM_DEBIT_CARD_CANCEL = {
         "accountName": "MD Arif Gazi",
@@ -213,45 +180,12 @@ module MockupData {
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
         "mobileNo": "01617877595",
+        "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)"
-
-
-        //"balanceAmount": "BDT 80,550.00",
-        //"balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
-        //"cardBrand": "VISA",
-        //"cardNumber": "1234 1234 1234 1234",
-        //"cardType": "ATM",
-        //"charge": "BDT 7.50",
-        //"chequeAmount": "BDT 10,000.00",
-        //"chequeLeafNumber": "123 456 789 123",
-        //"chequeLostReason": "Lost",
-        //"dpsAccountType": "DPS", "linkAccountNumber": "2005246987526",
-        //"maturityAmount": "BDT 2,26,047.00",
-        //"maturityDate": "19-JAN-2021",
-        //"noOfLeave": "10",
-        //"photo": "",
-        //"principalAmount": "BDT 1,00,000.00",
-        //"productTenor": "5 Years",
-        //"profitRate": "8.85% (Yearly)",
-        //"receiverAccountName": "SUJON PATWARY",
-        //"receiverName": "Asadul Haque",
-        //"requestId": "12346",
-        //"retrieveFrom": "From Lost",
-        //"statement": [
-        //    ["Date", "Description", "Deposit", "Withdraw", "Balance"],
-        //    ["15-Dec-2016", "FT-School Fee", "", "500.00", "4500.00"],
-        //    ["14-Dec-2016", "DEP Cash", "1500.00", "", "6000.00"],
-        //    ["14-Dec-2016", "WDL-Cash", "", "2000.00", "4000.00"],
-        //    ["13-Dec-2016", "FT-Other Bank", "", "2000.00", "2000.00"],
-        //    ["12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00"]
-        //],
-        //"termDepositAccountType": "TERM DEPOSIT",
-        //"withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        //"withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var cashWithdraw: JsonContracts.CASH_WITHDRAW = {
         "accountName": "MD Arif Gazi",
@@ -263,6 +197,7 @@ module MockupData {
         "customerId": "CB1158500",
         "customerName": "Md. Arif Gazi",
         "mobileNo": "01617877595",
+        "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
@@ -270,39 +205,6 @@ module MockupData {
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
-
-
-        //"balanceAmount": "BDT 80,550.00",
-        //"balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
-        //"cardBrand": "VISA",
-        //"cardNumber": "1234 1234 1234 1234",
-        //"cardType": "ATM",
-        //"chequeAmount": "BDT 10,000.00",
-        //"chequeLeafNumber": "123 456 789 123",
-        //"chequeLostReason": "Lost",
-        //"depositAmount": "BDT 3,000.00",
-        //"depositAmountInWords": "THREE THOUSAND ONLY",
-        //"dpsAccountType": "DPS", "linkAccountNumber": "2005246987526",
-        //"maturityAmount": "BDT 2,26,047.00",
-        //"maturityDate": "19-JAN-2021",
-        //"noOfLeave": "10",
-        //"photo": "",
-        //"principalAmount": "BDT 1,00,000.00",
-        //"productTenor": "5 Years",
-        //"profitRate": "8.85% (Yearly)",
-        //"receiverAccountName": "SUJON PATWARY",
-        //"receiverName": "Asadul Haque",
-        //"requestId": "12346",
-        //"retrieveFrom": "From Lost",
-        //"statement": [
-        //    ["Date", "Description", "Deposit", "Withdraw", "Balance"],
-        //    ["15-Dec-2016", "FT-School Fee", "", "500.00", "4500.00"],
-        //    ["14-Dec-2016", "DEP Cash", "1500.00", "", "6000.00"],
-        //    ["14-Dec-2016", "WDL-Cash", "", "2000.00", "4000.00"],
-        //    ["13-Dec-2016", "FT-Other Bank", "", "2000.00", "2000.00"],
-        //    ["12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00"]
-        //],
-        //"termDepositAccountType": "TERM DEPOSIT",
     };
     export var chequeBookDelivery: JsonContracts.CHEQUE_BOOK_DELIVERY = {
         "accountName": "MD Arif Gazi",
@@ -617,44 +519,11 @@ module MockupData {
         "maturityAmount": "BDT 2,26,047.00",
         "maturityDate": "19-JAN-2021",
         "mobileNo": "01617877595",
+        "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "productTenor": "5 Years",
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)"
-
-
-    
-        //"balanceAmount": "BDT 80,550.00",
-        //"balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
-        //"cardBrand": "VISA",
-        //"cardNumber": "1234 1234 1234 1234",
-        //"cardType": "ATM",
-        //"charge": "BDT 7.50",
-        //"chequeAmount": "BDT 10,000.00",
-        //"chequeLeafNumber": "123 456 789 123",
-        //"chequeLostReason": "Lost",
-        //"depositAmountInWords": "THREE THOUSAND ONLY",
-        //"noOfLeave": "10",
-        //"photo": "",
-        //"principalAmount": "BDT 1,00,000.00",
-        //"profitRate": "8.85% (Yearly)",
-        //"receiverAccountName": "SUJON PATWARY",
-        //"receiverName": "Asadul Haque",
-        //"requestId": "12346",
-        //"retrieveFrom": "From Lost",
-        //"savingsAccountType": "Savings",
-        //"statement": [
-        //    ["Date", "Description", "Deposit", "Withdraw", "Balance"],
-        //    ["15-Dec-2016", "FT-School Fee", "", "500.00", "4500.00"],
-        //    ["14-Dec-2016", "DEP Cash", "1500.00", "", "6000.00"],
-        //    ["14-Dec-2016", "WDL-Cash", "", "2000.00", "4000.00"],
-        //    ["13-Dec-2016", "FT-Other Bank", "", "2000.00", "2000.00"],
-        //    ["12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00"]
-        //],
-        //"termDepositAccountType": "TERM DEPOSIT",
-        //"transactionCode": "TR222369",
-        //"withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        //"withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var fixedDeposit: JsonContracts.FIXED_DEPOSIT = {
         "accountName": "MD Arif Gazi",
@@ -668,6 +537,7 @@ module MockupData {
         "maturityAmount": "BDT 2,26,047.00",
         "maturityDate": "19-JAN-2021",
         "mobileNo": "01617877595",
+        "photo":"",
         "principalAmount": "BDT 1,00,000.00",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "productTenor": "5 Years",
@@ -675,38 +545,6 @@ module MockupData {
         "termDepositAccountType": "TERM DEPOSIT",
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)"
-
-
-
-        //"balanceAmount": "BDT 80,550.00",
-        //"balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
-        //"cardBrand": "VISA",
-        //"cardNumber": "1234 1234 1234 1234",
-        //"cardType": "ATM",
-        //"charge": "BDT 7.50",
-        //"chequeAmount": "BDT 10,000.00",
-        //"chequeLeafNumber": "123 456 789 123",
-        //"chequeLostReason": "Lost",
-        //"depositAmountInWords": "THREE THOUSAND ONLY",
-        //"dpsAccountType": "DPS",
-        //"noOfLeave": "10",
-        //"photo": "",
-        //"receiverAccountName": "SUJON PATWARY",
-        //"receiverName": "Asadul Haque",
-        //"requestId": "12346",
-        //"retrieveFrom": "From Lost",
-        //"savingsAccountType": "Savings",
-        //"statement": [
-        //    ["Date", "Description", "Deposit", "Withdraw", "Balance"],
-        //    ["15-Dec-2016", "FT-School Fee", "", "500.00", "4500.00"],
-        //    ["14-Dec-2016", "DEP Cash", "1500.00", "", "6000.00"],
-        //    ["14-Dec-2016", "WDL-Cash", "", "2000.00", "4000.00"],
-        //    ["13-Dec-2016", "FT-Other Bank", "", "2000.00", "2000.00"],
-        //    ["12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00"]
-        //],
-        //"transactionCode": "TR222369",
-        //"withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        //"withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var fundTransfer: JsonContracts.FUND_TRANSFER = {
         "accountName": "MD Arif Gazi",
@@ -721,6 +559,7 @@ module MockupData {
         "linkAccountNumber": "2005246987526",
         "maturityDate": "19-JAN-2021",
         "mobileNo": "01617877595",
+        "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "receiverAccountName": "SUJON PATWARY",
         "termDepositAccountType": "TERM DEPOSIT",
@@ -728,38 +567,6 @@ module MockupData {
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)"
-
-
-
-        //"balanceAmount": "BDT 80,550.00",
-        //"balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
-        //"cardBrand": "VISA",
-        //"cardNumber": "1234 1234 1234 1234",
-        //"cardType": "ATM",
-        //"charge": "BDT 7.50",
-        //"chequeAmount": "BDT 10,000.00",
-        //"chequeLeafNumber": "123 456 789 123",
-        //"chequeLostReason": "Lost",
-        //"dpsAccountType": "DPS",
-        //"maturityAmount": "BDT 2,26,047.00",
-        //"noOfLeave": "10",
-        //"photo": "",
-        //"profitRate": "8.85% (Yearly)",
-        //"principalAmount": "BDT 1,00,000.00",
-        //"productTenor": "5 Years",
-        //"receiverName": "Asadul Haque",
-        //"requestId": "12346",
-        //"retrieveFrom": "From Lost",
-        //"statement": [
-        //    ["Date", "Description", "Deposit", "Withdraw", "Balance"],
-        //    ["15-Dec-2016", "FT-School Fee", "", "500.00", "4500.00"],
-        //    ["14-Dec-2016", "DEP Cash", "1500.00", "", "6000.00"],
-        //    ["14-Dec-2016", "WDL-Cash", "", "2000.00", "4000.00"],
-        //    ["13-Dec-2016", "FT-Other Bank", "", "2000.00", "2000.00"],
-        //    ["12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00"]
-        //],
-        //"withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        //"withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var miniStatement: JsonContracts.MINI_STATEMENT = {
         "accountNumber": "2001158500126",
@@ -770,6 +577,7 @@ module MockupData {
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "mobileNo": "01617877595",
+        "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "savingsAccountType": "Savings",
         "statement": [
@@ -784,35 +592,6 @@ module MockupData {
         ],
         "transactionCode": "TR222369",
         "userId": "615001001 (NAIM ISLAM)"
-
-
-        //"accountName": "MD Arif Gazi",
-        //"balanceAmount": "BDT 80,550.00",
-        //"balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
-        //"cardBrand": "VISA",
-        //"cardNumber": "1234 1234 1234 1234",
-        //"cardType": "ATM",
-        //"charge": "BDT 7.50",
-        //"chequeAmount": "BDT 10,000.00",
-        //"chequeLeafNumber": "123 456 789 123",
-        //"chequeLostReason": "Lost",
-        //"depositAmountInWords": "THREE THOUSAND ONLY",
-        //"dpsAccountType": "DPS", "linkAccountNumber": "2005246987526",
-        //"maturityAmount": "BDT 2,26,047.00",
-        //"maturityDate": "19-JAN-2021",
-        //"noOfLeave": "10",
-        //"photo": "",
-        //"principalAmount": "BDT 1,00,000.00",
-        //"productTenor": "5 Years",
-        //"profitRate": "8.85% (Yearly)",
-        //"receiverAccountName": "SUJON PATWARY",
-        //"receiverName": "Asadul Haque",
-        //"requestId": "12346",
-        //"retrieveFrom": "From Lost",
-        //"termDepositAccountType": "TERM DEPOSIT",
-        //"transactionDate": "19-JAN-2016",
-        //"withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        //"withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
         "user": "26160101(NAME OF USER)",
@@ -832,6 +611,8 @@ module MockupData {
         "idType": "NID",
         "idNumber": "19752698765626536",
         "printDate": "19-JAN-2016 13:13:15 PM",
+
+        "photo":""
     };
     export var remittanceRequest: JsonContracts.REMITTANCE_REQUEST = {
         "agentName": "BADRUL ALOM",
@@ -861,45 +642,10 @@ module MockupData {
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "mobileNo": "01617877595",
+        "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "savingsAccountType": "Savings",
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)"
-
-
-        //"balanceAmount": "BDT 80,550.00",
-        //"balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
-        //"cardBrand": "VISA",
-        //"cardNumber": "1234 1234 1234 1234",
-        //"cardType": "ATM",
-        //"charge": "BDT 7.50",
-        //"chequeAmount": "BDT 10,000.00",
-        //"chequeLeafNumber": "123 456 789 123",
-        //"chequeLostReason": "Lost",
-        //"depositAmountInWords": "THREE THOUSAND ONLY",
-        //"dpsAccountType": "DPS", "linkAccountNumber": "2005246987526",
-        //"maturityAmount": "BDT 2,26,047.00",
-        //"maturityDate": "19-JAN-2021",
-        //"noOfLeave": "10",
-        //"photo": "",
-        //"principalAmount": "BDT 1,00,000.00",
-        //"productTenor": "5 Years",
-        //"profitRate": "8.85% (Yearly)",
-        //"receiverAccountName": "SUJON PATWARY",
-        //"receiverName": "Asadul Haque",
-        //"requestId": "12346",
-        //"retrieveFrom": "From Lost",
-        //"statement": [
-        //    ["Date", "Description", "Deposit", "Withdraw", "Balance"],
-        //    ["15-Dec-2016", "FT-School Fee", "", "500.00", "4500.00"],
-        //    ["14-Dec-2016", "DEP Cash", "1500.00", "", "6000.00"],
-        //    ["14-Dec-2016", "WDL-Cash", "", "2000.00", "4000.00"],
-        //    ["13-Dec-2016", "FT-Other Bank", "", "2000.00", "2000.00"],
-        //    ["12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00"]
-        //],
-        //"termDepositAccountType": "TERM DEPOSIT",
-        //"transactionCode": "TR222369",
-        //"withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        //"withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
 }
