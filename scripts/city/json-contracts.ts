@@ -11,6 +11,7 @@
         customerName: string,
         mobileNo: string,
         printDate: string,
+        requestId: string,
         savingsAccountType: string,
         transactionCode: string,
         transactionDate: string,
@@ -158,6 +159,7 @@
         depositAmountInWords: string,
         mobileNo: string,
         printDate: string,
+        requestId: string,
         savingsAccountType: string,
         transactionCode: string,
         transactionDate: string,
@@ -175,6 +177,7 @@
         customerName: string,
         mobileNo: string,
         printDate: string,
+        requestId: string,
         savingsAccountType: string,
         transactionCode: string,
         transactionDate: string,
@@ -456,6 +459,7 @@
         mobileNo: string,
         printDate: string,
         productTenor: string,
+        requestId: string,
         transactionDate: string,
         userId: string,
         photo: string
@@ -476,6 +480,7 @@
         principalAmount: string,
         profitRate: string,
         productTenor: string,
+        requestId: string,
         termDepositAccountType: string,
         transactionDate: string,
         userId: string,
@@ -496,6 +501,7 @@
         mobileNo: string,
         printDate: string,
         receiverAccountName: string,
+        requestId: string,
         savingsAccountType: string,
         termDepositAccountType: string,
         transactionCode: string,
@@ -513,6 +519,7 @@
         depositAmount: string,
         mobileNo: string,
         printDate: string,
+        requestId: string,
         savingsAccountType: string,
         statement: Array<Array<string>>
         transactionCode: string,
@@ -537,8 +544,10 @@
 
         idType: string,
         idNumber: string,
+        printDate: string,
+
         photo: string,
-        printDate: string
+        requestId: string
     };
     export interface REMITTANCE_REQUEST {
         "agentName": string,
@@ -569,6 +578,7 @@
         depositAmount: string,
         mobileNo: string,
         printDate: string,
+        requestId: string,
         savingsAccountType: string,
         transactionDate: string,
         userId: string,

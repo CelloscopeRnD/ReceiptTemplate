@@ -13,7 +13,8 @@ module MockupData {
         "customerName": "Md. Arif Gazi",
         "mobileNo": "01617877595",
         "printDate": "19-JAN-2016 13:13:15 PM",
-        "photo":"",
+        "photo": "",
+        "requestId": "123456",
         "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
@@ -182,6 +183,7 @@ module MockupData {
         "mobileNo": "01617877595",
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
+        "requestId": "123456",
         "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
@@ -199,6 +201,7 @@ module MockupData {
         "mobileNo": "01617877595",
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
+        "requestId": "123456",
         "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
@@ -522,6 +525,7 @@ module MockupData {
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "productTenor": "5 Years",
+        "requestId": "123456",
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)"
     };
@@ -542,6 +546,7 @@ module MockupData {
         "printDate": "19-JAN-2016 13:13:15 PM",
         "productTenor": "5 Years",
         "profitRate": "8.85% (Yearly)",
+        "requestId": "123456",
         "termDepositAccountType": "TERM DEPOSIT",
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)"
@@ -562,6 +567,7 @@ module MockupData {
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "receiverAccountName": "SUJON PATWARY",
+        "requestId": "123456",
         "termDepositAccountType": "TERM DEPOSIT",
         "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
@@ -579,6 +585,7 @@ module MockupData {
         "mobileNo": "01617877595",
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
+        "requestId": "123456",
         "savingsAccountType": "Savings",
         "statement": [
             ["", "Date", "Description", "Deposit", "Withdraw", "Balance", ""],
@@ -612,7 +619,8 @@ module MockupData {
         "idNumber": "19752698765626536",
         "printDate": "19-JAN-2016 13:13:15 PM",
 
-        "photo":""
+        "photo": "",
+        "requestId": "123456"
     };
     export var remittanceRequest: JsonContracts.REMITTANCE_REQUEST = {
         "agentName": "BADRUL ALOM",
@@ -644,6 +652,7 @@ module MockupData {
         "mobileNo": "01617877595",
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
+        "requestId": "123456",
         "savingsAccountType": "Savings",
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)"
