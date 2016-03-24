@@ -703,24 +703,24 @@
         //withdrawsAmountInWords: string
     };
     export interface REMITTANCE_DISBURSEMENT {
-        "agentName": string,
-        "amountInWords": string,
-        "boothAddress": string,
-        "currency": string,
-        "customerName": string,
-        "exchangeHouse": string,
-        "exchangeRate": string,
-        "fxAmount": string,
-        "mobileNo": string,
-        "payableAmount": string,
-        "photo": string,
-        "pinNo": string,
-        "printDate": string,
-        "requestId": string,
-        "senderCountry": string,
-        "senderName": string,
-        "transactionCode": string,
-        "userId": string
+        user: string,
+        agentName: string,
+        boothAddress: string,
+
+        recipientName: string,
+        exchangeHouse: string,
+        pin: string,
+
+        mobileNo: string,
+
+        senderName: string,
+        senderCountry: string,
+        actualPayableAmount: string,
+        amountInWords: string,
+
+        idType: string,
+        idNumber: string,
+        printDate: string
     };
     export interface REMITTANCE_REQUEST {
         "agentName": string,

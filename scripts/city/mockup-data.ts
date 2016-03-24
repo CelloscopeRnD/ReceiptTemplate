@@ -815,24 +815,23 @@ module MockupData {
         //"withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
-        "agentName": "BADRUL ALOM",
-        "amountInWords": "ONE TOUSAND ONLY",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
-        "currency": "Euro",
-        "customerName": "Md. Arif Gazi",
-        "exchangeHouse": "",
-        "exchangeRate": "100",
-        "fxAmount": "",
-        "mobileNo": "01617877595",
-        "payableAmount": "1,000 BDT",
-        "photo": "",
-        "pinNo": "123456",
-        "printDate": "19-JAN-2016 13:13:15 PM",
-        "requestId": "123456",
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
+        "recipientName": "JAMAL UDDIN",
+        "exchangeHouse": "XPRESS MONEY",
+        "pin": "****2543",
+
+        "mobileNo": "01915067740",
+        "senderName": "MD. ASHSAN HABIB ROCKY",
         "senderCountry": "Italy",
-        "senderName": "Toufiq",
-        "transactionCode": "123456",
-        "userId": "615001001 (NAIM ISLAM)"
+        "actualPayableAmount": "BDT 1,256.00",
+        "amountInWords": "ONE THOUSAND TWO HUNDRED FIFTY SIX TAKA ONLY",
+
+        "idType": "NID",
+        "idNumber": "19752698765626536",
+        "printDate": "19-JAN-2016 13:13:15 PM",
     };
     export var remittanceRequest: JsonContracts.REMITTANCE_REQUEST = {
         "agentName": "BADRUL ALOM",

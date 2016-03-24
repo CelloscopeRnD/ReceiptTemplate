@@ -1,16 +1,16 @@
 ﻿/// <reference path="receipt-type" />
 /// <reference path="mockup-data" />
 
-var golbal,
+var global,
     receipt = receipt || {};
-golbal = window;
+global = window;
 
-golbal.onload = function () {
-    var url = golbal.location.search;
+global.onload = function () {
+    var url = global.location.search;
     url = url.replace("?", ''); // remove the ?
     if (!url) {
         url = receipt;
-        golbal.data = JSON.parse(golbal.stringData);
+        global.data = JSON.parse(global.stringData);
     } else {
         setData(parseInt(url));
     }
@@ -24,61 +24,61 @@ function setData(receipt) {
     switch (receipt) {
 
         case ReceiptTypeModule.Receipts.ACCOUNT_BALANCE:
-            golbal.data = MockupData.accountBalance;
+            global.data = MockupData.accountBalance;
             break;
         case ReceiptTypeModule.Receipts.ATM_DEBIT_CARD_CANCEL:
-            golbal.data = MockupData.atmDebitCardCancel;
+            global.data = MockupData.atmDebitCardCancel;
             break;
         case ReceiptTypeModule.Receipts.ATM_DEBIT_CARD_DELIVERY:
-            golbal.data = MockupData.atmDebitCardDelivery;
+            global.data = MockupData.atmDebitCardDelivery;
             break;
         case ReceiptTypeModule.Receipts.ATM_DEBIT_CARD_REQUEST:
-            golbal.data = MockupData.atmDebitCardRequest;
+            global.data = MockupData.atmDebitCardRequest;
             break;
         case ReceiptTypeModule.Receipts.CASH_DEPOSIT:
-            golbal.data = MockupData.cashDeposit;
+            global.data = MockupData.cashDeposit;
             break;
         case ReceiptTypeModule.Receipts.CASH_WITHDRAW:
-            golbal.data = MockupData.cashWithdraw;
+            global.data = MockupData.cashWithdraw;
             break;
         case ReceiptTypeModule.Receipts.CHEQUE_BOOK_DELIVERY:
-            golbal.data = MockupData.chequeBookDelivery;
+            global.data = MockupData.chequeBookDelivery;
             break;
         case ReceiptTypeModule.Receipts.CHEQUE_BOOK_REQUISITION:
-            golbal.data = MockupData.chequeBookRequisition;
+            global.data = MockupData.chequeBookRequisition;
             break;
         case ReceiptTypeModule.Receipts.CHEQUE_STOP_PAYMENT_RANGE:
-            golbal.data = MockupData.chequeStopPaymentRange;
+            global.data = MockupData.chequeStopPaymentRange;
             break;
         case ReceiptTypeModule.Receipts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL:
-            golbal.data = MockupData.chequeStopPaymentRangeCancel;
+            global.data = MockupData.chequeStopPaymentRangeCancel;
             break;
         case ReceiptTypeModule.Receipts.CHEQUE_STOP_PAYMENT_SINGLE:
-            golbal.data = MockupData.chequeStopPaymentSingle;
+            global.data = MockupData.chequeStopPaymentSingle;
             break;
         case ReceiptTypeModule.Receipts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL:
-            golbal.data = MockupData.chequeStopPaymentSingleCancel;
+            global.data = MockupData.chequeStopPaymentSingleCancel;
             break;
         case ReceiptTypeModule.Receipts.DPS_ACCOUNT:
-            golbal.data = MockupData.dpsAccount;
+            global.data = MockupData.dpsAccount;
             break;
         case ReceiptTypeModule.Receipts.FIXED_DEPOSIT:
-            golbal.data = MockupData.fixedDeposit;
+            global.data = MockupData.fixedDeposit;
             break;
         case ReceiptTypeModule.Receipts.FUND_TRANSFER:
-            golbal.data = MockupData.fundTransfer;
+            global.data = MockupData.fundTransfer;
             break;
         case ReceiptTypeModule.Receipts.MINI_STATEMENT:
-            golbal.data =MockupData.miniStatement;
+            global.data = MockupData.miniStatement;
             break;
         case ReceiptTypeModule.Receipts.REMITTANCE_DISBURSEMENT:
-            golbal.data = MockupData.remittanceDisbursement;
+            global.data = MockupData.remittanceDisbursement;
             break;
         case ReceiptTypeModule.Receipts.REMITTANCE_REQUEST:
-            golbal.data = MockupData.remittanceRequest;
+            global.data = MockupData.remittanceRequest;
             break;
         case ReceiptTypeModule.Receipts.SAVINGS_ACCOUNT:
-            golbal.data = MockupData.savingsAccount;
+            global.data = MockupData.savingsAccount;
             break;
     }
 }
@@ -177,7 +177,7 @@ var labelText = {
     inwardForeignRemittanceRequestTextEnglish: "Inward Foreign Remittance Request",
     inwardForeignRemittanceDisbursementTextEnglish: "Inward Foreign Remittance Disbursement",
     mobileNoTextEnglish: "Mobile No",
-    exchangeHouseNameEnglish: "Exchange House Name",
+    exchangeHouseNameEnglish: "Exchange House",
     payableAmountTextEnglish: "Payable Amount",
     pinNoTextEnglish: "Pin No",
     printDateTextEnglish: "Print Date",
@@ -200,9 +200,7 @@ function replaceToken(receipt) {
 
 
 
-    addClassText("customerIdLabel", labelText.customerIdText);
-    addClassText("customerId", golbal.data.customerId);
-    addClassText("accountTypeLabel", labelText.accountTypeText);
+   
 
     switch (receipt) {
         case 1:
@@ -268,32 +266,36 @@ function replaceToken(receipt) {
 }
 function setAccountBalance() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.accountBalanceText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.balanceDateText, golbal.data.transactionDate]],
-        [[labelText.balanceAmountText, golbal.data.balanceAmount], [labelText.transactionIdText, golbal.data.transactionCode]],
-        [[labelText.inWordsText, golbal.data.balanceAmountInWords], [labelText.printDateText, golbal.data.printDate]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.balanceDateText, global.data.transactionDate]],
+        [[labelText.balanceAmountText, global.data.balanceAmount], [labelText.transactionIdText, global.data.transactionCode]],
+        [[labelText.inWordsText, global.data.balanceAmountInWords], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
@@ -301,32 +303,36 @@ function setAccountBalance() {
 }
 function setCashDeposit() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.cashDepositText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.depositDateText, golbal.data.transactionDate]],
-        [[labelText.depositAmountText, golbal.data.depositAmount], [labelText.transactionIdText, golbal.data.transactionCode]],
-        [[labelText.inWordsText, golbal.data.depositAmountInWords], [labelText.printDateText, golbal.data.printDate]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.depositDateText, global.data.transactionDate]],
+        [[labelText.depositAmountText, global.data.depositAmount], [labelText.transactionIdText, global.data.transactionCode]],
+        [[labelText.inWordsText, global.data.depositAmountInWords], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
@@ -334,164 +340,184 @@ function setCashDeposit() {
 }
 function setCashWithdraw() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.cashWithdrawText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.withdrawDateText, golbal.data.transactionDate]],
-        [[labelText.withdrawAmountText, golbal.data.withdrawAmount], [labelText.transactionIdText, golbal.data.transactionCode]],
-        [[labelText.inWordsText, golbal.data.withdrawsAmountInWords], [labelText.printDateText, golbal.data.printDate]],
-        [[labelText.chargeText, golbal.data.charge], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.withdrawDateText, global.data.transactionDate]],
+        [[labelText.withdrawAmountText, global.data.withdrawAmount], [labelText.transactionIdText, global.data.transactionCode]],
+        [[labelText.inWordsText, global.data.withdrawsAmountInWords], [labelText.printDateText, global.data.printDate]],
+        [[labelText.chargeText, global.data.charge], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setDPSAccount() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.generalDPSAccountText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
     addClassText(labelText.accountNumberId, labelText.emptyText);
-    addClassText(labelText.accountTypeId, golbal.data.dpsAccountType);
+    addClassText(labelText.accountTypeId, global.data.dpsAccountType);
     addClassText(labelText.linkAccountNumberLabelId, labelText.linkAccountNumberText);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
-    addClassText(labelText.linkAccountNumberId, golbal.data.linkAccountNumber);
+    addClassText(labelText.linkAccountNumberId, global.data.linkAccountNumber);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.productTenorText, golbal.data.productTenor]],
-        [[labelText.accountOpeningDateText, golbal.data.transactionDate], [labelText.maturityDateText, golbal.data.maturityDate]],
-        [[labelText.monthlyDepositText, golbal.data.depositAmount], [labelText.printDateText, golbal.data.printDate]],
-        [[labelText.maturityAmountText, golbal.data.maturityAmount], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.productTenorText, global.data.productTenor]],
+        [[labelText.accountOpeningDateText, global.data.transactionDate], [labelText.maturityDateText, global.data.maturityDate]],
+        [[labelText.monthlyDepositText, global.data.depositAmount], [labelText.printDateText, global.data.printDate]],
+        [[labelText.maturityAmountText, global.data.maturityAmount], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setFixedDeposit() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.cityAgentFixedDepositText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
     addClassText(labelText.accountNumberId, labelText.emptyText);
-    addClassText(labelText.accountTypeId, golbal.data.termDepositAccountType);
+    addClassText(labelText.accountTypeId, global.data.termDepositAccountType);
     addClassText(labelText.linkAccountNumberLabelId, labelText.linkAccountNumberText);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
-    addClassText(labelText.linkAccountNumberId, golbal.data.linkAccountNumber);
+    addClassText(labelText.linkAccountNumberId, global.data.linkAccountNumber);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.productTenorText, golbal.data.productTenor]],
-        [[labelText.accountOpeningDateText, golbal.data.transactionDate], [labelText.maturityDateText, golbal.data.maturityDate]],
-        [[labelText.profitRateText, golbal.data.profitRate], [labelText.maturityAmountText, golbal.data.maturityAmount]],
-        [[labelText.principalAmountText, golbal.data.principalAmount], [labelText.printDateText, golbal.data.printDate]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.productTenorText, global.data.productTenor]],
+        [[labelText.accountOpeningDateText, global.data.transactionDate], [labelText.maturityDateText, global.data.maturityDate]],
+        [[labelText.profitRateText, global.data.profitRate], [labelText.maturityAmountText, global.data.maturityAmount]],
+        [[labelText.principalAmountText, global.data.principalAmount], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setFundTransfer() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.fundTransferText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.senderAccountNoText);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.sendrAccountNameText, golbal.data.accountName], [labelText.fundTransferDateText, golbal.data.transactionDate]],
-        [[labelText.receiverAccountNameText, golbal.data.receiverAccountName], [labelText.receiverAccountNoText, golbal.data.linkAccountNumber]],
-        [[labelText.transferAmountText, golbal.data.depositAmount], [labelText.transactionIdText, golbal.data.transactionCode]],
-        [[labelText.inWordsText, golbal.data.depositAmountInWords], [labelText.printDateText, golbal.data.printDate]],
+        [[labelText.sendrAccountNameText, global.data.accountName], [labelText.fundTransferDateText, global.data.transactionDate]],
+        [[labelText.receiverAccountNameText, global.data.receiverAccountName], [labelText.receiverAccountNoText, global.data.linkAccountNumber]],
+        [[labelText.transferAmountText, global.data.depositAmount], [labelText.transactionIdText, global.data.transactionCode]],
+        [[labelText.inWordsText, global.data.depositAmountInWords], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setSavingsAccount() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.cityAgentSavingsAccountText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.initialDepositText, golbal.data.depositAmount]],
-        [[labelText.accountOpeningDateText, golbal.data.transactionDate], [labelText.printDateText, golbal.data.printDate]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.initialDepositText, global.data.depositAmount]],
+        [[labelText.accountOpeningDateText, global.data.transactionDate], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
@@ -501,131 +527,147 @@ function setSavingsAccount() {
 
 function setATMDebitCardRequest() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.atmDebitCardRequestText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.requestReceiveTimeText, golbal.data.transactionDate]],
-        [[labelText.cardTypeText, golbal.data.cardType], [labelText.requestIdText, golbal.data.requestId]],
-        [[labelText.cardBrandText, golbal.data.cardBrand], [labelText.printDateText, golbal.data.printDate]],
-        [[labelText.cardTitleText, golbal.data.accountName], [labelText.chargeText, golbal.data.charge]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.requestReceiveTimeText, global.data.transactionDate]],
+        [[labelText.cardTypeText, global.data.cardType], [labelText.requestIdText, global.data.requestId]],
+        [[labelText.cardBrandText, global.data.cardBrand], [labelText.printDateText, global.data.printDate]],
+        [[labelText.cardTitleText, global.data.accountName], [labelText.chargeText, global.data.charge]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setATMDebitCardDelivery() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.atmDebitCardDeliveryText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.deliveryDateText, golbal.data.transactionDate]],
-        [[labelText.cardTypeText, golbal.data.cardType], [labelText.requestIdText, golbal.data.requestId]],
-        [[labelText.cardBrandText, golbal.data.cardBrand], [labelText.printDateText, golbal.data.printDate]],
-        [[labelText.cardTitleText, golbal.data.accountName], [labelText.cardNumberText, golbal.data.cardNumber]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.deliveryDateText, global.data.transactionDate]],
+        [[labelText.cardTypeText, global.data.cardType], [labelText.requestIdText, global.data.requestId]],
+        [[labelText.cardBrandText, global.data.cardBrand], [labelText.printDateText, global.data.printDate]],
+        [[labelText.cardTitleText, global.data.accountName], [labelText.cardNumberText, global.data.cardNumber]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setATMDebitCardCancel() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.atmDebitCardCancelText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.deliveryDateText, golbal.data.transactionDate]],
-        [[labelText.cardTypeText, golbal.data.cardType], [labelText.requestIdText, golbal.data.requestId]],
-        [[labelText.cardBrandText, golbal.data.cardBrand], [labelText.printDateText, golbal.data.printDate]],
-        [[labelText.cardTitleText, golbal.data.accountName], [labelText.cardNumberText, golbal.data.cardNumber]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.deliveryDateText, global.data.transactionDate]],
+        [[labelText.cardTypeText, global.data.cardType], [labelText.requestIdText, global.data.requestId]],
+        [[labelText.cardBrandText, global.data.cardBrand], [labelText.printDateText, global.data.printDate]],
+        [[labelText.cardTitleText, global.data.accountName], [labelText.cardNumberText, global.data.cardNumber]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setChequeBookRequisition() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.chequeBookRequisitionText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.requestReceiveTimeText, golbal.data.transactionDate]],
-        [[labelText.noOfLeaveText, golbal.data.noOfLeave], [labelText.requestIdText, golbal.data.requestId]],
-        [[labelText.chargeText, golbal.data.charge], [labelText.printDateText, golbal.data.printDate]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.requestReceiveTimeText, global.data.transactionDate]],
+        [[labelText.noOfLeaveText, global.data.noOfLeave], [labelText.requestIdText, global.data.requestId]],
+        [[labelText.chargeText, global.data.charge], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
@@ -633,32 +675,36 @@ function setChequeBookRequisition() {
 }
 function setChequeBookDelivery() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.chequeBookDeliveryText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.deliveryDateText, golbal.data.transactionDate]],
-        [[labelText.noOfLeaveText, golbal.data.noOfLeave], [labelText.requestIdText, golbal.data.requestId]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.printDateText, golbal.data.printDate]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.deliveryDateText, global.data.transactionDate]],
+        [[labelText.noOfLeaveText, global.data.noOfLeave], [labelText.requestIdText, global.data.requestId]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
@@ -666,132 +712,148 @@ function setChequeBookDelivery() {
 }
 function setChequeStopPaymentSingle() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.chequeStopPaymentSingleText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.receiverNameText, golbal.data.receiverName]],
-        [[labelText.chequeLeafNumberText, golbal.data.chequeLeafNumber], [labelText.requestIdText, golbal.data.requestId]],
-        [[labelText.amountOfTkText, golbal.data.chequeAmount], [labelText.printDateText, golbal.data.printDate]],
-        [[labelText.chargeText, golbal.data.charge], [labelText.chequeLostReasonText, golbal.data.chequeLostReason]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.receiverNameText, global.data.receiverName]],
+        [[labelText.chequeLeafNumberText, global.data.chequeLeafNumber], [labelText.requestIdText, global.data.requestId]],
+        [[labelText.amountOfTkText, global.data.chequeAmount], [labelText.printDateText, global.data.printDate]],
+        [[labelText.chargeText, global.data.charge], [labelText.chequeLostReasonText, global.data.chequeLostReason]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setChequeStopPaymentRange() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.chequeStopPaymentRangeText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.requestReceiveTimeText, golbal.data.transactionDate]],
-        [[labelText.chequeLeafNumberText, golbal.data.chequeLeafNumber], [labelText.requestIdText, golbal.data.requestId]],
-        [[labelText.chargeText, golbal.data.charge], [labelText.printDateText, golbal.data.printDate]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.chequeLostReasonText, golbal.data.chequeLostReason]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.requestReceiveTimeText, global.data.transactionDate]],
+        [[labelText.chequeLeafNumberText, global.data.chequeLeafNumber], [labelText.requestIdText, global.data.requestId]],
+        [[labelText.chargeText, global.data.charge], [labelText.printDateText, global.data.printDate]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.chequeLostReasonText, global.data.chequeLostReason]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setChequeStopPaymentSingleCancel() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.chequeStopPaymentSingleCancelText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.receiverNameText, golbal.data.receiverName]],
-        [[labelText.chequeLeafNumberText, golbal.data.chequeLeafNumber], [labelText.requestIdText, golbal.data.requestId]],
-        [[labelText.amountOfTkText, golbal.data.chequeAmount], [labelText.printDateText, golbal.data.printDate]],
-        [[labelText.chargeText, golbal.data.charge], [labelText.retrieveFromText, golbal.data.retrieveFrom]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.receiverNameText, global.data.receiverName]],
+        [[labelText.chequeLeafNumberText, global.data.chequeLeafNumber], [labelText.requestIdText, global.data.requestId]],
+        [[labelText.amountOfTkText, global.data.chequeAmount], [labelText.printDateText, global.data.printDate]],
+        [[labelText.chargeText, global.data.charge], [labelText.retrieveFromText, global.data.retrieveFrom]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setChequeStopPaymentRangeCancel() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.chequeStopPaymentRangeCancelText);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, golbal.data.accountName], [labelText.requestReceiveTimeText, golbal.data.transactionDate]],
-        [[labelText.chequeLeafNumberText, golbal.data.chequeLeafNumber], [labelText.requestIdText, golbal.data.requestId]],
-        [[labelText.chargeText, golbal.data.charge], [labelText.printDateText, golbal.data.printDate]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.retrieveFromText, golbal.data.retrieveFrom]],
+        [[labelText.accountNameText, global.data.accountName], [labelText.requestReceiveTimeText, global.data.transactionDate]],
+        [[labelText.chequeLeafNumberText, global.data.chequeLeafNumber], [labelText.requestIdText, global.data.requestId]],
+        [[labelText.chargeText, global.data.charge], [labelText.printDateText, global.data.printDate]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.retrieveFromText, global.data.retrieveFrom]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
@@ -799,29 +861,33 @@ function setChequeStopPaymentRangeCancel() {
 
 function setMiniStatement() {
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.accountStatement);
 
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", global.data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, golbal.data.accountNumber);
-    addClassText(labelText.accountTypeId, golbal.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, global.data.accountNumber);
+    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.transactionIdText);
-    addClassText(labelText.linkAccountNumberId, golbal.data.transactionCode);
+    addClassText(labelText.linkAccountNumberId, global.data.transactionCode);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, golbal.data.customerAddress);
+    addClassText(labelText.customerAddressId, global.data.customerAddress);
 
-    var tableData = golbal.data.statement;
+    var tableData = global.data.statement;
 
     var fourthTable = <HTMLTableElement>document.getElementsByClassName('fourthTable')[0];
     for (var r in tableData) {
@@ -832,59 +898,58 @@ function setMiniStatement() {
 }
 function setRemittanceRequest() {
     addClassText("agentNameLabel", labelText.agentNameTextEnglish);
-    addClassText("agentName", golbal.data.agentName);
+    addClassText("agentName", global.data.agentName);
     addClassText("userIdLabel", labelText.userTextEnglish);
-    addClassText("userId", golbal.data.userId);
+    addClassText("userId", global.data.userId);
     addClassText("boothAddressLabel", labelText.addressTextEnglish);
-    addClassText("boothAddress", golbal.data.boothAddress);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("title", labelText.inwardForeignRemittanceRequestTextEnglish);
 
     hideElementByClassName('accountBasic');
 
     addClassText("customerNameLabel", labelText.recipientNameTextEnglish);
-    addClassText("customerName", golbal.data.customerName);
+    addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoTextEnglish);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("mobileNo", global.data.mobileNo);
     addClassText("customerAddressLabel", labelText.exchangeHouseNameEnglish);
     addClassText(labelText.customerAddressId, labelText.emptyText);
-    addClassText(labelText.customerAddressId, golbal.data.exchangeHouse);
+    addClassText(labelText.customerAddressId, global.data.exchangeHouse);
 
 
     var tableData = [
-        [[labelText.senderNameTextEnglish, golbal.data.senderName], [labelText.senderCountryTextEnglish, golbal.data.senderCountry]],
-        [[labelText.iDTypeTextEnglish, golbal.data.iDType], [labelText.apprxAmountTextEnglish, golbal.data.apprxAmount]],
-        [[labelText.amountInWordsTextEnglish, golbal.data.amountInWords], [labelText.iDNumberTextEnglish, golbal.data.iDNumber]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.printDateTextEnglish, golbal.data.printDate]],
+        [[labelText.senderNameTextEnglish, global.data.senderName], [labelText.senderCountryTextEnglish, global.data.senderCountry]],
+        [[labelText.iDTypeTextEnglish, global.data.iDType], [labelText.apprxAmountTextEnglish, global.data.apprxAmount]],
+        [[labelText.amountInWordsTextEnglish, global.data.amountInWords], [labelText.iDNumberTextEnglish, global.data.iDNumber]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.printDateTextEnglish, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
     ];
     replaceTableData(tableData);
 }
 function setRemittanceDisbursement() {
-    addClassText("agentNameLabel", labelText.agentNameTextEnglish);
-    addClassText("agentName", golbal.data.agentName);
-    addClassText("userIdLabel", labelText.userTextEnglish);
-    addClassText("userId", golbal.data.userId);
-    addClassText("boothAddressLabel", labelText.addressTextEnglish);
-    addClassText("boothAddress", golbal.data.boothAddress);
-
     addClassText("title", labelText.inwardForeignRemittanceDisbursementTextEnglish);
 
-    hideElementByClassName('accountBasic');
+    let data = <JsonContracts.REMITTANCE_DISBURSEMENT>global.data;
+    addClassText("userIdLabel", labelText.userTextEnglish);
+    addClassText("userId", data.user);
+    addClassText("agentNameLabel", labelText.agentNameTextEnglish);
+    addClassText("agentName", data.agentName);
+    addClassText("boothAddressLabel", labelText.addressTextEnglish);
+    addClassText("boothAddress", data.boothAddress);
 
     addClassText("customerNameLabel", labelText.recipientNameTextEnglish);
-    addClassText("customerName", golbal.data.customerName);
-    addClassText("mobileNoLabel", labelText.mobileNoTextEnglish);
-    addClassText("mobileNo", golbal.data.mobileNo);
+    addClassText("customerName", data.recipientName);
     addClassText("customerAddressLabel", labelText.exchangeHouseNameEnglish);
-    addClassText(labelText.customerAddressId, labelText.emptyText);
+    addClassText(labelText.customerAddressId, data.exchangeHouse);
 
+    addClassText("mobileNoLabel", labelText.mobileNoTextEnglish);
+    addClassText("mobileNo", data.mobileNo);
 
     var tableData = [
-        [[labelText.senderNameTextEnglish, golbal.data.senderName], [labelText.senderCountryTextEnglish, golbal.data.senderCountry]],
-        [[labelText.transactionIdTextEnglish, golbal.data.transactionCode], [labelText.payableAmountTextEnglish, golbal.data.payableAmount]],
-        [[labelText.amountInWordsTextEnglish, golbal.data.amountInWords], [labelText.printDateTextEnglish, golbal.data.printDate]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.senderNameTextEnglish, data.senderName], [labelText.senderCountryTextEnglish, data.idType]],
+        [[labelText.transactionIdTextEnglish, data.senderCountry], [labelText.payableAmountTextEnglish, data.idNumber]],
+        [[labelText.amountInWordsTextEnglish, data.actualPayableAmount], [labelText.printDateTextEnglish, data.printDate]],
+        [[labelText.amountInWordsTextEnglish, data.amountInWords], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
