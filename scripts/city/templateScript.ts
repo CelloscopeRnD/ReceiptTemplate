@@ -110,7 +110,7 @@ var labelText = {
     atmDebitCardRequestText: "এটিএম / ডেবিটি কার্ডের অনুরোধ",
     balanceAmountText: "ব্যালেন্সের পরিমান",
     balanceDateText: "ব্যালেন্সের তারিখ",
-    chargeText: "চার্জ",
+    chargeAndVatText: "চার্জ+ভ্যাট",
     cashDepositText: "নগদ জমা",
     cashWithdrawText: "নগদ উত্তোলন",
     chequeBookDeliveryText: "চেক বই হস্তান্তর",
@@ -334,11 +334,11 @@ function setCashDeposit() {
     addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, data.accountName], [labelText.depositDateText, data.transactionDate]],
-        [[labelText.depositAmountText, data.depositAmount], [labelText.transactionIdText, data.transactionCode]],
-        [[labelText.inWordsText, data.depositAmountInWords], [labelText.printDateText, data.printDate]],
+        [[labelText.depositAmountText, data.depositAmount], [labelText.depositDateText, data.depositDate]],
+        [[labelText.inWordsText, data.inWords], [labelText.transactionIdText, data.transactionCode]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.printDateText, data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
+        [[labelText.chargeAndVatText, data.chargeAndVat], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
@@ -376,7 +376,7 @@ function setCashWithdraw() {
         [[labelText.accountNameText, data.accountName], [labelText.withdrawDateText, data.transactionDate]],
         [[labelText.withdrawAmountText, data.withdrawAmount], [labelText.transactionIdText, data.transactionCode]],
         [[labelText.inWordsText, data.withdrawsAmountInWords], [labelText.printDateText, data.printDate]],
-        [[labelText.chargeText, data.charge], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.chargeAndVatText, data.charge], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
@@ -575,7 +575,7 @@ function setATMDebitCardRequest() {
         [[labelText.accountNameText, global.data.accountName], [labelText.requestReceiveTimeText, global.data.transactionDate]],
         [[labelText.cardTypeText, global.data.cardType], [labelText.requestIdText, global.data.requestId]],
         [[labelText.cardBrandText, global.data.cardBrand], [labelText.printDateText, global.data.printDate]],
-        [[labelText.cardTitleText, global.data.accountName], [labelText.chargeText, global.data.charge]],
+        [[labelText.cardTitleText, global.data.accountName], [labelText.chargeAndVatText, global.data.charge]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
@@ -685,7 +685,7 @@ function setChequeBookRequisition() {
     var tableData = [
         [[labelText.accountNameText, global.data.accountName], [labelText.requestReceiveTimeText, global.data.transactionDate]],
         [[labelText.noOfLeaveText, global.data.noOfLeave], [labelText.requestIdText, global.data.requestId]],
-        [[labelText.chargeText, global.data.charge], [labelText.printDateText, global.data.printDate]],
+        [[labelText.chargeAndVatText, global.data.charge], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
@@ -760,7 +760,7 @@ function setChequeStopPaymentSingle() {
         [[labelText.accountNameText, global.data.accountName], [labelText.receiverNameText, global.data.receiverName]],
         [[labelText.chequeLeafNumberText, global.data.chequeLeafNumber], [labelText.requestIdText, global.data.requestId]],
         [[labelText.amountOfTkText, global.data.chequeAmount], [labelText.printDateText, global.data.printDate]],
-        [[labelText.chargeText, global.data.charge], [labelText.chequeLostReasonText, global.data.chequeLostReason]],
+        [[labelText.chargeAndVatText, global.data.charge], [labelText.chequeLostReasonText, global.data.chequeLostReason]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
@@ -796,7 +796,7 @@ function setChequeStopPaymentRange() {
     var tableData = [
         [[labelText.accountNameText, global.data.accountName], [labelText.requestReceiveTimeText, global.data.transactionDate]],
         [[labelText.chequeLeafNumberText, global.data.chequeLeafNumber], [labelText.requestIdText, global.data.requestId]],
-        [[labelText.chargeText, global.data.charge], [labelText.printDateText, global.data.printDate]],
+        [[labelText.chargeAndVatText, global.data.charge], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.chequeLostReasonText, global.data.chequeLostReason]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
@@ -834,7 +834,7 @@ function setChequeStopPaymentSingleCancel() {
         [[labelText.accountNameText, global.data.accountName], [labelText.receiverNameText, global.data.receiverName]],
         [[labelText.chequeLeafNumberText, global.data.chequeLeafNumber], [labelText.requestIdText, global.data.requestId]],
         [[labelText.amountOfTkText, global.data.chequeAmount], [labelText.printDateText, global.data.printDate]],
-        [[labelText.chargeText, global.data.charge], [labelText.retrieveFromText, global.data.retrieveFrom]],
+        [[labelText.chargeAndVatText, global.data.charge], [labelText.retrieveFromText, global.data.retrieveFrom]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
@@ -870,7 +870,7 @@ function setChequeStopPaymentRangeCancel() {
     var tableData = [
         [[labelText.accountNameText, global.data.accountName], [labelText.requestReceiveTimeText, global.data.transactionDate]],
         [[labelText.chequeLeafNumberText, global.data.chequeLeafNumber], [labelText.requestIdText, global.data.requestId]],
-        [[labelText.chargeText, global.data.charge], [labelText.printDateText, global.data.printDate]],
+        [[labelText.chargeAndVatText, global.data.charge], [labelText.printDateText, global.data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.retrieveFromText, global.data.retrieveFrom]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];

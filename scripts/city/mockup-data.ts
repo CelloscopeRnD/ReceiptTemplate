@@ -182,18 +182,20 @@ module MockupData {
         "customerId": "CB2183726",
         "accountType": "SAVINGS ACCOUNT",
 
-
         "accountName": "MD Arif Gazi",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerName": "Md. Arif Gazi",
-        "depositAmount": "BDT 3,000.00",
-        "depositAmountInWords": "THREE THOUSAND ONLY",
         "mobileNo": "01617877595",
-        "photo":"",
-        "printDate": "19-JAN-2016 13:13:15 PM",
+
+
+        "depositAmount": "BDT 1,200.00",
+        "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
+        "chargeAndVat":"BDT 10.00 + 1.50",
+        "depositDate": "15-MAR-2016",
+        "transactionCode": "73970008",
+        "printDate": "15-MAR-2016 01:00:57 PM",
+
         "requestId": "123456",
-        "transactionCode": "TR222369",
-        "transactionDate": "19-JAN-2016",
+        "photo":"",
     };
     export var cashWithdraw: JsonContracts.CASH_WITHDRAW = {
         "user": "26160101(NAME OF USER)",

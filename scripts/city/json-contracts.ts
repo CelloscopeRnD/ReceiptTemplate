@@ -160,14 +160,17 @@
 
         accountName: string,
         customerAddress: string,
-        customerName: string,
-        depositAmount: string,
-        depositAmountInWords: string,
         mobileNo: string,
-        printDate: string,
-        requestId: string,
+
+
+        depositAmount: string,
+        inWords: string,
+        chargeAndVat: string;
+        depositDate: string,
         transactionCode: string,
-        transactionDate: string,
+        printDate: string,
+
+        requestId: string,
         photo: string
     };
     export interface CASH_WITHDRAW {
