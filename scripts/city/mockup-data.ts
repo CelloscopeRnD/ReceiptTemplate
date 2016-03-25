@@ -593,25 +593,22 @@ module MockupData {
         "photo":"",
     };
     export var miniStatement: JsonContracts.MINI_STATEMENT = {
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101 (NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "accountNumber": "2802183726001",
         "customerId": "CB2183726",
         "accountType": "SAVINGS ACCOUNT",
-        "transactionCode": "TR222369",
 
+        "chargeAndVat": "BDT 10.00 + 1.50",
 
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "accountName": "Md. Arif Gazi",
-        "depositAmount": "BDT 3,000.00",
-        "mobileNo": "01617877595",
-        "photo":"",
-        "printDate": "19-JAN-2016 13:13:15 PM",
-        "requestId": "123456",
+        "accountName": "JAMAL UDDIN",
+        "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
+        "mobileNo": "01915067740",
+
         "statement": [
-            ["", "Date", "Description", "Deposit", "Withdraw", "Balance", ""],
+            ["", "Date", "Description", "Withdraw", "Deposit", "Balance", ""],
             ["", "", "", "", "", "5000.00", "Starting"],
             ["1", "15-Dec-2016", "FT-School Fee", "", "500.00", "4500.00", ""],
             ["2", "14-Dec-2016", "DEP Cash", "1500.00", "", "6000.00", ""],
@@ -620,6 +617,9 @@ module MockupData {
             ["5", "12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00", ""],
             ["", "", "", "", "", "9000.00", "Ending"]
         ],
+        
+        "requestId": "123456",
+        "photo":"",
     };
     export var remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
         "user": "26160101(NAME OF USER)",

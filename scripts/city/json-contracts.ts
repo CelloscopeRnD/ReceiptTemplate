@@ -533,15 +533,16 @@
         accountNumber: string,
         customerId: string,
         accountType: string,
-        transactionCode: string,
 
-        customerAddress: string,
+        chargeAndVat: string,
+
         accountName: string,
-        depositAmount: string,
+        customerAddress: string,
         mobileNo: string,
-        printDate: string,
-        requestId: string,
+
         statement: Array<Array<string>>
+
+        requestId: string,
         photo: string
     };
     export interface REMITTANCE_DISBURSEMENT {

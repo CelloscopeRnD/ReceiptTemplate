@@ -98,7 +98,7 @@ var labelText = {
     accountBalanceText: "ব্যালেন্স",
     accountOpeningDateText: "হিসাব খোলার তারিখ",
     accountTypeText: "হিসাবের ধরন",
-    accountStatement: "হিসাবের সার বিবরনী",
+    accountStatement: "মিনিস্টেটমেন্ট",
     addressLine1Text: "এজেন্ট ব্যাংকিং ডিভিশন",
     addressLine2Text: "সিটি ব্যাংক লিঃ",
     addressLine3Text: "সিটি ব্যাংক  সেন্টার ১৩৬",
@@ -889,10 +889,10 @@ function setMiniStatement() {
 
     let data = <JsonContracts.MINI_STATEMENT>global.data;
 
-    addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", data.agentName);
     addClassText("userIdLabel", labelText.userText);
     addClassText("userId", data.user);
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", data.agentName);
     addClassText("boothAddressLabel", labelText.addressText);
     addClassText("boothAddress", data.boothAddress);
 
@@ -903,9 +903,10 @@ function setMiniStatement() {
     addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
     addClassText(labelText.accountTypeId, data.accountType);
+
+    addClassText(labelText.linkAccountNumberLabelId, labelText.chargeAndVatText);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
-    addClassText(labelText.linkAccountNumberLabelId, labelText.transactionIdText);
-    addClassText(labelText.linkAccountNumberId, data.transactionCode);
+    addClassText(labelText.linkAccountNumberId, data.chargeAndVat);
 
     addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", data.accountName);
