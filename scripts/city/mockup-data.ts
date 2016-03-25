@@ -623,22 +623,25 @@ module MockupData {
         "requestId": "123456"
     };
     export var remittanceRequest: JsonContracts.REMITTANCE_REQUEST = {
-        "agentName": "BADRUL ALOM",
-        "userId": "615001001 (NAIM ISLAM)",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
-        "customerName": "Md. Arif Gazi",
-        "mobileNo": "01617877595",
-        "exchangeHouse": "",
-        "senderName": "Toufiq",
-        "senderCountry": "Italy",
-        "pinNo": "123456",
-        "apprxAmount": "1,000 BDT",
-        "iDType": "NID",
-        "iDNumber": "123456789",
-        "amountInWords": "ONE TOUSAND ONLY",
-        "printDate": "19-JAN-2016 13:13:15 PM",
-        "requestId": "123456",
-        "photo": ""
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
+        "recipientName": "JAMAL UDDIN",
+        "pin": "****2543",
+
+        "mobileNo": "01915067740",
+        "senderName": "MD. ASHSAN HABIB ROCKY",
+        "senderCountry": "2801619598001",
+        "actualPayableAmount": "BDT 1,256.00",
+        "amountInWords": "ONE THOUSAND TWO HUNDRED FIFTY SIX TAKA ONLY",
+
+        "idType": "NID",
+        "idNumber": "19752698765626536",
+        "printDate": "15-MAR-2016 01:00:57 PM",
+
+        "photo": "",
+        "requestId": "123456"
     };
     export var savingsAccount: JsonContracts.SAVINGS_ACCOUNT = {
         "accountName": "MD Arif Gazi",

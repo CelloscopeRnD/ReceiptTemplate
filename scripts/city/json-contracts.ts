@@ -550,22 +550,26 @@
         requestId: string
     };
     export interface REMITTANCE_REQUEST {
-        "agentName": string,
-        "userId": string,
-        "boothAddress": string,
-        "customerName": string,
-        "mobileNo": string,
-        "exchangeHouse": string,
-        "senderName": string,
-        "senderCountry": string,
-        "pinNo": string,
-        "apprxAmount": string,
-        "iDType": string,
-        "iDNumber": string,
-        "amountInWords": string,
-        "printDate": string,
-        "requestId": string,
-        "photo": string
+        user: string,
+        agentName: string,
+        boothAddress: string,
+
+        recipientName: string,
+        pin: string,
+
+        mobileNo: string,
+
+        senderName: string,
+        senderCountry: string,
+        actualPayableAmount: string,
+        amountInWords: string,
+
+        idType: string,
+        idNumber: string,
+        printDate: string,
+
+        photo: string,
+        requestId: string
     };
     export interface SAVINGS_ACCOUNT {
         accountName: string,

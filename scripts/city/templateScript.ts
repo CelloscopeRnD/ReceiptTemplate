@@ -168,7 +168,7 @@ var labelText = {
     addressTextEnglish: "Address",
     agentNameTextEnglish: "Agent Name",
     amountInWordsTextEnglish: "Amount in Words",
-    apprxAmountTextEnglish: "Apprx.  Amount",
+    approximateAmountTextEnglish: "Approximate  Amount",
     currencyTextEnglish: "Currency",
     exchangeRateTextEnglish: "Exchange Rate",
     fxAmountTextEnglish: "Fx Amount",
@@ -897,32 +897,38 @@ function setMiniStatement() {
     }
 }
 function setRemittanceRequest() {
-    addClassText("agentNameLabel", labelText.agentNameTextEnglish);
-    addClassText("agentName", global.data.agentName);
-    addClassText("userIdLabel", labelText.userTextEnglish);
-    addClassText("userId", global.data.userId);
-    addClassText("boothAddressLabel", labelText.addressTextEnglish);
-    addClassText("boothAddress", global.data.boothAddress);
-
     addClassText("title", labelText.inwardForeignRemittanceRequestTextEnglish);
 
-    hideElementByClassName('accountBasic');
+    let data = <JsonContracts.REMITTANCE_REQUEST>global.data;
+    //addClassText("userIdLabel", labelText.userTextEnglish);
+    //addClassText("userId", data.user);
+    //addClassText("agentNameLabel", labelText.agentNameTextEnglish);
+    //addClassText("agentName", data.agentName);
+    //addClassText("boothAddressLabel", labelText.addressTextEnglish);
+    //addClassText("boothAddress", data.boothAddress);
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", global.data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", global.data.userId);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("customerNameLabel", labelText.recipientNameTextEnglish);
-    addClassText("customerName", global.data.customerName);
-    addClassText("mobileNoLabel", labelText.mobileNoTextEnglish);
-    addClassText("mobileNo", global.data.mobileNo);
+    addClassText("customerName", data.recipientName);
     addClassText("customerAddressLabel", labelText.exchangeHouseNameEnglish);
-    addClassText(labelText.customerAddressId, labelText.emptyText);
-    addClassText(labelText.customerAddressId, global.data.exchangeHouse);
+    addClassText("pinLabel", labelText.pinNoTextEnglish);
+    addClassText("pinColon", labelText.colonText);
+    addClassText("pin", data.pin);
 
+    addClassText("mobileNoLabel", labelText.mobileNoTextEnglish);
+    addClassText("mobileNo", data.mobileNo);
 
     var tableData = [
-        [[labelText.senderNameTextEnglish, global.data.senderName], [labelText.senderCountryTextEnglish, global.data.senderCountry]],
-        [[labelText.iDTypeTextEnglish, global.data.iDType], [labelText.apprxAmountTextEnglish, global.data.apprxAmount]],
-        [[labelText.amountInWordsTextEnglish, global.data.amountInWords], [labelText.iDNumberTextEnglish, global.data.iDNumber]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.printDateTextEnglish, global.data.printDate]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.senderNameTextEnglish, data.senderName], [labelText.iDTypeTextEnglish, data.idType]],
+        [[labelText.senderCountryTextEnglish, data.senderCountry], [labelText.iDNumberTextEnglish, data.idNumber]],
+        [[labelText.approximateAmountTextEnglish, data.actualPayableAmount], [labelText.printDateTextEnglish, data.printDate]],
+        [[labelText.amountInWordsTextEnglish, data.amountInWords], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
