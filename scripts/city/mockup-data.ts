@@ -189,13 +189,13 @@ module MockupData {
 
         "depositAmount": "BDT 1,200.00",
         "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
-        "chargeAndVat":"BDT 10.00 + 1.50",
+        "chargeAndVat": "BDT 10.00 + 1.50",
         "depositDate": "15-MAR-2016",
         "transactionCode": "73970008",
         "printDate": "15-MAR-2016 01:00:57 PM",
 
         "requestId": "123456",
-        "photo":"",
+        "photo": "",
     };
     export var cashWithdraw: JsonContracts.CASH_WITHDRAW = {
         "user": "26160101(NAME OF USER)",
@@ -218,7 +218,7 @@ module MockupData {
         "printDate": "15-MAR-2016 01:00:57 PM",
 
         "requestId": "123456",
-        "photo":"",
+        "photo": "",
     };
     export var chequeBookDelivery: JsonContracts.CHEQUE_BOOK_DELIVERY = {
         "accountName": "MD Arif Gazi",
@@ -526,7 +526,7 @@ module MockupData {
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "customerId": "CB2183726",
-        "accountType": "DPS", 
+        "accountType": "DPS",
         "linkAccountNumber": "2005246987526",
 
         "accountName": "MD Arif Gazi",
@@ -536,7 +536,7 @@ module MockupData {
         "maturityAmount": "BDT 2,26,047.00",
         "maturityDate": "19-JAN-2021",
         "mobileNo": "01617877595",
-        "photo":"",
+        "photo": "",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "productTenor": "5 Years",
         "requestId": "123456",
@@ -559,7 +559,7 @@ module MockupData {
         "maturityAmount": "BDT 2,26,047.00",
         "maturityDate": "19-JAN-2021",
         "mobileNo": "01617877595",
-        "photo":"",
+        "photo": "",
         "principalAmount": "BDT 1,00,000.00",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "productTenor": "5 Years",
@@ -590,7 +590,7 @@ module MockupData {
         "printDate": "15-MAR-2016 01:00:57 PM",
 
         "requestId": "123456",
-        "photo":"",
+        "photo": "",
     };
     export var miniStatement: JsonContracts.MINI_STATEMENT = {
         "user": "26160101 (NAME OF USER)",
@@ -607,19 +607,22 @@ module MockupData {
         "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
         "mobileNo": "01915067740",
 
+
+
+
+
         "statement": [
-            ["", "Date", "Description", "Withdraw", "Deposit", "Balance", ""],
-            ["", "", "", "", "", "5000.00", "Starting"],
-            ["1", "15-Dec-2016", "FT-School Fee", "", "500.00", "4500.00", ""],
-            ["2", "14-Dec-2016", "DEP Cash", "1500.00", "", "6000.00", ""],
-            ["3", "14-Dec-2016", "WDL-Cash", "", "2000.00", "4000.00", ""],
-            ["4", "13-Dec-2016", "FT-Other Bank", "", "2000.00", "2000.00", ""],
-            ["5", "12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00", ""],
-            ["", "", "", "", "", "9000.00", "Ending"]
+            ["Date", "Description", "Withdraw", "Deposit", "Balance"],
+            ["", "Opening Balance", "", "", "4,231,594.17"],
+            ["24-FEB-2016", "DR.TRAN FOR FUNDING A/C ZZ1323537", "3,500,000.00", "-", "731,594.17"],
+            ["18-FEB-2016", "SUMON", "100, 000.00", "-", "631,594.17"],
+            ["01-MAR-2016", "2801633560001: WTAX PDF", "185.43", "-", "631,408.74"],
+            ["01-MAR-2016", "2801633560001: INT.PD:01-02 - 2016", "-", "1,236.22", "632,644.96"],
+            ["15-MAR-2016", "TRTR/000043011856/15- 02 - 2016 15: 18:56/CBL", "-", "500.00", "633,144.96"]
         ],
-        
+
         "requestId": "123456",
-        "photo":"",
+        "photo": "",
     };
     export var remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
         "user": "26160101(NAME OF USER)",
@@ -679,7 +682,7 @@ module MockupData {
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "mobileNo": "01617877595",
-        "photo":"",
+        "photo": "",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "requestId": "123456",
         "transactionDate": "19-JAN-2016",
