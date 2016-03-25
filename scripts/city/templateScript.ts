@@ -277,16 +277,15 @@ function setAccountBalance() {
     addClassText("boothAddress", data.boothAddress);
 
 
+    addClassText(labelText.accountNoLabelId, labelText.titleId);
+    addClassText("accountNumberColon", ":");
+    addClassText(labelText.accountNumberId, data.accountNumber);
     addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerIdColon", ":");
     addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
-
-    addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, data.accountNumber);
+    addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
-    addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
     addClassText("customerName", data.customerName);
@@ -317,16 +316,15 @@ function setCashDeposit() {
     addClassText("boothAddress", data.boothAddress);
 
 
+    addClassText(labelText.accountNoLabelId, labelText.titleId);
+    addClassText("accountNumberColon", ":");
+    addClassText(labelText.accountNumberId, data.accountNumber);
     addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerIdColon", ":");
     addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
-
-    addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, data.accountNumber);
+    addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
-    addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
     addClassText("customerName", data.customerName);
@@ -357,16 +355,15 @@ function setCashWithdraw() {
     addClassText("boothAddress", data.boothAddress);
 
 
+    addClassText(labelText.accountNoLabelId, labelText.titleId);
+    addClassText("accountNumberColon", ":");
+    addClassText(labelText.accountNumberId, data.accountNumber);
     addClassText("customerIdLabel", labelText.customerIdText);
     addClassText("customerId", data.customerId);
+    addClassText("customerIdColon", ":");
     addClassText("accountTypeLabel", labelText.accountTypeText);
-
-    addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, data.accountNumber);
+    addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
-    addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
     addClassText("customerName", data.customerName);
@@ -400,7 +397,9 @@ function setDPSAccount() {
     addClassText(labelText.accountNoLabelId, labelText.titleId);
     addClassText("customerIdLabel", labelText.customerIdText);
     addClassText("customerId", data.customerId);
+    addClassText("customerIdColon", ":");
     addClassText("accountTypeLabel", labelText.accountTypeText);
+    addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberLabelId, labelText.linkAccountNumberText);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
@@ -436,12 +435,14 @@ function setFixedDeposit() {
     addClassText("boothAddress", data.boothAddress);
 
 
+    addClassText(labelText.accountNoLabelId, labelText.titleId);
+    addClassText("accountNumberColon", ":");
+    addClassText(labelText.accountNumberId, labelText.emptyText);
     addClassText("customerIdLabel", labelText.customerIdText);
     addClassText("customerId", data.customerId);
+    addClassText("customerIdColon", ":");
     addClassText("accountTypeLabel", labelText.accountTypeText);
-
-    addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, labelText.emptyText);
+    addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberLabelId, labelText.linkAccountNumberText);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
@@ -476,17 +477,15 @@ function setFundTransfer() {
     addClassText("boothAddress", data.boothAddress);
 
 
+    addClassText(labelText.accountNoLabelId, labelText.senderAccountNoText);
+    addClassText("accountNumberColon", ":");
+    addClassText(labelText.accountNumberId, data.senderAccountNumber);
     addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerIdColon", ":");
     addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
-
-    addClassText(labelText.accountNoLabelId, labelText.senderAccountNoText);
-    addClassText(labelText.accountNumberId, data.senderAccountNumber);
-    addClassText(labelText.accountNumberId, data.senderAccountNumber);
+    addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
-    addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
     addClassText("customerName", data.customerName);
@@ -517,16 +516,15 @@ function setSavingsAccount() {
     addClassText("boothAddress", data.boothAddress);
 
 
+    addClassText(labelText.accountNoLabelId, labelText.titleId);
+    addClassText("accountNumberColon", ":");
+    addClassText(labelText.accountNumberId, data.accountNumber);
     addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerIdColon", ":");
     addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
-
-    addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, data.accountNumber);
+    addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
-    addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
-    addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
     addClassText("customerName", data.customerName);
@@ -892,12 +890,11 @@ function setMiniStatement() {
     addClassText("boothAddress", data.boothAddress);
 
 
+    addClassText(labelText.accountNoLabelId, labelText.titleId);
+    addClassText(labelText.accountNumberId, data.accountNumber);
     addClassText("customerIdLabel", labelText.customerIdText);
     addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
-
-    addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, data.accountNumber);
     addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.transactionIdText);

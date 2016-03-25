@@ -6,9 +6,9 @@ module MockupData {
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
-        "accountNumber": "2001158500126",
-        "customerId": "CB1158500",
-        "accountType": "Savings",
+        "accountNumber": "2802183726001",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
 
 
         "accountName": "MD Arif Gazi",
@@ -25,7 +25,7 @@ module MockupData {
     };
     export var atmDebitCardCancel: JsonContracts.ATM_DEBIT_CARD_CANCEL = {
         "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
+        "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
@@ -38,7 +38,7 @@ module MockupData {
         "chequeLeafNumber": "123 456 789 123",
         "chequeLostReason": "Lost",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -75,7 +75,7 @@ module MockupData {
     };
     export var atmDebitCardDelivery: JsonContracts.ATM_DEBIT_CARD_DELIVERY = {
         "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
+        "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
@@ -88,7 +88,7 @@ module MockupData {
         "chequeLeafNumber": "123 456 789 123",
         "chequeLostReason": "Lost",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -125,7 +125,7 @@ module MockupData {
     };
     export var atmDebitCardRequest: JsonContracts.ATM_DEBIT_CARD_REQUEST = {
         "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
+        "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
@@ -138,7 +138,7 @@ module MockupData {
         "chequeLeafNumber": "123 456 789 123",
         "chequeLostReason": "Lost",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -178,9 +178,9 @@ module MockupData {
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
-        "accountNumber": "2001158500126",
-        "customerId": "CB1158500",
-        "accountType": "Savings",
+        "accountNumber": "2802183726001",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
 
 
         "accountName": "MD Arif Gazi",
@@ -200,9 +200,9 @@ module MockupData {
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
-        "accountNumber": "2001158500126",
-        "customerId": "CB1158500",
-        "accountType": "Savings",
+        "accountNumber": "2802183726001",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
 
 
         "accountName": "MD Arif Gazi",
@@ -220,7 +220,7 @@ module MockupData {
     };
     export var chequeBookDelivery: JsonContracts.CHEQUE_BOOK_DELIVERY = {
         "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
+        "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
@@ -233,7 +233,7 @@ module MockupData {
         "chequeLeafNumber": "123 456 789 123",
         "chequeLostReason": "Lost",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -270,7 +270,7 @@ module MockupData {
     };
     export var chequeBookRequisition: JsonContracts.CHEQUE_BOOK_REQUISITION = {
         "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
+        "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
@@ -283,7 +283,7 @@ module MockupData {
         "chequeLeafNumber": "123 456 789 123",
         "chequeLostReason": "Lost",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -320,7 +320,7 @@ module MockupData {
     };
     export var chequeStopPaymentRange: JsonContracts.CHEQUE_STOP_PAYMENT_RANGE = {
         "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
+        "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
@@ -333,7 +333,7 @@ module MockupData {
         "chequeLeafNumber": "123 456 789 123",
         "chequeLostReason": "Lost",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -370,7 +370,7 @@ module MockupData {
     };
     export var chequeStopPaymentRangeCancel: JsonContracts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL = {
         "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
+        "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
@@ -383,7 +383,7 @@ module MockupData {
         "chequeLeafNumber": "123 456 789 123",
         "chequeLostReason": "Lost",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -420,7 +420,7 @@ module MockupData {
     };
     export var chequeStopPaymentSingle: JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE = {
         "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
+        "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
@@ -433,7 +433,7 @@ module MockupData {
         "chequeLeafNumber": "123 456 789 123",
         "chequeLostReason": "Lost",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -470,7 +470,7 @@ module MockupData {
     };
     export var chequeStopPaymentSingleCancel: JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL = {
         "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
+        "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
@@ -483,7 +483,7 @@ module MockupData {
         "chequeLeafNumber": "123 456 789 123",
         "chequeLostReason": "Lost",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -523,7 +523,7 @@ module MockupData {
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "accountType": "DPS", 
         "linkAccountNumber": "2005246987526",
 
@@ -545,7 +545,7 @@ module MockupData {
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
-        "customerId": "CB1158500",
+        "customerId": "CB2183726",
         "accountType": "TERM DEPOSIT",
         "linkAccountNumber": "2005246987526",
 
@@ -571,8 +571,8 @@ module MockupData {
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "senderAccountNumber": "2001158500126",
-        "customerId": "CB1158500",
-        "accountType": "Savings",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
 
 
         "accountName": "MD Arif Gazi",
@@ -596,9 +596,9 @@ module MockupData {
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
-        "accountNumber": "2001158500126",
-        "customerId": "CB1158500",
-        "accountType": "Savings",
+        "accountNumber": "2802183726001",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
         "transactionCode": "TR222369",
 
 
@@ -668,9 +668,9 @@ module MockupData {
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
-        "accountNumber": "2001158500126",
-        "customerId": "CB1158500",
-        "accountType": "Savings",
+        "accountNumber": "2802183726001",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
 
 
         "accountName": "MD Arif Gazi",
