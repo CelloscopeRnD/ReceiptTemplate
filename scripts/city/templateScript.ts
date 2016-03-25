@@ -94,7 +94,7 @@ var labelText = {
     linkAccountNumberId: "linkAccountNumber",
 
     titleId: "হিসাব নম্বর",
-    accountNameText: "হিসাব নাম",
+    accountNameText: "হিসাবের নাম",
     accountBalanceText: "ব্যালেন্স",
     accountOpeningDateText: "হিসাব খোলার তারিখ",
     accountTypeText: "হিসাবের ধরন",
@@ -287,8 +287,8 @@ function setAccountBalance() {
     addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", data.customerName);
+    addClassText("customerNameLabel", labelText.accountNameText);
+    addClassText("customerName", data.accountName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
@@ -326,8 +326,8 @@ function setCashDeposit() {
     addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", data.customerName);
+    addClassText("customerNameLabel", labelText.accountNameText);
+    addClassText("customerName", data.accountName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
@@ -365,8 +365,8 @@ function setCashWithdraw() {
     addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", data.customerName);
+    addClassText("customerNameLabel", labelText.accountNameText);
+    addClassText("customerName", data.accountName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
@@ -406,8 +406,8 @@ function setDPSAccount() {
     addClassText(labelText.linkAccountNumberId, data.linkAccountNumber);
 
 
-    addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", data.customerName);
+    addClassText("customerNameLabel", labelText.accountNameText);
+    addClassText("customerName", data.accountName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
@@ -448,8 +448,8 @@ function setFixedDeposit() {
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
     addClassText(labelText.linkAccountNumberId, data.linkAccountNumber);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", data.customerName);
+    addClassText("customerNameLabel", labelText.accountNameText);
+    addClassText("customerName", data.accountName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
@@ -487,8 +487,8 @@ function setFundTransfer() {
     addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", data.customerName);
+    addClassText("customerNameLabel", labelText.accountNameText);
+    addClassText("customerName", data.accountName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
@@ -526,8 +526,8 @@ function setSavingsAccount() {
     addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", data.customerName);
+    addClassText("customerNameLabel", labelText.accountNameText);
+    addClassText("customerName", data.accountName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
@@ -564,7 +564,7 @@ function setATMDebitCardRequest() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
+    addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", global.data.mobileNo);
@@ -601,7 +601,7 @@ function setATMDebitCardDelivery() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
+    addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", global.data.mobileNo);
@@ -638,7 +638,7 @@ function setATMDebitCardCancel() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
+    addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", global.data.mobileNo);
@@ -675,7 +675,7 @@ function setChequeBookRequisition() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
+    addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", global.data.mobileNo);
@@ -712,7 +712,7 @@ function setChequeBookDelivery() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
+    addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", global.data.mobileNo);
@@ -749,7 +749,7 @@ function setChequeStopPaymentSingle() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
+    addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", global.data.mobileNo);
@@ -786,7 +786,7 @@ function setChequeStopPaymentRange() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
+    addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", global.data.mobileNo);
@@ -823,7 +823,7 @@ function setChequeStopPaymentSingleCancel() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
+    addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", global.data.mobileNo);
@@ -860,7 +860,7 @@ function setChequeStopPaymentRangeCancel() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
+    addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", global.data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", global.data.mobileNo);
@@ -900,8 +900,8 @@ function setMiniStatement() {
     addClassText(labelText.linkAccountNumberLabelId, labelText.transactionIdText);
     addClassText(labelText.linkAccountNumberId, data.transactionCode);
 
-    addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", data.customerName);
+    addClassText("customerNameLabel", labelText.accountNameText);
+    addClassText("customerName", data.accountName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);

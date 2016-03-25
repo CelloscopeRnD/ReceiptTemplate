@@ -603,7 +603,7 @@ module MockupData {
 
 
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerName": "Md. Arif Gazi",
+        "accountName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "mobileNo": "01617877595",
         "photo":"",

@@ -533,7 +533,7 @@
         transactionCode: string,
 
         customerAddress: string,
-        customerName: string,
+        accountName: string,
         depositAmount: string,
         mobileNo: string,
         printDate: string,
