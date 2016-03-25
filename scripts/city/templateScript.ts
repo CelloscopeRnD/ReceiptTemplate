@@ -142,9 +142,9 @@ var labelText = {
     principalAmountText: "আসল টাকার পরিমান",
     productTenorText: "মেয়াদ",
     receiverAccountNoText: "প্রাপকের হিসাব নম্বর",
-    receiverAccountNameText: "প্রাপকের হিসাব নাম",
+    receiverAccountNameText: "প্রাপকের হিসাবের নাম",
     senderAccountNoText: "প্রেরকের হিসাব নম্বর",
-    sendrAccountNameText: "প্রেরকের হিসাব নাম",
+    senderAccountNameText: "প্রেরকের হিসাবের নাম",
     transferAmountText: "ট্রান্সফারের পরিমান",
     transactionIdText: "লেনদেন আইডি",
     userText: "ইউজার",
@@ -491,21 +491,24 @@ function setFundTransfer() {
     addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
 
-    addClassText("customerNameLabel", labelText.accountNameText);
-    addClassText("customerName", data.accountName);
-    addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", data.mobileNo);
+    addClassText("customerNameLabel", labelText.senderAccountNameText);
+    addClassText("customerName", data.senderAccountName);
     addClassText("customerAddressLabel", labelText.addressText);
     addClassText(labelText.customerAddressId, data.customerAddress);
+    addClassText("mobileNoLabel", labelText.mobileNoText);
+    addClassText("mobileNo", data.mobileNo);
 
     var tableData = [
-        [[labelText.sendrAccountNameText, data.accountName], [labelText.fundTransferDateText, data.transactionDate]],
-        [[labelText.receiverAccountNameText, data.receiverAccountName], [labelText.receiverAccountNoText, data.linkAccountNumber]],
-        [[labelText.transferAmountText, data.depositAmount], [labelText.transactionIdText, data.transactionCode]],
-        [[labelText.inWordsText, data.depositAmountInWords], [labelText.printDateText, data.printDate]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
+        [[labelText.receiverAccountNoText, data.receiverAccountNumber], [labelText.fundTransferDateText, data.fundTransferDate]],
+        [[labelText.receiverAccountNameText, data.receiverAccountName], [labelText.transactionIdText, data.transactionCode]],
+        [[labelText.transferAmountText, data.transferAmount], [labelText.printDateText, data.printDate]],
+        [[labelText.inWordsText, data.inWords], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.chargeAndVatText, data.chargeAndVat], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
+
+    doRowSpan("fourthTable", 3, 2);
 }
 function setSavingsAccount() {
     addClassText("title", labelText.cityAgentSavingsAccountText);

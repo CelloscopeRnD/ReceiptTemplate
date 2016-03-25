@@ -509,20 +509,20 @@
         customerId: string,
         accountType: string,
 
-        accountName: string,
+        senderAccountName: string,
         customerAddress: string,
-        customerName: string,
-        depositAmount: string,
-        depositAmountInWords: string,
-        linkAccountNumber: string,
-        maturityDate: string,
         mobileNo: string,
-        printDate: string,
+
+        receiverAccountNumber: string,
         receiverAccountName: string,
-        requestId: string,
-        termDepositAccountType: string,
+        transferAmount: string,
+        inWords: string,
+        chargeAndVat: string,
+        fundTransferDate: string,
         transactionCode: string,
-        transactionDate: string,
+        printDate: string,
+
+        requestId: string,
         photo: string
     };
     export interface MINI_STATEMENT {
