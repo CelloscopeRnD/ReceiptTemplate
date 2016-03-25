@@ -2,23 +2,26 @@
 
 module MockupData {
     export var accountBalance: JsonContracts.ACCOUNT_BALANCE = {
-        "accountName": "MD Arif Gazi",
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
         "accountNumber": "2001158500126",
-        "agentName": "BADRUL ALOM",
+        "customerId": "CB1158500",
+        "accountType": "Savings",
+
+
+        "accountName": "MD Arif Gazi",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
         "customerName": "Md. Arif Gazi",
         "mobileNo": "01617877595",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "photo": "",
         "requestId": "123456",
-        "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
-        "userId": "615001001 (NAIM ISLAM)"
     };
     export var atmDebitCardCancel: JsonContracts.ATM_DEBIT_CARD_CANCEL = {
         "accountName": "MD Arif Gazi",
@@ -171,12 +174,17 @@ module MockupData {
 
     };
     export var cashDeposit: JsonContracts.CASH_DEPOSIT = {
-        "accountName": "MD Arif Gazi",
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
         "accountNumber": "2001158500126",
-        "agentName": "BADRUL ALOM",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
         "customerId": "CB1158500",
+        "accountType": "Savings",
+
+
+        "accountName": "MD Arif Gazi",
+        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -184,28 +192,29 @@ module MockupData {
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "requestId": "123456",
-        "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
-        "userId": "615001001 (NAIM ISLAM)"
     };
     export var cashWithdraw: JsonContracts.CASH_WITHDRAW = {
-        "accountName": "MD Arif Gazi",
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
         "accountNumber": "2001158500126",
-        "agentName": "BADRUL ALOM",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
+        "customerId": "CB1158500",
+        "accountType": "Savings",
+
+
+        "accountName": "MD Arif Gazi",
         "charge": "BDT 7.50",
         "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerId": "CB1158500",
         "customerName": "Md. Arif Gazi",
         "mobileNo": "01617877595",
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "requestId": "123456",
-        "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
-        "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
@@ -510,15 +519,18 @@ module MockupData {
 
     };
     export var dpsAccount: JsonContracts.DPS_ACCOUNT = {
-        "accountName": "MD Arif Gazi",
-        "agentName": "BADRUL ALOM",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
         "customerId": "CB1158500",
+        "accountType": "DPS", 
+        "linkAccountNumber": "2005246987526",
+
+        "accountName": "MD Arif Gazi",
+        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
-        "dpsAccountType": "DPS", 
-        "linkAccountNumber": "2005246987526",
         "maturityAmount": "BDT 2,26,047.00",
         "maturityDate": "19-JAN-2021",
         "mobileNo": "01617877595",
@@ -527,17 +539,21 @@ module MockupData {
         "productTenor": "5 Years",
         "requestId": "123456",
         "transactionDate": "19-JAN-2016",
-        "userId": "615001001 (NAIM ISLAM)"
     };
     export var fixedDeposit: JsonContracts.FIXED_DEPOSIT = {
-        "accountName": "MD Arif Gazi",
-        "agentName": "BADRUL ALOM",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
         "customerId": "CB1158500",
+        "accountType": "TERM DEPOSIT",
+        "linkAccountNumber": "2005246987526",
+
+
+        "accountName": "MD Arif Gazi",
+        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
-        "linkAccountNumber": "2005246987526",
         "maturityAmount": "BDT 2,26,047.00",
         "maturityDate": "19-JAN-2021",
         "mobileNo": "01617877595",
@@ -547,17 +563,20 @@ module MockupData {
         "productTenor": "5 Years",
         "profitRate": "8.85% (Yearly)",
         "requestId": "123456",
-        "termDepositAccountType": "TERM DEPOSIT",
         "transactionDate": "19-JAN-2016",
-        "userId": "615001001 (NAIM ISLAM)"
     };
     export var fundTransfer: JsonContracts.FUND_TRANSFER = {
-        "accountName": "MD Arif Gazi",
-        "accountNumber": "2001158500126",
-        "agentName": "BADRUL ALOM",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
+        "senderAccountNumber": "2001158500126",
         "customerId": "CB1158500",
+        "accountType": "Savings",
+
+
+        "accountName": "MD Arif Gazi",
+        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "depositAmountInWords": "THREE THOUSAND ONLY",
@@ -569,24 +588,27 @@ module MockupData {
         "receiverAccountName": "SUJON PATWARY",
         "requestId": "123456",
         "termDepositAccountType": "TERM DEPOSIT",
-        "savingsAccountType": "Savings",
         "transactionCode": "TR222369",
         "transactionDate": "19-JAN-2016",
-        "userId": "615001001 (NAIM ISLAM)"
     };
     export var miniStatement: JsonContracts.MINI_STATEMENT = {
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
         "accountNumber": "2001158500126",
-        "agentName": "BADRUL ALOM",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
         "customerId": "CB1158500",
+        "accountType": "Savings",
+        "transactionCode": "TR222369",
+
+
+        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "mobileNo": "01617877595",
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "requestId": "123456",
-        "savingsAccountType": "Savings",
         "statement": [
             ["", "Date", "Description", "Deposit", "Withdraw", "Balance", ""],
             ["", "", "", "", "", "5000.00", "Starting"],
@@ -597,8 +619,6 @@ module MockupData {
             ["5", "12-Dec-2016", "DEP-Personal A/C", "7000.00", "", "9000.00", ""],
             ["", "", "", "", "", "9000.00", "Ending"]
         ],
-        "transactionCode": "TR222369",
-        "userId": "615001001 (NAIM ISLAM)"
     };
     export var remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
         "user": "26160101(NAME OF USER)",
@@ -644,20 +664,23 @@ module MockupData {
         "requestId": "123456"
     };
     export var savingsAccount: JsonContracts.SAVINGS_ACCOUNT = {
-        "accountName": "MD Arif Gazi",
+        "user": "26160101(NAME OF USER)",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
         "accountNumber": "2001158500126",
-        "agentName": "BADRUL ALOM",
-        "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
         "customerId": "CB1158500",
+        "accountType": "Savings",
+
+
+        "accountName": "MD Arif Gazi",
+        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
         "customerName": "Md. Arif Gazi",
         "depositAmount": "BDT 3,000.00",
         "mobileNo": "01617877595",
         "photo":"",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "requestId": "123456",
-        "savingsAccountType": "Savings",
         "transactionDate": "19-JAN-2016",
-        "userId": "615001001 (NAIM ISLAM)"
     };
 }

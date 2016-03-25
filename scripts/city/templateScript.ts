@@ -265,259 +265,279 @@ function replaceToken(receipt) {
     }
 }
 function setAccountBalance() {
-    addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
-    addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
-    addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
-
     addClassText("title", labelText.accountBalanceText);
 
+    let data = <JsonContracts.ACCOUNT_BALANCE>global.data;
+
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", data.user);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", data.boothAddress);
+
+
     addClassText("customerIdLabel", labelText.customerIdText);
-    addClassText("customerId", global.data.customerId);
+    addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, global.data.accountNumber);
-    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, data.accountNumber);
+    addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", global.data.customerName);
+    addClassText("customerName", data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", global.data.mobileNo);
+    addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, global.data.customerAddress);
+    addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, global.data.accountName], [labelText.balanceDateText, global.data.transactionDate]],
-        [[labelText.balanceAmountText, global.data.balanceAmount], [labelText.transactionIdText, global.data.transactionCode]],
-        [[labelText.inWordsText, global.data.balanceAmountInWords], [labelText.printDateText, global.data.printDate]],
+        [[labelText.accountNameText, data.accountName], [labelText.balanceDateText, data.transactionDate]],
+        [[labelText.balanceAmountText, data.balanceAmount], [labelText.transactionIdText, data.transactionCode]],
+        [[labelText.inWordsText, data.balanceAmountInWords], [labelText.printDateText, data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setCashDeposit() {
-    addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
-    addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
-    addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
-
     addClassText("title", labelText.cashDepositText);
 
+    let data = <JsonContracts.CASH_DEPOSIT>global.data;
+
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", data.user);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", data.boothAddress);
+
+
     addClassText("customerIdLabel", labelText.customerIdText);
-    addClassText("customerId", global.data.customerId);
+    addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, global.data.accountNumber);
-    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, data.accountNumber);
+    addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", global.data.customerName);
+    addClassText("customerName", data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", global.data.mobileNo);
+    addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, global.data.customerAddress);
+    addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, global.data.accountName], [labelText.depositDateText, global.data.transactionDate]],
-        [[labelText.depositAmountText, global.data.depositAmount], [labelText.transactionIdText, global.data.transactionCode]],
-        [[labelText.inWordsText, global.data.depositAmountInWords], [labelText.printDateText, global.data.printDate]],
+        [[labelText.accountNameText, data.accountName], [labelText.depositDateText, data.transactionDate]],
+        [[labelText.depositAmountText, data.depositAmount], [labelText.transactionIdText, data.transactionCode]],
+        [[labelText.inWordsText, data.depositAmountInWords], [labelText.printDateText, data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setCashWithdraw() {
-    addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
-    addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
-    addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
-
     addClassText("title", labelText.cashWithdrawText);
 
+    let data = <JsonContracts.CASH_WITHDRAW>global.data;
+
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", data.user);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", data.boothAddress);
+
+
     addClassText("customerIdLabel", labelText.customerIdText);
-    addClassText("customerId", global.data.customerId);
+    addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, global.data.accountNumber);
-    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, data.accountNumber);
+    addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", global.data.customerName);
+    addClassText("customerName", data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", global.data.mobileNo);
+    addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, global.data.customerAddress);
+    addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, global.data.accountName], [labelText.withdrawDateText, global.data.transactionDate]],
-        [[labelText.withdrawAmountText, global.data.withdrawAmount], [labelText.transactionIdText, global.data.transactionCode]],
-        [[labelText.inWordsText, global.data.withdrawsAmountInWords], [labelText.printDateText, global.data.printDate]],
-        [[labelText.chargeText, global.data.charge], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.accountNameText, data.accountName], [labelText.withdrawDateText, data.transactionDate]],
+        [[labelText.withdrawAmountText, data.withdrawAmount], [labelText.transactionIdText, data.transactionCode]],
+        [[labelText.inWordsText, data.withdrawsAmountInWords], [labelText.printDateText, data.printDate]],
+        [[labelText.chargeText, data.charge], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setDPSAccount() {
-    addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
-    addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
-    addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
-
     addClassText("title", labelText.generalDPSAccountText);
 
-    addClassText("customerIdLabel", labelText.customerIdText);
-    addClassText("customerId", global.data.customerId);
-    addClassText("accountTypeLabel", labelText.accountTypeText);
+    let data = <JsonContracts.DPS_ACCOUNT>global.data;
+
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", data.user);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", data.boothAddress);
+
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, labelText.emptyText);
-    addClassText(labelText.accountTypeId, global.data.dpsAccountType);
+    addClassText("customerIdLabel", labelText.customerIdText);
+    addClassText("customerId", data.customerId);
+    addClassText("accountTypeLabel", labelText.accountTypeText);
+    addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberLabelId, labelText.linkAccountNumberText);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
-    addClassText(labelText.linkAccountNumberId, global.data.linkAccountNumber);
+    addClassText(labelText.linkAccountNumberId, data.linkAccountNumber);
+
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", global.data.customerName);
+    addClassText("customerName", data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", global.data.mobileNo);
+    addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, global.data.customerAddress);
+    addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, global.data.accountName], [labelText.productTenorText, global.data.productTenor]],
-        [[labelText.accountOpeningDateText, global.data.transactionDate], [labelText.maturityDateText, global.data.maturityDate]],
-        [[labelText.monthlyDepositText, global.data.depositAmount], [labelText.printDateText, global.data.printDate]],
-        [[labelText.maturityAmountText, global.data.maturityAmount], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.accountNameText, data.accountName], [labelText.productTenorText, data.productTenor]],
+        [[labelText.accountOpeningDateText, data.transactionDate], [labelText.maturityDateText, data.maturityDate]],
+        [[labelText.monthlyDepositText, data.depositAmount], [labelText.printDateText, data.printDate]],
+        [[labelText.maturityAmountText, data.maturityAmount], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setFixedDeposit() {
-    addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
-    addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
-    addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
-
     addClassText("title", labelText.cityAgentFixedDepositText);
 
+    let data = <JsonContracts.FIXED_DEPOSIT>global.data;
+
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", data.user);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", data.boothAddress);
+
+
     addClassText("customerIdLabel", labelText.customerIdText);
-    addClassText("customerId", global.data.customerId);
+    addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
     addClassText(labelText.accountNumberId, labelText.emptyText);
-    addClassText(labelText.accountTypeId, global.data.termDepositAccountType);
+    addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberLabelId, labelText.linkAccountNumberText);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
-    addClassText(labelText.linkAccountNumberId, global.data.linkAccountNumber);
+    addClassText(labelText.linkAccountNumberId, data.linkAccountNumber);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", global.data.customerName);
+    addClassText("customerName", data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", global.data.mobileNo);
+    addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, global.data.customerAddress);
+    addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, global.data.accountName], [labelText.productTenorText, global.data.productTenor]],
-        [[labelText.accountOpeningDateText, global.data.transactionDate], [labelText.maturityDateText, global.data.maturityDate]],
-        [[labelText.profitRateText, global.data.profitRate], [labelText.maturityAmountText, global.data.maturityAmount]],
-        [[labelText.principalAmountText, global.data.principalAmount], [labelText.printDateText, global.data.printDate]],
+        [[labelText.accountNameText, data.accountName], [labelText.productTenorText, data.productTenor]],
+        [[labelText.accountOpeningDateText, data.transactionDate], [labelText.maturityDateText, data.maturityDate]],
+        [[labelText.profitRateText, data.profitRate], [labelText.maturityAmountText, data.maturityAmount]],
+        [[labelText.principalAmountText, data.principalAmount], [labelText.printDateText, data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setFundTransfer() {
-    addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
-    addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
-    addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
-
     addClassText("title", labelText.fundTransferText);
 
+    let data = <JsonContracts.FUND_TRANSFER>global.data;
+
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", data.user);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", data.boothAddress);
+
+
     addClassText("customerIdLabel", labelText.customerIdText);
-    addClassText("customerId", global.data.customerId);
+    addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
 
     addClassText(labelText.accountNoLabelId, labelText.senderAccountNoText);
-    addClassText(labelText.accountNumberId, global.data.accountNumber);
-    addClassText(labelText.accountNumberId, global.data.accountNumber);
-    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, data.senderAccountNumber);
+    addClassText(labelText.accountNumberId, data.senderAccountNumber);
+    addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", global.data.customerName);
+    addClassText("customerName", data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", global.data.mobileNo);
+    addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, global.data.customerAddress);
+    addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.sendrAccountNameText, global.data.accountName], [labelText.fundTransferDateText, global.data.transactionDate]],
-        [[labelText.receiverAccountNameText, global.data.receiverAccountName], [labelText.receiverAccountNoText, global.data.linkAccountNumber]],
-        [[labelText.transferAmountText, global.data.depositAmount], [labelText.transactionIdText, global.data.transactionCode]],
-        [[labelText.inWordsText, global.data.depositAmountInWords], [labelText.printDateText, global.data.printDate]],
+        [[labelText.sendrAccountNameText, data.accountName], [labelText.fundTransferDateText, data.transactionDate]],
+        [[labelText.receiverAccountNameText, data.receiverAccountName], [labelText.receiverAccountNoText, data.linkAccountNumber]],
+        [[labelText.transferAmountText, data.depositAmount], [labelText.transactionIdText, data.transactionCode]],
+        [[labelText.inWordsText, data.depositAmountInWords], [labelText.printDateText, data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
 }
 function setSavingsAccount() {
-    addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
-    addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
-    addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
-
     addClassText("title", labelText.cityAgentSavingsAccountText);
 
+    let data = <JsonContracts.SAVINGS_ACCOUNT>global.data;
+
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", data.user);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", data.boothAddress);
+
+
     addClassText("customerIdLabel", labelText.customerIdText);
-    addClassText("customerId", global.data.customerId);
+    addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, global.data.accountNumber);
-    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, data.accountNumber);
+    addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.emptyText);
     addClassText(labelText.linkAccountNumberId, labelText.emptyText);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", global.data.customerName);
+    addClassText("customerName", data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", global.data.mobileNo);
+    addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, global.data.customerAddress);
+    addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, global.data.accountName], [labelText.initialDepositText, global.data.depositAmount]],
-        [[labelText.accountOpeningDateText, global.data.transactionDate], [labelText.printDateText, global.data.printDate]],
+        [[labelText.accountNameText, data.accountName], [labelText.initialDepositText, data.depositAmount]],
+        [[labelText.accountOpeningDateText, data.transactionDate], [labelText.printDateText, data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
@@ -860,39 +880,43 @@ function setChequeStopPaymentRangeCancel() {
 }
 
 function setMiniStatement() {
-    addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
-    addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
-    addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
-
     addClassText("title", labelText.accountStatement);
 
+    let data = <JsonContracts.MINI_STATEMENT>global.data;
+
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", data.user);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", data.boothAddress);
+
+
     addClassText("customerIdLabel", labelText.customerIdText);
-    addClassText("customerId", global.data.customerId);
+    addClassText("customerId", data.customerId);
     addClassText("accountTypeLabel", labelText.accountTypeText);
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
-    addClassText(labelText.accountNumberId, global.data.accountNumber);
-    addClassText(labelText.accountTypeId, global.data.savingsAccountType);
+    addClassText(labelText.accountNumberId, data.accountNumber);
+    addClassText(labelText.accountTypeId, data.accountType);
     addClassText(labelText.linkAccountNumberColonId, labelText.colonText);
     addClassText(labelText.linkAccountNumberLabelId, labelText.transactionIdText);
-    addClassText(labelText.linkAccountNumberId, global.data.transactionCode);
+    addClassText(labelText.linkAccountNumberId, data.transactionCode);
 
     addClassText("customerNameLabel", labelText.customerNameText);
-    addClassText("customerName", global.data.customerName);
+    addClassText("customerName", data.customerName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
-    addClassText("mobileNo", global.data.mobileNo);
+    addClassText("mobileNo", data.mobileNo);
     addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, global.data.customerAddress);
+    addClassText(labelText.customerAddressId, data.customerAddress);
 
-    var tableData = global.data.statement;
+    var tableData = data.statement;
 
     var fourthTable = <HTMLTableElement>document.getElementsByClassName('fourthTable')[0];
     for (var r in tableData) {
         for (var c in tableData[r]) {
-            fourthTable.rows[r].cells[c].innerHTML = tableData[r][c];
+            let row = <HTMLTableRowElement>fourthTable.rows[r];
+            row.cells[c].innerHTML = tableData[r][c];
         }
     }
 }
@@ -907,11 +931,11 @@ function setRemittanceRequest() {
     //addClassText("boothAddressLabel", labelText.addressTextEnglish);
     //addClassText("boothAddress", data.boothAddress);
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
+    addClassText("agentName", data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
+    addClassText("userId", data.user);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
+    addClassText("boothAddress", data.boothAddress);
 
     addClassText("customerNameLabel", labelText.recipientNameTextEnglish);
     addClassText("customerName", data.recipientName);
@@ -943,11 +967,11 @@ function setRemittanceDisbursement() {
     //addClassText("boothAddressLabel", labelText.addressTextEnglish);
     //addClassText("boothAddress", data.boothAddress);
     addClassText("agentNameLabel", labelText.agentNameText);
-    addClassText("agentName", global.data.agentName);
+    addClassText("agentName", data.agentName);
     addClassText("userIdLabel", labelText.userText);
-    addClassText("userId", global.data.userId);
+    addClassText("userId", data.user);
     addClassText("boothAddressLabel", labelText.addressText);
-    addClassText("boothAddress", global.data.boothAddress);
+    addClassText("boothAddress", data.boothAddress);
 
     addClassText("customerNameLabel", labelText.recipientNameTextEnglish);
     addClassText("customerName", data.recipientName);

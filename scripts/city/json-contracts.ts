@@ -1,21 +1,23 @@
 ﻿module JsonContracts {
     export interface ACCOUNT_BALANCE {
-        accountName: string,
-        accountNumber: string,
+        user: string,
         agentName: string,
+        boothAddress: string,
+
+        accountNumber: string,
+        customerId: string,
+        accountType: string,
+
+        accountName: string,
         balanceAmount: string,
         balanceAmountInWords: string,
-        boothAddress: string,
         customerAddress: string,
-        customerId: string,
         customerName: string,
         mobileNo: string,
         printDate: string,
         requestId: string,
-        savingsAccountType: string,
         transactionCode: string,
         transactionDate: string,
-        userId: string,
         photo: string
     };
     export interface ATM_DEBIT_CARD_CANCEL {
@@ -148,40 +150,45 @@
         withdrawsAmountInWords: string,
     };
     export interface CASH_DEPOSIT {
-        accountName: string,
-        accountNumber: string,
+        user: string,
         agentName: string,
         boothAddress: string,
-        customerAddress: string,
+
+        accountNumber: string,
         customerId: string,
+        accountType: string,
+
+        accountName: string,
+        customerAddress: string,
         customerName: string,
         depositAmount: string,
         depositAmountInWords: string,
         mobileNo: string,
         printDate: string,
         requestId: string,
-        savingsAccountType: string,
         transactionCode: string,
         transactionDate: string,
-        userId: string,
         photo: string
     };
     export interface CASH_WITHDRAW {
-        accountName: string,
-        accountNumber: string,
+        user: string,
         agentName: string,
         boothAddress: string,
+
+        accountNumber: string,
+        customerId: string,
+        accountType: string,
+
+
+        accountName: string,
         charge: string,
         customerAddress: string,
-        customerId: string,
         customerName: string,
         mobileNo: string,
         printDate: string,
         requestId: string,
-        savingsAccountType: string,
         transactionCode: string,
         transactionDate: string,
-        userId: string,
         withdrawAmount: string,
         withdrawsAmountInWords: string,
         photo: string
@@ -445,15 +452,18 @@
         withdrawsAmountInWords: string,
     };
     export interface DPS_ACCOUNT {
-        accountName: string,
+        user: string,
         agentName: string,
         boothAddress: string,
-        customerAddress: string,
+
         customerId: string,
+        accountType: string,
+        linkAccountNumber: string,
+
+        accountName: string,
+        customerAddress: string,
         customerName: string,
         depositAmount: string,
-        dpsAccountType: string,
-        linkAccountNumber: string,
         maturityAmount: string,
         maturityDate: string,
         mobileNo: string,
@@ -461,18 +471,21 @@
         productTenor: string,
         requestId: string,
         transactionDate: string,
-        userId: string,
         photo: string
     };
     export interface FIXED_DEPOSIT {
-        accountName: string,
+        user: string,
         agentName: string,
         boothAddress: string,
-        customerAddress: string,
+
         customerId: string,
+        accountType: string,
+        linkAccountNumber: string,
+
+        accountName: string,
+        customerAddress: string,
         customerName: string,
         depositAmount: string,
-        linkAccountNumber: string,
         maturityAmount: string,
         maturityDate: string,
         mobileNo: string,
@@ -481,18 +494,20 @@
         profitRate: string,
         productTenor: string,
         requestId: string,
-        termDepositAccountType: string,
         transactionDate: string,
-        userId: string,
         photo: string
     };
     export interface FUND_TRANSFER {
-        accountName: string,
-        accountNumber: string,
+        user: string,
         agentName: string,
         boothAddress: string,
-        customerAddress: string,
+
+        senderAccountNumber: string,
         customerId: string,
+        accountType: string,
+
+        accountName: string,
+        customerAddress: string,
         customerName: string,
         depositAmount: string,
         depositAmountInWords: string,
@@ -502,28 +517,28 @@
         printDate: string,
         receiverAccountName: string,
         requestId: string,
-        savingsAccountType: string,
         termDepositAccountType: string,
         transactionCode: string,
         transactionDate: string,
-        userId: string,
         photo: string
     };
     export interface MINI_STATEMENT {
-        accountNumber: string,
+        user: string,
         agentName: string,
         boothAddress: string,
-        customerAddress: string,
+
+        accountNumber: string,
         customerId: string,
+        accountType: string,
+        transactionCode: string,
+
+        customerAddress: string,
         customerName: string,
         depositAmount: string,
         mobileNo: string,
         printDate: string,
         requestId: string,
-        savingsAccountType: string,
         statement: Array<Array<string>>
-        transactionCode: string,
-        userId: string,
         photo: string
     };
     export interface REMITTANCE_DISBURSEMENT {
@@ -572,20 +587,22 @@
         requestId: string
     };
     export interface SAVINGS_ACCOUNT {
-        accountName: string,
-        accountNumber: string,
+        user: string,
         agentName: string,
         boothAddress: string,
-        customerAddress: string,
+
+        accountNumber: string,
         customerId: string,
+        accountType: string,
+
+        accountName: string,
+        customerAddress: string,
         customerName: string,
         depositAmount: string,
         mobileNo: string,
         printDate: string,
         requestId: string,
-        savingsAccountType: string,
         transactionDate: string,
-        userId: string,
         photo: string
     };
 }
