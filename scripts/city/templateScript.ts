@@ -178,7 +178,7 @@ var labelText = {
     inwardForeignRemittanceDisbursementTextEnglish: "Inward Foreign Remittance Disbursement",
     mobileNoTextEnglish: "Mobile No",
     exchangeHouseNameEnglish: "Exchange House",
-    payableAmountTextEnglish: "Payable Amount",
+    actualPayableAmountTextEnglish: "Actual Payable Amount",
     pinNoTextEnglish: "Pin No",
     printDateTextEnglish: "Print Date",
     recipientNameTextEnglish: "Recipient Name",
@@ -930,25 +930,34 @@ function setRemittanceDisbursement() {
     addClassText("title", labelText.inwardForeignRemittanceDisbursementTextEnglish);
 
     let data = <JsonContracts.REMITTANCE_DISBURSEMENT>global.data;
-    addClassText("userIdLabel", labelText.userTextEnglish);
-    addClassText("userId", data.user);
-    addClassText("agentNameLabel", labelText.agentNameTextEnglish);
-    addClassText("agentName", data.agentName);
-    addClassText("boothAddressLabel", labelText.addressTextEnglish);
-    addClassText("boothAddress", data.boothAddress);
+    //addClassText("userIdLabel", labelText.userTextEnglish);
+    //addClassText("userId", data.user);
+    //addClassText("agentNameLabel", labelText.agentNameTextEnglish);
+    //addClassText("agentName", data.agentName);
+    //addClassText("boothAddressLabel", labelText.addressTextEnglish);
+    //addClassText("boothAddress", data.boothAddress);
+    addClassText("agentNameLabel", labelText.agentNameText);
+    addClassText("agentName", global.data.agentName);
+    addClassText("userIdLabel", labelText.userText);
+    addClassText("userId", global.data.userId);
+    addClassText("boothAddressLabel", labelText.addressText);
+    addClassText("boothAddress", global.data.boothAddress);
 
     addClassText("customerNameLabel", labelText.recipientNameTextEnglish);
     addClassText("customerName", data.recipientName);
     addClassText("customerAddressLabel", labelText.exchangeHouseNameEnglish);
     addClassText(labelText.customerAddressId, data.exchangeHouse);
+    addClassText("pinLabel", labelText.pinNoTextEnglish);
+    addClassText("pinColon", labelText.colonText);
+    addClassText("pin", data.pin);
 
     addClassText("mobileNoLabel", labelText.mobileNoTextEnglish);
     addClassText("mobileNo", data.mobileNo);
 
     var tableData = [
-        [[labelText.senderNameTextEnglish, data.senderName], [labelText.senderCountryTextEnglish, data.idType]],
-        [[labelText.transactionIdTextEnglish, data.senderCountry], [labelText.payableAmountTextEnglish, data.idNumber]],
-        [[labelText.amountInWordsTextEnglish, data.actualPayableAmount], [labelText.printDateTextEnglish, data.printDate]],
+        [[labelText.senderNameTextEnglish, data.senderName], [labelText.iDTypeTextEnglish, data.idType]],
+        [[labelText.senderCountryTextEnglish, data.senderCountry], [labelText.iDNumberTextEnglish, data.idNumber]],
+        [[labelText.actualPayableAmountTextEnglish, data.actualPayableAmount], [labelText.printDateTextEnglish, data.printDate]],
         [[labelText.amountInWordsTextEnglish, data.amountInWords], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
