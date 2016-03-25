@@ -295,13 +295,14 @@ function setAccountBalance() {
     addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, data.accountName], [labelText.balanceDateText, data.transactionDate]],
-        [[labelText.balanceAmountText, data.balanceAmount], [labelText.transactionIdText, data.transactionCode]],
-        [[labelText.inWordsText, data.balanceAmountInWords], [labelText.printDateText, data.printDate]],
+        [[labelText.balanceAmountText, data.balanceAmount], [labelText.balanceDateText, data.balanceDate]],
+        [[labelText.inWordsText, data.inWords], [labelText.transactionIdText, labelText.emptyText]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.printDateText, data.printDate]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
+        [[labelText.chargeAndVatText, data.chargeAndVat], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
+    doRowSpan("fourthTable", 1, 2);
 }
 function setCashDeposit() {
     addClassText("title", labelText.cashDepositText);
@@ -357,6 +358,7 @@ function setCashWithdraw() {
 
 
     addClassText(labelText.accountNoLabelId, labelText.titleId);
+
     addClassText("accountNumberColon", ":");
     addClassText(labelText.accountNumberId, data.accountNumber);
     addClassText("customerIdLabel", labelText.customerIdText);
@@ -374,13 +376,14 @@ function setCashWithdraw() {
     addClassText(labelText.customerAddressId, data.customerAddress);
 
     var tableData = [
-        [[labelText.accountNameText, data.accountName], [labelText.withdrawDateText, data.transactionDate]],
-        [[labelText.withdrawAmountText, data.withdrawAmount], [labelText.transactionIdText, data.transactionCode]],
-        [[labelText.inWordsText, data.withdrawsAmountInWords], [labelText.printDateText, data.printDate]],
-        [[labelText.chargeAndVatText, data.charge], [labelText.emptyText, labelText.emptyText]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
+        [[labelText.withdrawAmountText, data.withdrawAmount], [labelText.withdrawDateText, data.withdrawDate]],
+        [[labelText.inWordsText, data.inWords], [labelText.transactionIdText, data.transactionCode]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.printDateText, data.printDate]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.chargeAndVatText, data.chargeAndVat], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
+    doRowSpan("fourthTable", 1, 2);
 }
 function setDPSAccount() {
     addClassText("title", labelText.generalDPSAccountText);
@@ -1010,7 +1013,6 @@ function replaceTableData(tableData) {
         }
     }
 }
-
 function doRowSpan(tableClassName: string, rowIndex: number, cellIndex: number, rowSpan: number = 2) {
     var table = <HTMLTableElement>document.getElementsByClassName(tableClassName)[0];
     let row = <HTMLTableRowElement>table.rows[rowIndex];

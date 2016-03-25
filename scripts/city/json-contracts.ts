@@ -9,15 +9,16 @@
         accountType: string,
 
         accountName: string,
-        balanceAmount: string,
-        balanceAmountInWords: string,
         customerAddress: string,
-        customerName: string,
         mobileNo: string,
+
+        balanceAmount: string,
+        inWords: string,
+        chargeAndVat: string,
+        balanceDate: string,
         printDate: string,
+
         requestId: string,
-        transactionCode: string,
-        transactionDate: string,
         photo: string
     };
     export interface ATM_DEBIT_CARD_CANCEL {
@@ -162,7 +163,6 @@
         customerAddress: string,
         mobileNo: string,
 
-
         depositAmount: string,
         inWords: string,
         chargeAndVat: string;
@@ -182,18 +182,18 @@
         customerId: string,
         accountType: string,
 
-
         accountName: string,
-        charge: string,
         customerAddress: string,
-        customerName: string,
         mobileNo: string,
-        printDate: string,
-        requestId: string,
-        transactionCode: string,
-        transactionDate: string,
+
         withdrawAmount: string,
-        withdrawsAmountInWords: string,
+        inWords: string,
+        chargeAndVat: string,
+        withdrawDate: string,
+        transactionCode: string,
+        printDate: string,
+
+        requestId: string,
         photo: string
     };
     export interface CHEQUE_BOOK_DELIVERY {

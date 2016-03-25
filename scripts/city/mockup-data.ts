@@ -11,17 +11,18 @@ module MockupData {
         "accountType": "SAVINGS ACCOUNT",
 
 
-        "accountName": "MD Arif Gazi",
-        "balanceAmount": "BDT 80,550.00",
-        "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerName": "Md. Arif Gazi",
-        "mobileNo": "01617877595",
-        "printDate": "19-JAN-2016 13:13:15 PM",
-        "photo": "",
+        "accountName": "JAMAL UDDIN",
+        "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
+        "mobileNo": "01915067740",
+
+        "balanceAmount": "BDT 1,200.00",
+        "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
+        "chargeAndVat": "BDT 10.00 + 1.50",
+        "balanceDate": "15-MAR-2016",
+        "printDate": "15-MAR-2016 01:00:57 PM",
+
         "requestId": "123456",
-        "transactionCode": "TR222369",
-        "transactionDate": "19-JAN-2016",
+        "photo": ""
     };
     export var atmDebitCardCancel: JsonContracts.ATM_DEBIT_CARD_CANCEL = {
         "accountName": "MD Arif Gazi",
@@ -186,7 +187,6 @@ module MockupData {
         "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
         "mobileNo": "01915067740",
 
-
         "depositAmount": "BDT 1,200.00",
         "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
         "chargeAndVat":"BDT 10.00 + 1.50",
@@ -206,19 +206,19 @@ module MockupData {
         "customerId": "CB2183726",
         "accountType": "SAVINGS ACCOUNT",
 
+        "accountName": "JAMAL UDDIN",
+        "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
+        "mobileNo": "01915067740",
 
-        "accountName": "MD Arif Gazi",
-        "charge": "BDT 7.50",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerName": "Md. Arif Gazi",
-        "mobileNo": "01617877595",
-        "photo":"",
-        "printDate": "19-JAN-2016 13:13:15 PM",
+        "withdrawAmount": "BDT 1,200.00",
+        "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
+        "chargeAndVat": "BDT 10.00 + 1.50",
+        "withdrawDate": "15-MAR-2016",
+        "transactionCode": "73970008",
+        "printDate": "15-MAR-2016 01:00:57 PM",
+
         "requestId": "123456",
-        "transactionCode": "TR222369",
-        "transactionDate": "19-JAN-2016",
-        "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
+        "photo":"",
     };
     export var chequeBookDelivery: JsonContracts.CHEQUE_BOOK_DELIVERY = {
         "accountName": "MD Arif Gazi",
