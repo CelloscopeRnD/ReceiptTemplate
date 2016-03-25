@@ -200,7 +200,7 @@ function replaceToken(receipt) {
 
 
 
-   
+
 
     switch (receipt) {
         case 1:
@@ -341,6 +341,7 @@ function setCashDeposit() {
         [[labelText.chargeAndVatText, data.chargeAndVat], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
+    doRowSpan("fourthTable", 1, 2);
 }
 function setCashWithdraw() {
     addClassText("title", labelText.cashWithdrawText);
@@ -1008,6 +1009,18 @@ function replaceTableData(tableData) {
             row.cells[++j].innerHTML = value;
         }
     }
+}
+
+function doRowSpan(tableClassName: string, rowIndex: number, cellIndex: number, rowSpan: number = 2) {
+    var table = <HTMLTableElement>document.getElementsByClassName(tableClassName)[0];
+    let row = <HTMLTableRowElement>table.rows[rowIndex];
+    let cell = <HTMLTableCellElement>row.cells[cellIndex];
+    cell.rowSpan = 2;
+
+    let nextrow = <HTMLTableRowElement>table.rows[++rowIndex];
+    let bottomcell = <HTMLTableCellElement>nextrow.cells[cellIndex];
+    bottomcell.remove();
+    
 }
 function addImage(elementId, url, alternateUrl) {
     var elements = document.getElementsByClassName(elementId);

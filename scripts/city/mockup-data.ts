@@ -182,9 +182,9 @@ module MockupData {
         "customerId": "CB2183726",
         "accountType": "SAVINGS ACCOUNT",
 
-        "accountName": "MD Arif Gazi",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "mobileNo": "01617877595",
+        "accountName": "JAMAL UDDIN",
+        "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
+        "mobileNo": "01915067740",
 
 
         "depositAmount": "BDT 1,200.00",
