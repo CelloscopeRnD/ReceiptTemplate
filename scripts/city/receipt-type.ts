@@ -1,4 +1,4 @@
-﻿module ReceiptTypeModule {
+﻿namespace ReceiptTypeModule {
     export enum Receipts {
         ACCOUNT_BALANCE = 1,
         CASH_DEPOSIT,

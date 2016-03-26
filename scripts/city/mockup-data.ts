@@ -1,6 +1,6 @@
 ﻿/// <reference path="./json-contracts" />
 
-module MockupData {
+namespace MockupData {
     export var accountBalance: JsonContracts.ACCOUNT_BALANCE = {
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",

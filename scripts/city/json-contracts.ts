@@ -1,4 +1,4 @@
-﻿module JsonContracts {
+﻿namespace JsonContracts {
     export interface ACCOUNT_BALANCE {
         user: string,
         agentName: string,
