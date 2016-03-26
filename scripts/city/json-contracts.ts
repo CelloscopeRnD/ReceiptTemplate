@@ -540,7 +540,15 @@
         customerAddress: string,
         mobileNo: string,
 
-        statement: Array<Array<string>>
+        statement: [
+            [string, string, string, string, string],
+            [string, string, string, string, string],
+            [string, string, string, string, string],
+            [string, string, string, string, string],
+            [string, string, string, string, string],
+            [string, string, string, string, string],
+            [string, string, string, string, string]
+        ],
 
         requestId: string,
         photo: string
