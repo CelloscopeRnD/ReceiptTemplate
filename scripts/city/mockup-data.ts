@@ -71,8 +71,7 @@ namespace MockupData {
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY",
-
+        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var atmDebitCardDelivery: JsonContracts.ATM_DEBIT_CARD_DELIVERY = {
         "accountName": "MD Arif Gazi",
@@ -121,8 +120,7 @@ namespace MockupData {
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY",
-
+        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var atmDebitCardRequest: JsonContracts.ATM_DEBIT_CARD_REQUEST = {
         "accountName": "MD Arif Gazi",
@@ -171,8 +169,7 @@ namespace MockupData {
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY",
-
+        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var cashDeposit: JsonContracts.CASH_DEPOSIT = {
         "user": "26160101(NAME OF USER)",
@@ -195,7 +192,7 @@ namespace MockupData {
         "printDate": "15-MAR-2016 01:00:57 PM",
 
         "requestId": "123456",
-        "photo": "",
+        "photo": ""
     };
     export var cashWithdraw: JsonContracts.CASH_WITHDRAW = {
         "user": "26160101(NAME OF USER)",
@@ -218,7 +215,7 @@ namespace MockupData {
         "printDate": "15-MAR-2016 01:00:57 PM",
 
         "requestId": "123456",
-        "photo": "",
+        "photo": ""
     };
     export var chequeBookDelivery: JsonContracts.CHEQUE_BOOK_DELIVERY = {
         "accountName": "MD Arif Gazi",
@@ -267,8 +264,7 @@ namespace MockupData {
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY",
-
+        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var chequeBookRequisition: JsonContracts.CHEQUE_BOOK_REQUISITION = {
         "accountName": "MD Arif Gazi",
@@ -317,8 +313,7 @@ namespace MockupData {
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY",
-
+        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var chequeStopPaymentRange: JsonContracts.CHEQUE_STOP_PAYMENT_RANGE = {
         "accountName": "MD Arif Gazi",
@@ -367,8 +362,7 @@ namespace MockupData {
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY",
-
+        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var chequeStopPaymentRangeCancel: JsonContracts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL = {
         "accountName": "MD Arif Gazi",
@@ -417,8 +411,7 @@ namespace MockupData {
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY",
-
+        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var chequeStopPaymentSingle: JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE = {
         "accountName": "MD Arif Gazi",
@@ -467,8 +460,7 @@ namespace MockupData {
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY",
-
+        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var chequeStopPaymentSingleCancel: JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL = {
         "accountName": "MD Arif Gazi",
@@ -517,8 +509,7 @@ namespace MockupData {
         "transactionDate": "19-JAN-2016",
         "userId": "615001001 (NAIM ISLAM)",
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
-        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY",
-
+        "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     export var dpsAccount: JsonContracts.DPS_ACCOUNT = {
         "user": "26160101(NAME OF USER)",
@@ -540,7 +531,7 @@ namespace MockupData {
         "printDate": "19-JAN-2016 13:13:15 PM",
         "productTenor": "5 Years",
         "requestId": "123456",
-        "transactionDate": "19-JAN-2016",
+        "transactionDate": "19-JAN-2016"
     };
     export var fixedDeposit: JsonContracts.FIXED_DEPOSIT = {
         "user": "26160101(NAME OF USER)",
@@ -565,7 +556,7 @@ namespace MockupData {
         "productTenor": "5 Years",
         "profitRate": "8.85% (Yearly)",
         "requestId": "123456",
-        "transactionDate": "19-JAN-2016",
+        "transactionDate": "19-JAN-2016"
     };
     export var fundTransfer: JsonContracts.FUND_TRANSFER = {
         "user": "26160101(NAME OF USER)",
@@ -590,7 +581,7 @@ namespace MockupData {
         "printDate": "15-MAR-2016 01:00:57 PM",
 
         "requestId": "123456",
-        "photo": "",
+        "photo": ""
     };
     export var miniStatement: JsonContracts.MINI_STATEMENT = {
         "user": "26160101 (NAME OF USER)",
@@ -622,7 +613,7 @@ namespace MockupData {
         ],
 
         "requestId": "123456",
-        "photo": "",
+        "photo": ""
     };
     export var remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
         "user": "26160101(NAME OF USER)",
@@ -677,14 +668,14 @@ namespace MockupData {
         "accountType": "SAVINGS ACCOUNT",
 
 
-        "accountName": "MD Arif Gazi",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerName": "Md. Arif Gazi",
+        "accountName": "JAMAL UDDIN",
+        "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
+        "customerName": "JAMAL UDDIN",
         "depositAmount": "BDT 3,000.00",
-        "mobileNo": "01617877595",
+        "mobileNo": "01915067740",
         "photo": "",
-        "printDate": "19-JAN-2016 13:13:15 PM",
+        "printDate": "15-MAR-2016 01:00:57 PM",
         "requestId": "123456",
-        "transactionDate": "19-JAN-2016",
+        "transactionDate": "19-JAN-2016"
     };
 }
