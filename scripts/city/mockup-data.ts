@@ -683,6 +683,6 @@ namespace MockupData {
         "printDate": "15-MAR-2016 01:00:57 PM",
 
         "photo": "",
-        "requestId": "123456",
+        "requestId": "123456"
     };
 }
