@@ -598,7 +598,9 @@
         photo: string,
         requestId: string
     };
-    export interface SAVINGS_ACCOUNT {
+    export interface ACCOUNT_OPENING {
+        productName: string,
+
         user: string,
         agentName: string,
         boothAddress: string,
@@ -607,14 +609,20 @@
         customerId: string,
         accountType: string,
 
+        disclaimer: string,
+
         accountName: string,
-        customerAddress: string,
-        customerName: string,
-        depositAmount: string,
+        gender: string,
         mobileNo: string,
+
+        initialDeposit: string,
+        inWords: string,
+        chargeAndVat: string,
+
+        accountOpeningDate: string,
         printDate: string,
-        requestId: string,
-        transactionDate: string,
+
         photo: string
+        requestId: string,
     };
 }

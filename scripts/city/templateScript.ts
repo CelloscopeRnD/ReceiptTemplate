@@ -77,8 +77,8 @@ function setData(receipt) {
         case ReceiptTypeModule.Receipts.REMITTANCE_REQUEST:
             global.data = MockupData.remittanceRequest;
             break;
-        case ReceiptTypeModule.Receipts.SAVINGS_ACCOUNT:
-            global.data = MockupData.savingsAccount;
+        case ReceiptTypeModule.Receipts.ACCOUNT_OPENING:
+            global.data = MockupData.accountOpeningRequest;
             break;
     }
 }
@@ -97,6 +97,7 @@ var labelText = {
     accountNameText: "হিসাবের নাম",
     accountBalanceText: "ব্যালেন্স",
     accountOpeningDateText: "হিসাব খোলার তারিখ",
+    accountOpeningRequest: "হিসাব খোলার অনুরোধঃ ",
     accountTypeText: "হিসাবের ধরন",
     accountStatement: "মিনিস্টেটমেন্ট",
     addressLine1Text: "এজেন্ট ব্যাংকিং ডিভিশন",
@@ -120,7 +121,6 @@ var labelText = {
     chequeStopPaymentRangeText: "চেক স্টপ পেমেন্ট নির্দেশনা - রেঞ্জ",
     chequeStopPaymentSingleText: "চেক স্টপ পেমেন্ট নির্দেশনা - সিঙ্গেল",
     cityAgentFixedDepositText: "সিটি এজেন্ট ফিক্সড ডিপোজিট",
-    cityAgentSavingsAccountText: "সিটি এজেন্ট সঞ্চয়ী হিসাব",
     colonText: ":",
     customerIdText: "গ্রাহক আইডি",
     customerNameText: "গ্রাহকের নাম",
@@ -129,6 +129,7 @@ var labelText = {
     emptyText: "",
     fundTransferDateText: "ফান্ড ট্রান্সফারের তারিখ",
     fundTransferText: "ফান্ড ট্রান্সফার",
+    gendertText: "লিঙ্গ",
     generalDPSAccountText: "সাধারন ডিপিএস হিসাব",
     initialDepositText: "প্রারম্ভিক জমার পরিমান",
     inWordsText: "কথায়",
@@ -222,7 +223,7 @@ function replaceToken(receipt) {
             setFundTransfer();
             break;
         case 7:
-            setSavingsAccount();
+            setAccountOpening();
             break;
         case 8:
             setATMDebitCardRequest();
@@ -510,10 +511,10 @@ function setFundTransfer() {
 
     doRowSpan("fourthTable", 3, 2);
 }
-function setSavingsAccount() {
-    addClassText("title", labelText.cityAgentSavingsAccountText);
+function setAccountOpening() {
+    let data = <JsonContracts.ACCOUNT_OPENING>global.data;
 
-    let data = <JsonContracts.SAVINGS_ACCOUNT>global.data;
+    addClassText("title", labelText.accountOpeningRequest + data.productName);
 
     addClassText("agentNameLabel", labelText.agentNameText);
     addClassText("agentName", data.agentName);
@@ -532,19 +533,21 @@ function setSavingsAccount() {
     addClassText("accountTypeLabel", labelText.accountTypeText);
     addClassText("accountTypeColon", ":");
     addClassText(labelText.accountTypeId, data.accountType);
+    addClassText("linkAccountNumberLabel", '&nbsp');
+    addClassText("disclaimerLabel", data.disclaimer);
 
     addClassText("customerNameLabel", labelText.accountNameText);
     addClassText("customerName", data.accountName);
     addClassText("mobileNoLabel", labelText.mobileNoText);
     addClassText("mobileNo", data.mobileNo);
-    addClassText("customerAddressLabel", labelText.addressText);
-    addClassText(labelText.customerAddressId, data.customerAddress);
+    addClassText("customerAddressLabel", labelText.gendertText);
+    addClassText(labelText.customerAddressId, data.gender);
 
     var tableData = [
-        [[labelText.accountNameText, data.accountName], [labelText.initialDepositText, data.depositAmount]],
-        [[labelText.accountOpeningDateText, data.transactionDate], [labelText.printDateText, data.printDate]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
-        [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.initialDepositText, data.initialDeposit], [labelText.accountOpeningDateText, data.accountOpeningDate]],
+        [[labelText.inWordsText, data.inWords], [labelText.emptyText, labelText.emptyText]],
+        [[labelText.emptyText, labelText.emptyText], [labelText.printDateText, data.printDate]],
+        [[labelText.chargeAndVatText, data.chargeAndVat], [labelText.emptyText, labelText.emptyText]],
         [[labelText.emptyText, labelText.emptyText], [labelText.emptyText, labelText.emptyText]]
     ];
     replaceTableData(tableData);
@@ -1026,7 +1029,7 @@ function doRowSpan(tableClassName: string, rowIndex: number, cellIndex: number, 
     let nextrow = <HTMLTableRowElement>table.rows[++rowIndex];
     let bottomcell = <HTMLTableCellElement>nextrow.cells[cellIndex];
     bottomcell.remove();
-    
+
 }
 function addImage(elementId, url, alternateUrl) {
     var elements = document.getElementsByClassName(elementId);

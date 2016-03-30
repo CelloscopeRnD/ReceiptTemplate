@@ -658,7 +658,9 @@ namespace MockupData {
         "photo": "",
         "requestId": "123456"
     };
-    export var savingsAccount: JsonContracts.SAVINGS_ACCOUNT = {
+    export var accountOpeningRequest: JsonContracts.ACCOUNT_OPENING = {
+        "productName": "সিটি এজেন্ট সঞ্চয়ী হিসাব",
+
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -667,15 +669,20 @@ namespace MockupData {
         "customerId": "CB2183726",
         "accountType": "SAVINGS ACCOUNT",
 
+        "disclaimer": "DISCLAIMER:",
 
         "accountName": "JAMAL UDDIN",
-        "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
-        "customerName": "JAMAL UDDIN",
-        "depositAmount": "BDT 3,000.00",
+        "gender": "Male",
         "mobileNo": "01915067740",
-        "photo": "",
+
+        "initialDeposit": "BDT 1,200.00",
+        "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
+        "chargeAndVat": "BDT 10.00 + 1.50",
+
+        "accountOpeningDate": "15-MAR-2016",
         "printDate": "15-MAR-2016 01:00:57 PM",
+
+        "photo": "",
         "requestId": "123456",
-        "transactionDate": "19-JAN-2016"
     };
 }

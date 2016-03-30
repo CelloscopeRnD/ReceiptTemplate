@@ -6,7 +6,7 @@
         DPS_ACCOUNT = 4,
         FIXED_DEPOSIT = 5,
         FUND_TRANSFER = 6,
-        SAVINGS_ACCOUNT = 7,
+        ACCOUNT_OPENING = 7,
         ATM_DEBIT_CARD_REQUEST = 8,
         ATM_DEBIT_CARD_DELIVERY = 9,
         ATM_DEBIT_CARD_CANCEL = 10,
