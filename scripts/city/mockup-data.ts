@@ -21,7 +21,14 @@ namespace MockupData {
         "balanceDate": "15-MAR-2016",
         "printDate": "15-MAR-2016 01:00:57 PM",
 
-        "requestId": "123456",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "photo": ""
     };
     export var atmDebitCardCancel: JsonContracts.ATM_DEBIT_CARD_CANCEL = {
@@ -55,7 +62,14 @@ namespace MockupData {
         "profitRate": "8.85% (Yearly)",
         "receiverAccountName": "SUJON PATWARY",
         "receiverName": "Asadul Haque",
-        "requestId": "12346",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "retrieveFrom": "From Lost",
         "savingsAccountType": "Savings",
         "statement": [
@@ -104,7 +118,14 @@ namespace MockupData {
         "profitRate": "8.85% (Yearly)",
         "receiverAccountName": "SUJON PATWARY",
         "receiverName": "Asadul Haque",
-        "requestId": "12346",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "retrieveFrom": "From Lost",
         "savingsAccountType": "Savings",
         "statement": [
@@ -153,7 +174,14 @@ namespace MockupData {
         "profitRate": "8.85% (Yearly)",
         "receiverAccountName": "SUJON PATWARY",
         "receiverName": "Asadul Haque",
-        "requestId": "12346",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "retrieveFrom": "From Lost",
         "savingsAccountType": "Savings",
         "statement": [
@@ -191,7 +219,14 @@ namespace MockupData {
         "transactionCode": "73970008",
         "printDate": "15-MAR-2016 01:00:57 PM",
 
-        "requestId": "123456",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "photo": ""
     };
     export var cashWithdraw: JsonContracts.CASH_WITHDRAW = {
@@ -214,7 +249,14 @@ namespace MockupData {
         "transactionCode": "73970008",
         "printDate": "15-MAR-2016 01:00:57 PM",
 
-        "requestId": "123456",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "photo": ""
     };
     export var chequeBookDelivery: JsonContracts.CHEQUE_BOOK_DELIVERY = {
@@ -248,7 +290,14 @@ namespace MockupData {
         "profitRate": "8.85% (Yearly)",
         "receiverAccountName": "SUJON PATWARY",
         "receiverName": "Asadul Haque",
-        "requestId": "12346",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "retrieveFrom": "From Lost",
         "savingsAccountType": "Savings",
         "statement": [
@@ -297,7 +346,14 @@ namespace MockupData {
         "profitRate": "8.85% (Yearly)",
         "receiverAccountName": "SUJON PATWARY",
         "receiverName": "Asadul Haque",
-        "requestId": "12346",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "retrieveFrom": "From Lost",
         "savingsAccountType": "Savings",
         "statement": [
@@ -346,7 +402,14 @@ namespace MockupData {
         "profitRate": "8.85% (Yearly)",
         "receiverAccountName": "SUJON PATWARY",
         "receiverName": "Asadul Haque",
-        "requestId": "12346",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "retrieveFrom": "From Lost",
         "savingsAccountType": "Savings",
         "statement": [
@@ -395,7 +458,14 @@ namespace MockupData {
         "profitRate": "8.85% (Yearly)",
         "receiverAccountName": "SUJON PATWARY",
         "receiverName": "Asadul Haque",
-        "requestId": "12346",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "retrieveFrom": "From Lost",
         "savingsAccountType": "Savings",
         "statement": [
@@ -444,7 +514,14 @@ namespace MockupData {
         "profitRate": "8.85% (Yearly)",
         "receiverAccountName": "SUJON PATWARY",
         "receiverName": "Asadul Haque",
-        "requestId": "12346",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "retrieveFrom": "From Lost",
         "savingsAccountType": "Savings",
         "statement": [
@@ -493,7 +570,14 @@ namespace MockupData {
         "profitRate": "8.85% (Yearly)",
         "receiverAccountName": "SUJON PATWARY",
         "receiverName": "Asadul Haque",
-        "requestId": "12346",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "retrieveFrom": "From Lost",
         "savingsAccountType": "Savings",
         "statement": [
@@ -530,7 +614,14 @@ namespace MockupData {
         "photo": "",
         "printDate": "19-JAN-2016 13:13:15 PM",
         "productTenor": "5 Years",
-        "requestId": "123456",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "transactionDate": "19-JAN-2016"
     };
     export var fixedDeposit: JsonContracts.FIXED_DEPOSIT = {
@@ -555,7 +646,14 @@ namespace MockupData {
         "printDate": "19-JAN-2016 13:13:15 PM",
         "productTenor": "5 Years",
         "profitRate": "8.85% (Yearly)",
-        "requestId": "123456",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "transactionDate": "19-JAN-2016"
     };
     export var fundTransfer: JsonContracts.FUND_TRANSFER = {
@@ -580,7 +678,14 @@ namespace MockupData {
         "transactionCode": "73970008",
         "printDate": "15-MAR-2016 01:00:57 PM",
 
-        "requestId": "123456",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "photo": ""
     };
     export var miniStatement: JsonContracts.MINI_STATEMENT = {
@@ -598,10 +703,6 @@ namespace MockupData {
         "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
         "mobileNo": "01915067740",
 
-
-
-
-
         "statement": [
             ["Date", "Description", "Withdraw", "Deposit", "Balance"],
             ["", "Opening Balance", "", "", "4,231,594.17"],
@@ -612,7 +713,14 @@ namespace MockupData {
             ["15-MAR-2016", "TRTR/000043011856/15- 02 - 2016 15: 18:56/CBL", "-", "500.00", "633,144.96"]
         ],
 
-        "requestId": "123456",
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
         "photo": ""
     };
     export var remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
@@ -634,8 +742,15 @@ namespace MockupData {
         "idNumber": "19752698765626536",
         "printDate": "15-MAR-2016 01:00:57 PM",
 
-        "photo": "",
-        "requestId": "123456"
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
+        "photo": ""
     };
     export var remittanceRequest: JsonContracts.REMITTANCE_REQUEST = {
         "user": "26160101(NAME OF USER)",
@@ -655,8 +770,15 @@ namespace MockupData {
         "idNumber": "19752698765626536",
         "printDate": "15-MAR-2016 01:00:57 PM",
 
-        "photo": "",
-        "requestId": "123456"
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
+        "photo": ""
     };
     export var accountOpeningRequest: JsonContracts.ACCOUNT_OPENING = {
         "productName": "সিটি এজেন্ট সঞ্চয়ী হিসাব",
@@ -682,7 +804,14 @@ namespace MockupData {
         "accountOpeningDate": "15-MAR-2016",
         "printDate": "15-MAR-2016 01:00:57 PM",
 
-        "photo": "",
-        "requestId": "123456"
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
+        "photo": ""
     };
 }

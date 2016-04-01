@@ -18,7 +18,14 @@
         balanceDate: string,
         printDate: string,
 
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         photo: string
     };
     export interface ATM_DEBIT_CARD_CANCEL {
@@ -53,7 +60,14 @@
         profitRate: string,
         receiverAccountName: string,
         receiverName: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         retrieveFrom: string,
         savingsAccountType: string,
         statement: Array<Array<any>>
@@ -96,7 +110,14 @@
         profitRate: string,
         receiverAccountName: string,
         receiverName: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         retrieveFrom: string,
         savingsAccountType: string,
         statement: Array<Array<any>>
@@ -139,7 +160,14 @@
         profitRate: string,
         receiverAccountName: string,
         receiverName: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         retrieveFrom: string,
         savingsAccountType: string,
         statement: Array<Array<any>>
@@ -170,7 +198,14 @@
         transactionCode: string,
         printDate: string,
 
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         photo: string
     };
     export interface CASH_WITHDRAW {
@@ -193,7 +228,14 @@
         transactionCode: string,
         printDate: string,
 
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         photo: string
     };
     export interface CHEQUE_BOOK_DELIVERY {
@@ -228,7 +270,14 @@
         profitRate: string,
         receiverAccountName: string,
         receiverName: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         retrieveFrom: string,
         savingsAccountType: string,
         statement: Array<Array<any>>
@@ -271,7 +320,14 @@
         profitRate: string,
         receiverAccountName: string,
         receiverName: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         retrieveFrom: string,
         savingsAccountType: string,
         statement: Array<Array<any>>
@@ -314,7 +370,14 @@
         profitRate: string,
         receiverAccountName: string,
         receiverName: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         retrieveFrom: string,
         savingsAccountType: string,
         statement: Array<Array<any>>
@@ -357,7 +420,14 @@
         profitRate: string,
         receiverAccountName: string,
         receiverName: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         retrieveFrom: string,
         savingsAccountType: string,
         statement: Array<Array<any>>
@@ -400,7 +470,14 @@
         profitRate: string,
         receiverAccountName: string,
         receiverName: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         retrieveFrom: string,
         savingsAccountType: string,
         statement: Array<Array<any>>
@@ -443,7 +520,14 @@
         profitRate: string,
         receiverAccountName: string,
         receiverName: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         retrieveFrom: string,
         savingsAccountType: string,
         statement: Array<Array<any>>
@@ -472,7 +556,14 @@
         mobileNo: string,
         printDate: string,
         productTenor: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         transactionDate: string,
         photo: string
     };
@@ -496,7 +587,14 @@
         principalAmount: string,
         profitRate: string,
         productTenor: string,
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         transactionDate: string,
         photo: string
     };
@@ -522,7 +620,14 @@
         transactionCode: string,
         printDate: string,
 
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         photo: string
     };
     export interface MINI_STATEMENT {
@@ -550,7 +655,14 @@
             [string, string, string, string, string]
         ],
 
-        requestId: string,
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         photo: string
     };
     export interface REMITTANCE_DISBURSEMENT {
@@ -573,8 +685,15 @@
         idNumber: string,
         printDate: string,
 
-        photo: string,
-        requestId: string
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
+        photo: string
     };
     export interface REMITTANCE_REQUEST {
         user: string,
@@ -595,8 +714,15 @@
         idNumber: string,
         printDate: string,
 
-        photo: string,
-        requestId: string
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
+        photo: string
     };
     export interface ACCOUNT_OPENING {
         productName: string,
@@ -622,7 +748,14 @@
         accountOpeningDate: string,
         printDate: string,
 
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
         photo: string
-        requestId: string,
     };
 }
