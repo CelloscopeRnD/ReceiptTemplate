@@ -96,6 +96,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\agrani\poweredbycelloscope.png" />
     <Content Include="images\city\logo.gif" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
