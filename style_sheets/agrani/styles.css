@@ -48,6 +48,12 @@ body {
     margin: 0 auto;
 }
 
+.poweredbycelloscope {
+    width: 50%;
+    /*height: .4in;*/
+    display: block;
+    margin: 0 auto;
+}
 
 
 
@@ -115,6 +121,11 @@ body {
     margin: 0 auto;
     text-align: center;
     font-weight: bold;
+}
+
+.copyWhom {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .phone {

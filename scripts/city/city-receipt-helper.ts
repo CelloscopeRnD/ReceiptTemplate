@@ -89,7 +89,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("boothAddress", data.boothAddress);
 
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText("accountNumberColon", ":");
         ReceiptHelper.addClassText(LabelText.accountNumberId, data.accountNumber);
         ReceiptHelper.addClassText("customerIdLabel", LabelText.customerIdText);
@@ -113,7 +113,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
         ReceiptHelper.doRowSpan("fourthTable", 1, 2);
     }
     setCashDeposit() {
@@ -129,7 +129,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("boothAddress", data.boothAddress);
 
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText("accountNumberColon", ":");
         ReceiptHelper.addClassText(LabelText.accountNumberId, data.accountNumber);
         ReceiptHelper.addClassText("customerIdLabel", LabelText.customerIdText);
@@ -153,7 +153,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
         ReceiptHelper.doRowSpan("fourthTable", 1, 2);
     }
     setCashWithdraw() {
@@ -169,7 +169,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("boothAddress", data.boothAddress);
 
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
 
         ReceiptHelper.addClassText("accountNumberColon", ":");
         ReceiptHelper.addClassText(LabelText.accountNumberId, data.accountNumber);
@@ -194,7 +194,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
         ReceiptHelper.doRowSpan("fourthTable", 1, 2);
     }
     setDPSAccount() {
@@ -210,7 +210,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("boothAddress", data.boothAddress);
 
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText("customerIdLabel", LabelText.customerIdText);
         ReceiptHelper.addClassText("customerId", data.customerId);
         ReceiptHelper.addClassText("customerIdColon", ":");
@@ -236,7 +236,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.maturityAmountText, data.maturityAmount], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setFixedDeposit() {
         ReceiptHelper.addClassText("title", LabelText.fixedDepositText);
@@ -251,7 +251,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("boothAddress", data.boothAddress);
 
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText("accountNumberColon", ":");
         ReceiptHelper.addClassText(LabelText.accountNumberId, LabelText.emptyText);
         ReceiptHelper.addClassText("customerIdLabel", LabelText.customerIdText);
@@ -278,7 +278,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.principalAmountText, data.principalAmount], [LabelText.printDateText, data.printDate]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setFundTransfer() {
         ReceiptHelper.addClassText("title", LabelText.fundTransferText);
@@ -318,7 +318,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
 
         ReceiptHelper.doRowSpan("fourthTable", 3, 2);
     }
@@ -335,7 +335,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("boothAddress", data.boothAddress);
 
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText("accountNumberColon", ":");
         ReceiptHelper.addClassText(LabelText.accountNumberId, data.accountNumber);
         ReceiptHelper.addClassText("customerIdLabel", LabelText.customerIdText);
@@ -361,7 +361,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
 
     setATMDebitCardRequest() {
@@ -378,7 +378,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerId", global.data.customerId);
         ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, global.data.accountNumber);
         ReceiptHelper.addClassText(LabelText.accountTypeId, global.data.savingsAccountType);
         ReceiptHelper.addClassText(LabelText.linkAccountNumberColonId, LabelText.emptyText);
@@ -399,7 +399,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.cardTitleText, global.data.accountName], [LabelText.chargeAndVatText, global.data.charge]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setATMDebitCardDelivery() {
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
@@ -415,7 +415,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerId", global.data.customerId);
         ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, global.data.accountNumber);
         ReceiptHelper.addClassText(LabelText.accountTypeId, global.data.savingsAccountType);
         ReceiptHelper.addClassText(LabelText.linkAccountNumberColonId, LabelText.emptyText);
@@ -436,7 +436,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.cardTitleText, global.data.accountName], [LabelText.cardNumberText, global.data.cardNumber]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setATMDebitCardCancel() {
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
@@ -452,7 +452,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerId", global.data.customerId);
         ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, global.data.accountNumber);
         ReceiptHelper.addClassText(LabelText.accountTypeId, global.data.savingsAccountType);
         ReceiptHelper.addClassText(LabelText.linkAccountNumberColonId, LabelText.emptyText);
@@ -473,7 +473,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.cardTitleText, global.data.accountName], [LabelText.cardNumberText, global.data.cardNumber]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setChequeBookRequisition() {
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
@@ -489,7 +489,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerId", global.data.customerId);
         ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, global.data.accountNumber);
         ReceiptHelper.addClassText(LabelText.accountTypeId, global.data.savingsAccountType);
         ReceiptHelper.addClassText(LabelText.linkAccountNumberColonId, LabelText.emptyText);
@@ -510,7 +510,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setChequeBookDelivery() {
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
@@ -526,7 +526,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerId", global.data.customerId);
         ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, global.data.accountNumber);
         ReceiptHelper.addClassText(LabelText.accountTypeId, global.data.savingsAccountType);
         ReceiptHelper.addClassText(LabelText.linkAccountNumberColonId, LabelText.emptyText);
@@ -547,7 +547,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setChequeStopPaymentSingle() {
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
@@ -563,7 +563,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerId", global.data.customerId);
         ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, global.data.accountNumber);
         ReceiptHelper.addClassText(LabelText.accountTypeId, global.data.savingsAccountType);
         ReceiptHelper.addClassText(LabelText.linkAccountNumberColonId, LabelText.emptyText);
@@ -584,7 +584,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.chargeAndVatText, global.data.charge], [LabelText.chequeLostReasonText, global.data.chequeLostReason]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setChequeStopPaymentRange() {
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
@@ -600,7 +600,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerId", global.data.customerId);
         ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, global.data.accountNumber);
         ReceiptHelper.addClassText(LabelText.accountTypeId, global.data.savingsAccountType);
         ReceiptHelper.addClassText(LabelText.linkAccountNumberColonId, LabelText.emptyText);
@@ -621,7 +621,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.chequeLostReasonText, global.data.chequeLostReason]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setChequeStopPaymentSingleCancel() {
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
@@ -637,7 +637,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerId", global.data.customerId);
         ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, global.data.accountNumber);
         ReceiptHelper.addClassText(LabelText.accountTypeId, global.data.savingsAccountType);
         ReceiptHelper.addClassText(LabelText.linkAccountNumberColonId, LabelText.emptyText);
@@ -658,7 +658,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.chargeAndVatText, global.data.charge], [LabelText.retrieveFromText, global.data.retrieveFrom]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setChequeStopPaymentRangeCancel() {
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
@@ -674,7 +674,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerId", global.data.customerId);
         ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, global.data.accountNumber);
         ReceiptHelper.addClassText(LabelText.accountTypeId, global.data.savingsAccountType);
         ReceiptHelper.addClassText(LabelText.linkAccountNumberColonId, LabelText.emptyText);
@@ -695,7 +695,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.retrieveFromText, global.data.retrieveFrom]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
 
     setMiniStatement() {
@@ -711,7 +711,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("boothAddress", data.boothAddress);
 
 
-        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.titleId);
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
         ReceiptHelper.addClassText(LabelText.accountNumberId, data.accountNumber);
         ReceiptHelper.addClassText("customerIdLabel", LabelText.customerIdText);
         ReceiptHelper.addClassText("customerId", data.customerId);
@@ -759,6 +759,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerNameLabel", LabelText.recipientNameTextEnglish);
         ReceiptHelper.addClassText("customerName", data.recipientName);
         ReceiptHelper.addClassText("customerAddressLabel", LabelText.exchangeHouseNameEnglish);
+        ReceiptHelper.addClassText(LabelText.customerAddressId, data.exchangeHouse);
         ReceiptHelper.addClassText("pinLabel", LabelText.pinNoTextEnglish);
         ReceiptHelper.addClassText("pinColon", LabelText.colonText);
         ReceiptHelper.addClassText("pin", data.pin);
@@ -773,7 +774,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.amountInWordsTextEnglish, data.amountInWords], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
     }
     setRemittanceDisbursement() {
         ReceiptHelper.addClassText("title", LabelText.inwardForeignRemittanceDisbursementTextEnglish);
@@ -810,6 +811,25 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.amountInWordsTextEnglish, data.amountInWords], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
-        ReceiptHelper.replaceTableData(tableData);
+        this.replaceTableData(tableData);
+    }
+
+    replaceTableData(tableData) {
+        var fourthTable = <HTMLTableElement>document.getElementsByClassName('fourthTable')[0];
+        for (var i = 0; i < fourthTable.rows.length; i++) {
+            let row = <HTMLTableRowElement>fourthTable.rows[i];
+            for (var j = 0; j < row.cells.length; j++) {
+                var text = tableData[i][j / 3][0];
+                var value = tableData[i][j / 3][1];
+                if (text) {
+                    row.cells[j].innerHTML = text;
+                    row.cells[++j].innerHTML = LabelText.colonText;
+                } else {
+                    row.cells[j].innerHTML = LabelText.emptyText;
+                    row.cells[++j].innerHTML = LabelText.emptyText;
+                }
+                row.cells[++j].innerHTML = value;
+            }
+        }
     }
 }

@@ -758,6 +758,7 @@ namespace MockupData {
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "recipientName": "JAMAL UDDIN",
+        "exchangeHouse": "XPRESS MONEY",
         "pin": "****2543",
 
         "mobileNo": "01915067740",

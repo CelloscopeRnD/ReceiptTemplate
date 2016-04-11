@@ -7,7 +7,7 @@
     static linkAccountNumberLabelId = "linkAccountNumberLabel";
     static linkAccountNumberId = "linkAccountNumber";
 
-    static titleId = "হিসাব নম্বর";
+    static accountNumberText = "হিসাব নম্বর";
     static accountNameText = "হিসাবের নাম";
     static accountBalanceText = "ব্যালেন্স";
     static accountOpeningDateText = "হিসাব খোলার তারিখ";

@@ -701,6 +701,7 @@
         boothAddress: string,
 
         recipientName: string,
+        exchangeHouse: string,
         pin: string,
 
         mobileNo: string,

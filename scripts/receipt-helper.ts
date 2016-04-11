@@ -89,24 +89,7 @@ class ReceiptHelper {
     setRemittanceRequest() { }
     setRemittanceDisbursement() { }
 
-    static replaceTableData(tableData) {
-        var fourthTable = <HTMLTableElement>document.getElementsByClassName('fourthTable')[0];
-        for (var i = 0; i < fourthTable.rows.length; i++) {
-            let row = <HTMLTableRowElement>fourthTable.rows[i];
-            for (var j = 0; j < row.cells.length; j++) {
-                var text = tableData[i][j / 3][0];
-                var value = tableData[i][j / 3][1];
-                if (text) {
-                    row.cells[j].innerHTML = text;
-                    row.cells[++j].innerHTML = LabelText.colonText;
-                } else {
-                    row.cells[j].innerHTML = LabelText.emptyText;
-                    row.cells[++j].innerHTML = LabelText.emptyText;
-                }
-                row.cells[++j].innerHTML = value;
-            }
-        }
-    }
+    replaceTableData(tableData) { }
     static doRowSpan(tableClassName: string, rowIndex: number, cellIndex: number, rowSpan: number = 2) {
         var table = <HTMLTableElement>document.getElementsByClassName(tableClassName)[0];
         let row = <HTMLTableRowElement>table.rows[rowIndex];
