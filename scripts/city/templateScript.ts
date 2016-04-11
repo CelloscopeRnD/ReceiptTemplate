@@ -1,4 +1,4 @@
-﻿/// <reference path="receipt-type" />
+﻿/// <reference path="../receipt-type.ts" />
 /// <reference path="mockup-data" />
 
 var global,

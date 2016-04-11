@@ -196,7 +196,8 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
-
+/scripts/**/*.js
+/scripts/**/*.map
 /scripts/city/**/*.js
 /scripts/city/**/*.map
 /scripts/agrani/**/*.js

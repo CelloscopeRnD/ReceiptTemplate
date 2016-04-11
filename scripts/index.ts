@@ -3,8 +3,10 @@
 
 const general_template = "template.html";
 const ministatement_template = "miniStatementTemplate.html";
-const sub_folder = "city";
-const bank_name = "City Bank";
+//const sub_folder = "city";
+//const bank_name = "City Bank";
+const sub_folder = "agrani";
+const bank_name = "Agrani Bank";
 
 window.onload = function myfunction() {
 
