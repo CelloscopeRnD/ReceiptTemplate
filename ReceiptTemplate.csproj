@@ -96,6 +96,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\city\logo.gif" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -114,11 +115,13 @@
     <Content Include="images\barcode.jpg" />
     <Content Include="images\city\AGENT-BANKING-LOGO_Small.png" />
     <Content Include="images\city\agent_banking_logo.png" />
-    <Content Include="images\city\logo.png" />
     <Content Include="images\photo.png" />
     <Content Include="images\qr.png" />
     <Content Include="readme.txt" />
+    <TypeScriptCompile Include="scripts\agrani\agrani-receipt-helper.ts" />
     <TypeScriptCompile Include="scripts\bank-constants.ts" />
+    <TypeScriptCompile Include="scripts\banks.ts" />
+    <TypeScriptCompile Include="scripts\city\city-receipt-helper.ts" />
     <TypeScriptCompile Include="scripts\index.ts" />
     <TypeScriptCompile Include="scripts\json-contracts.ts" />
     <TypeScriptCompile Include="scripts\label-text.ts" />
@@ -141,10 +144,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="scripts\agrani\" />
-    <Folder Include="scripts\city\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
