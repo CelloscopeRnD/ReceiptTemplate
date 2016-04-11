@@ -1,5 +1,6 @@
 ﻿/// <reference path="bank-constants.ts" />
-/// <reference path="./receipt-type" />
+/// <reference path="receipt-type.ts" />
+
 //tsc -out index.js index.js
 
 window.onload = function myfunction() {

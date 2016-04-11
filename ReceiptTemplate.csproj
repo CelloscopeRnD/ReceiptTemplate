@@ -118,13 +118,13 @@
     <Content Include="images\photo.png" />
     <Content Include="images\qr.png" />
     <Content Include="readme.txt" />
+    <TypeScriptCompile Include="scripts\bank-constants.ts" />
     <TypeScriptCompile Include="scripts\index.ts" />
     <TypeScriptCompile Include="scripts\json-contracts.ts" />
     <TypeScriptCompile Include="scripts\label-text.ts" />
     <TypeScriptCompile Include="scripts\mockup-data.ts" />
     <TypeScriptCompile Include="scripts\receipt-helper.ts" />
     <TypeScriptCompile Include="scripts\receipt-type.ts" />
-    <TypeScriptCompile Include="scripts\city\templateScript.ts" />
     <Content Include="style_sheets\agrani\styles.css" />
     <Content Include="style_sheets\city\styles.css" />
     <Content Include="templates\agrani\miniStatementTemplate.html" />
@@ -133,6 +133,7 @@
     <Content Include="templates\city\miniStatementTemplate.html" />
     <Content Include="templates\city\template.html" />
     <Content Include="Web.config" />
+    <TypeScriptCompile Include="scripts\templateScript.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scripts\agrani\" />
+    <Folder Include="scripts\city\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

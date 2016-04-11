@@ -1,5 +1,6 @@
-﻿/// <reference path="../receipt-helper.ts" />
-/// <reference path="../bank-constants.ts" />
+﻿/// <reference path="receipt-helper.ts" />
+/// <reference path="bank-constants.ts" />
+
 
 var global,
     receipt = receipt || {};

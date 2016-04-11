@@ -68,7 +68,7 @@ class ReceiptHelper {
 
     static replaceToken(receipt) {
         ReceiptHelper.addImage("agent_banking_logo", `file:///android_asset/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`, `../../images/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`);
-        ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.gif`, `../../images/${BankConstants.sub_folder}/logo.png`);
+        ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.gif`, `../../images/${BankConstants.sub_folder}/logo.gif`);
         ReceiptHelper.addImage("qr", "qr.png", "../../images/qr.png");
         ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
 
