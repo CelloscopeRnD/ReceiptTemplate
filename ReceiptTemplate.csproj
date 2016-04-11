@@ -119,12 +119,15 @@
     <Content Include="images\qr.png" />
     <Content Include="readme.txt" />
     <TypeScriptCompile Include="scripts\index.ts" />
-    <TypeScriptCompile Include="scripts\city\json-contracts.ts" />
-    <TypeScriptCompile Include="scripts\city\mockup-data.ts" />
+    <TypeScriptCompile Include="scripts\json-contracts.ts" />
+    <TypeScriptCompile Include="scripts\label-text.ts" />
+    <TypeScriptCompile Include="scripts\mockup-data.ts" />
+    <TypeScriptCompile Include="scripts\receipt-helper.ts" />
     <TypeScriptCompile Include="scripts\receipt-type.ts" />
     <TypeScriptCompile Include="scripts\city\templateScript.ts" />
     <Content Include="style_sheets\agrani\styles.css" />
     <Content Include="style_sheets\city\styles.css" />
+    <Content Include="templates\agrani\miniStatementTemplate.html" />
     <Content Include="templates\agrani\template.html" />
     <Content Include="templates\index.html" />
     <Content Include="templates\city\miniStatementTemplate.html" />

@@ -1,17 +1,9 @@
-﻿/// <reference path="./receipt-type" />
+﻿/// <reference path="bank-constants.ts" />
+/// <reference path="./receipt-type" />
 //tsc -out index.js index.js
 
-const general_template = "template.html";
-const ministatement_template = "miniStatementTemplate.html";
-//const sub_folder = "city";
-//const bank_name = "City Bank";
-const sub_folder = "agrani";
-const bank_name = "Agrani Bank";
-
 window.onload = function myfunction() {
-
-
-    document.getElementsByTagName("h1")[0].innerHTML = bank_name;
+    document.getElementsByTagName("h1")[0].innerHTML = BankConstants.bank_name;
     var formSelect = <HTMLSelectElement>document.getElementById('receiptSelectForm');
     Object.keys(ReceiptTypeModule.Receipts)
         .slice(0, Object.keys(ReceiptTypeModule.Receipts).length / 2)
@@ -24,9 +16,9 @@ window.onload = function myfunction() {
     var submitButton = <HTMLButtonElement>document.querySelectorAll("button[type='submit']")[0];
     submitButton.onclick = function () {
         if (<any>formSelect.value == ReceiptTypeModule.Receipts.MINI_STATEMENT) {
-            window.location.href = `http://${window.location.host}/templates/${sub_folder}/${ministatement_template}?${formSelect.value}`;
+            window.location.href = `http://${window.location.host}/templates/${BankConstants.sub_folder}/${BankConstants.ministatement_template}?${formSelect.value}`;
         } else {
-            window.location.href = `http://${window.location.host}/templates/${sub_folder}/${general_template}?${formSelect.value}`;
+            window.location.href = `http://${window.location.host}/templates/${BankConstants.sub_folder}/${BankConstants.general_template}?${formSelect.value}`;
         }
     }
 
