@@ -1,10 +1,4 @@
-﻿@font-face {
-    font-family: "SolaimanLipi";
-    /*src: url(file:///android_asset/fonts/SolaimanLipi_22-02-2012.ttf) format("truetype");*/
-    src: url('../Fonts/SolaimanLipi_22-02-2012.ttf') format('truetype');
-}
-
-* {
+﻿* {
     margin: 0;
     padding: 0;
 }
@@ -15,7 +9,8 @@
     }
 
     .main {
-        width: 288px;
+        width: 272px;
+       /* border-right: 1px dotted black;*/
     }
 }
 
@@ -27,7 +22,7 @@
 }
 
 body {
-    font-family: 'Arial Narrow', SolaimanLipi;
+    font-family: 'Arial Narrow';
     font-size: 12pt;
 }
 
@@ -49,8 +44,8 @@ body {
 
 table, th, td {
     border-collapse: collapse;
-    border: 1px solid lightgray;
-    width: 100%;
+   /* border: 1px solid lightgray;*/
+    vertical-align: top;
 }
 
 tr {
@@ -59,8 +54,8 @@ tr {
 
 
 td:nth-child(3) {
-    max-width: 157px;
-    white-space: nowrap;
+    max-width: 170px;
+    /*white-space: nowrap;*/
 }
 
 .qr {
