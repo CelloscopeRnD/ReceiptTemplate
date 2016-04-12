@@ -3,6 +3,7 @@
 class AgraniReceiptHelper extends ReceiptHelper {
     replaceToken(receipt) {
         ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.gif`, `../../images/${BankConstants.sub_folder}/logo.gif`);
+        ReceiptHelper.addImage("qr", "qr.png", "../../images/qr.png");
         ReceiptHelper.addImage("poweredbycelloscope", `file:///android_asset/${BankConstants.sub_folder}/poweredbycelloscope.png`, `../../images/${BankConstants.sub_folder}/poweredbycelloscope.png`);
 
         switch (receipt) {
@@ -796,7 +797,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     }
 
     replaceTableData(tableData) {
-        const table = <HTMLTableElement>document.getElementsByClassName('fourthTable')[0];
+        const table = <HTMLTableElement>document.getElementsByClassName('dataTabel')[0];
         var tableBody = document.createElement('tbody');
 
         for (const rowData of tableData) {
@@ -815,12 +816,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
                     firstCell = false;
                 }
             }
-
-
-
             tableBody.appendChild(row);
         }
-
         table.appendChild(tableBody);
     }
 }
