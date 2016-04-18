@@ -21,6 +21,11 @@
     }
 }
 
+.main + .main {
+    display: none;
+    margin-top: 30px;
+}
+
 body {
     font-family: 'Arial Narrow';
     font-size: 10pt;

@@ -68,6 +68,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
             default:
                 break;
         }
+
     }
     setAccountBalance() {
         ReceiptHelper.addClassText("title", LabelText.accountBalanceText);
@@ -606,27 +607,32 @@ class AgraniReceiptHelper extends ReceiptHelper {
     }
 
     replaceTableData(tableData) {
-        const table = <HTMLTableElement>document.getElementsByClassName('dataTabel')[0];
-        var tableBody = document.createElement('tbody');
+        const tables = document.getElementsByClassName('dataTabel');
 
-        for (const rowData of tableData) {
-            const row = document.createElement('tr');
 
-            var firstCell = true;
+        for (let i = 0; i < tables.length; i += 1) {
+            const table = <HTMLTableElement>tables[i];
+            var tableBody = document.createElement('tbody');
 
-            for (const cellData of rowData) {
-                let cell = document.createElement('td');
-                cell.appendChild(document.createTextNode(cellData));
-                row.appendChild(cell);
-                if (firstCell) {
-                    cell = document.createElement('td');
-                    cell.appendChild(document.createTextNode(cellData ? ':' : '\xa0'));
+            for (const rowData of tableData) {
+                const row = document.createElement('tr');
+
+                var firstCell = true;
+
+                for (const cellData of rowData) {
+                    let cell = document.createElement('td');
+                    cell.appendChild(document.createTextNode(cellData));
                     row.appendChild(cell);
-                    firstCell = false;
+                    if (firstCell) {
+                        cell = document.createElement('td');
+                        cell.appendChild(document.createTextNode(cellData ? ':' : '\xa0'));
+                        row.appendChild(cell);
+                        firstCell = false;
+                    }
                 }
+                tableBody.appendChild(row);
             }
-            tableBody.appendChild(row);
+            table.appendChild(tableBody);
         }
-        table.appendChild(tableBody);
     }
 }
