@@ -2,7 +2,7 @@
 
 class AgraniReceiptHelper extends ReceiptHelper {
     replaceToken(receipt) {
-        ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.gif`, `../../images/${BankConstants.sub_folder}/logo.gif`);
+        ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.png`, `../../images/${BankConstants.sub_folder}/logo.png`);
         ReceiptHelper.addImage("qr", "qr.png", "../../images/qr.png");
         ReceiptHelper.addImage("agraniDoer", `file:///android_asset/${BankConstants.sub_folder}/agranidoer.png`, `../../images/${BankConstants.sub_folder}/agranidoer.png`);
         ReceiptHelper.addImage("poweredbycelloscope", `file:///android_asset/${BankConstants.sub_folder}/poweredbycelloscope.png`, `../../images/${BankConstants.sub_folder}/poweredbycelloscope.png`);
