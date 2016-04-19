@@ -1,6 +1,14 @@
 ﻿/// <reference path="../receipt-helper.ts" />
 
 class CityReceiptHelper extends ReceiptHelper {
+    setMockData(receipt) {
+        super.setMockData(receipt);
+        switch (receipt) {
+            case ReceiptTypeModule.Receipts.MINI_STATEMENT:
+                global.data = MockupData.miniStatement;
+                break;
+        }
+    }
     replaceToken(receipt) {
         ReceiptHelper.addImage("agent_banking_logo", `file:///android_asset/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`, `../../images/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`);
         ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.gif`, `../../images/${BankConstants.sub_folder}/logo.gif`);

@@ -1,7 +1,7 @@
 ﻿/// <reference path="./json-contracts" />
 
-namespace MockupData {
-    export var accountBalance: JsonContracts.ACCOUNT_BALANCE = {
+class MockupData {
+    static accountBalance: JsonContracts.ACCOUNT_BALANCE = {
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -31,7 +31,7 @@ namespace MockupData {
         },
         "photo": ""
     };
-    export var atmDebitCardCancel: JsonContracts.ATM_DEBIT_CARD_CANCEL = {
+    static atmDebitCardCancel: JsonContracts.ATM_DEBIT_CARD_CANCEL = {
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
@@ -87,7 +87,7 @@ namespace MockupData {
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
-    export var atmDebitCardDelivery: JsonContracts.ATM_DEBIT_CARD_DELIVERY = {
+    static atmDebitCardDelivery: JsonContracts.ATM_DEBIT_CARD_DELIVERY = {
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
@@ -143,7 +143,7 @@ namespace MockupData {
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
-    export var atmDebitCardRequest: JsonContracts.ATM_DEBIT_CARD_REQUEST = {
+    static atmDebitCardRequest: JsonContracts.ATM_DEBIT_CARD_REQUEST = {
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
@@ -199,7 +199,7 @@ namespace MockupData {
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
-    export var cashDeposit: JsonContracts.CASH_DEPOSIT = {
+    static cashDeposit: JsonContracts.CASH_DEPOSIT = {
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -229,7 +229,7 @@ namespace MockupData {
         },
         "photo": ""
     };
-    export var cashWithdraw: JsonContracts.CASH_WITHDRAW = {
+    static cashWithdraw: JsonContracts.CASH_WITHDRAW = {
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -259,7 +259,7 @@ namespace MockupData {
         },
         "photo": ""
     };
-    export var chequeBookDelivery: JsonContracts.CHEQUE_BOOK_DELIVERY = {
+    static chequeBookDelivery: JsonContracts.CHEQUE_BOOK_DELIVERY = {
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
@@ -315,7 +315,7 @@ namespace MockupData {
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
-    export var chequeBookRequisition: JsonContracts.CHEQUE_BOOK_REQUISITION = {
+    static chequeBookRequisition: JsonContracts.CHEQUE_BOOK_REQUISITION = {
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
@@ -371,7 +371,7 @@ namespace MockupData {
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
-    export var chequeStopPaymentRange: JsonContracts.CHEQUE_STOP_PAYMENT_RANGE = {
+    static chequeStopPaymentRange: JsonContracts.CHEQUE_STOP_PAYMENT_RANGE = {
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
@@ -427,7 +427,7 @@ namespace MockupData {
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
-    export var chequeStopPaymentRangeCancel: JsonContracts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL = {
+    static chequeStopPaymentRangeCancel: JsonContracts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL = {
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
@@ -483,7 +483,7 @@ namespace MockupData {
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
-    export var chequeStopPaymentSingle: JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE = {
+    static chequeStopPaymentSingle: JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE = {
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
@@ -539,7 +539,7 @@ namespace MockupData {
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
-    export var chequeStopPaymentSingleCancel: JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL = {
+    static chequeStopPaymentSingleCancel: JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL = {
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
@@ -595,7 +595,7 @@ namespace MockupData {
         "withdrawAmount": "BDT 3,000.00 + 7.5 (Charge)",
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
-    export var dpsAccount: JsonContracts.DPS_ACCOUNT = {
+    static dpsAccount: JsonContracts.DPS_ACCOUNT = {
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -624,7 +624,7 @@ namespace MockupData {
         },
         "transactionDate": "19-JAN-2016"
     };
-    export var fixedDeposit: JsonContracts.FIXED_DEPOSIT = {
+    static fixedDeposit: JsonContracts.FIXED_DEPOSIT = {
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -656,7 +656,7 @@ namespace MockupData {
         },
         "transactionDate": "19-JAN-2016"
     };
-    export var fundTransfer: JsonContracts.FUND_TRANSFER = {
+    static fundTransfer: JsonContracts.FUND_TRANSFER = {
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -688,7 +688,7 @@ namespace MockupData {
         },
         "photo": ""
     };
-    export var miniStatement: JsonContracts.MINI_STATEMENT = {
+    static miniStatement: JsonContracts.MINI_STATEMENT = {
         "user": "26160101 (NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -723,7 +723,7 @@ namespace MockupData {
         },
         "photo": ""
     };
-    export var remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
+    static remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -752,7 +752,7 @@ namespace MockupData {
         },
         "photo": ""
     };
-    export var remittanceRequest: JsonContracts.REMITTANCE_REQUEST = {
+    static remittanceRequest: JsonContracts.REMITTANCE_REQUEST = {
         "user": "26160101(NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
@@ -781,7 +781,7 @@ namespace MockupData {
         },
         "photo": ""
     };
-    export var accountOpeningRequest: JsonContracts.ACCOUNT_OPENING = {
+    static accountOpeningRequest: JsonContracts.ACCOUNT_OPENING = {
         "productName": "সিটি এজেন্ট সঞ্চয়ী হিসাব",
 
         "user": "26160101(NAME OF USER)",

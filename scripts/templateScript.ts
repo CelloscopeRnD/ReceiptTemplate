@@ -24,7 +24,7 @@ global.onload = function () {
         url = receipt;
         global.data = JSON.parse(global.stringData);
     } else {
-        receiptHelper.setData(parseInt(url));
+        receiptHelper.setMockData(parseInt(url));
     }
 
     ReceiptHelper.addStyleSheet(`../../style_sheets/${BankConstants.sub_folder}/styles.css`); ReceiptHelper.addStyleSheet(`file:///android_asset/${BankConstants.sub_folder}/styles.css`);

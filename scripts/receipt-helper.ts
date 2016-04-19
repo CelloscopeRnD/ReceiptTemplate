@@ -4,7 +4,7 @@
 /// <reference path="bank-constants.ts" />
 
 class ReceiptHelper {
-    setData(receipt) {
+    setMockData(receipt) {
         switch (receipt) {
             case ReceiptTypeModule.Receipts.ACCOUNT_BALANCE:
                 global.data = MockupData.accountBalance;

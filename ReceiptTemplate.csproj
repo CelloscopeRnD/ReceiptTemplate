@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\agrani\agranidoer.png" />
+    <Content Include="images\agrani\logo.png" />
     <Content Include="images\agrani\poweredbycelloscope.png" />
     <Content Include="images\city\logo.gif" />
     <Content Include="packages.config" />
@@ -113,7 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="images\agrani\logo.gif" />
     <Content Include="images\barcode.jpg" />
     <Content Include="images\city\AGENT-BANKING-LOGO_Small.png" />
     <Content Include="images\city\agent_banking_logo.png" />
@@ -132,7 +132,6 @@
     <TypeScriptCompile Include="scripts\receipt-type.ts" />
     <Content Include="style_sheets\agrani\styles.css" />
     <Content Include="style_sheets\city\styles.css" />
-    <Content Include="templates\agrani\miniStatementTemplate.html" />
     <Content Include="templates\agrani\template.html" />
     <Content Include="templates\index.html" />
     <Content Include="templates\city\miniStatementTemplate.html" />

@@ -1,6 +1,14 @@
 ﻿/// <reference path="../receipt-helper.ts" />
 
 class AgraniReceiptHelper extends ReceiptHelper {
+    setMockData(receipt) {
+        super.setMockData(receipt);
+        switch (receipt) {
+            case ReceiptTypeModule.Receipts.MINI_STATEMENT:
+                global.data = MockupData.miniStatement;
+                break;
+        }
+    }
     replaceToken(receipt) {
         ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.png`, `../../images/${BankConstants.sub_folder}/logo.png`);
         ReceiptHelper.addImage("qr", "qr.png", "../../images/qr.png");
