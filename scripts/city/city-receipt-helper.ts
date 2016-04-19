@@ -1,11 +1,12 @@
 ﻿/// <reference path="../receipt-helper.ts" />
+/// <reference path="city-mockup-data.ts" />
 
 class CityReceiptHelper extends ReceiptHelper {
     setMockData(receipt) {
         super.setMockData(receipt);
         switch (receipt) {
             case Receipts.MINI_STATEMENT:
-                global.data = MockupData.miniStatement;
+                global.data = CityMockupData.miniStatement;
                 break;
         }
     }

@@ -51,9 +51,6 @@ class ReceiptHelper {
             case Receipts.FUND_TRANSFER:
                 global.data = MockupData.fundTransfer;
                 break;
-            case Receipts.MINI_STATEMENT:
-                global.data = MockupData.miniStatement;
-                break;
             case Receipts.REMITTANCE_DISBURSEMENT:
                 global.data = MockupData.remittanceDisbursement;
                 break;

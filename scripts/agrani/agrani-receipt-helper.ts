@@ -1,11 +1,12 @@
 ﻿/// <reference path="../receipt-helper.ts" />
+/// <reference path="agrani-mockup-data.ts" />
 
 class AgraniReceiptHelper extends ReceiptHelper {
     setMockData(receipt) {
         super.setMockData(receipt);
         switch (receipt) {
             case Receipts.MINI_STATEMENT:
-                global.data = MockupData.miniStatement;
+                global.data = AgrainMockupData.miniStatement;
                 break;
         }
     }

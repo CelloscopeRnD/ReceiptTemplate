@@ -121,9 +121,11 @@
     <Content Include="images\qr.png" />
     <Content Include="readme.txt" />
     <TypeScriptCompile Include="scripts\agrani\agrani-receipt-helper.ts" />
+    <TypeScriptCompile Include="scripts\agrani\agrani-mockup-data.ts" />
     <TypeScriptCompile Include="scripts\bank-constants.ts" />
     <TypeScriptCompile Include="scripts\banks.ts" />
     <TypeScriptCompile Include="scripts\city\city-receipt-helper.ts" />
+    <TypeScriptCompile Include="scripts\city\city-mockup-data.ts" />
     <TypeScriptCompile Include="scripts\index.ts" />
     <TypeScriptCompile Include="scripts\json-contracts.ts" />
     <TypeScriptCompile Include="scripts\label-text.ts" />
