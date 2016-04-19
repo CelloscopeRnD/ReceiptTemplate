@@ -4,7 +4,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setMockData(receipt) {
         super.setMockData(receipt);
         switch (receipt) {
-            case ReceiptTypeModule.Receipts.MINI_STATEMENT:
+            case Receipts.MINI_STATEMENT:
                 global.data = MockupData.miniStatement;
                 break;
         }

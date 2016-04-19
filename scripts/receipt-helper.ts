@@ -1,4 +1,4 @@
-﻿/// <reference path="receipt-type.ts" />
+﻿/// <reference path="receipts.ts" />
 /// <reference path="mockup-data.ts" />
 /// <reference path="label-text.ts" />
 /// <reference path="bank-constants.ts" />
@@ -6,61 +6,61 @@
 class ReceiptHelper {
     setMockData(receipt) {
         switch (receipt) {
-            case ReceiptTypeModule.Receipts.ACCOUNT_BALANCE:
+            case Receipts.ACCOUNT_BALANCE:
                 global.data = MockupData.accountBalance;
                 break;
-            case ReceiptTypeModule.Receipts.ATM_DEBIT_CARD_CANCEL:
+            case Receipts.ATM_DEBIT_CARD_CANCEL:
                 global.data = MockupData.atmDebitCardCancel;
                 break;
-            case ReceiptTypeModule.Receipts.ATM_DEBIT_CARD_DELIVERY:
+            case Receipts.ATM_DEBIT_CARD_DELIVERY:
                 global.data = MockupData.atmDebitCardDelivery;
                 break;
-            case ReceiptTypeModule.Receipts.ATM_DEBIT_CARD_REQUEST:
+            case Receipts.ATM_DEBIT_CARD_REQUEST:
                 global.data = MockupData.atmDebitCardRequest;
                 break;
-            case ReceiptTypeModule.Receipts.CASH_DEPOSIT:
+            case Receipts.CASH_DEPOSIT:
                 global.data = MockupData.cashDeposit;
                 break;
-            case ReceiptTypeModule.Receipts.CASH_WITHDRAW:
+            case Receipts.CASH_WITHDRAW:
                 global.data = MockupData.cashWithdraw;
                 break;
-            case ReceiptTypeModule.Receipts.CHEQUE_BOOK_DELIVERY:
+            case Receipts.CHEQUE_BOOK_DELIVERY:
                 global.data = MockupData.chequeBookDelivery;
                 break;
-            case ReceiptTypeModule.Receipts.CHEQUE_BOOK_REQUISITION:
+            case Receipts.CHEQUE_BOOK_REQUISITION:
                 global.data = MockupData.chequeBookRequisition;
                 break;
-            case ReceiptTypeModule.Receipts.CHEQUE_STOP_PAYMENT_RANGE:
+            case Receipts.CHEQUE_STOP_PAYMENT_RANGE:
                 global.data = MockupData.chequeStopPaymentRange;
                 break;
-            case ReceiptTypeModule.Receipts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL:
+            case Receipts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL:
                 global.data = MockupData.chequeStopPaymentRangeCancel;
                 break;
-            case ReceiptTypeModule.Receipts.CHEQUE_STOP_PAYMENT_SINGLE:
+            case Receipts.CHEQUE_STOP_PAYMENT_SINGLE:
                 global.data = MockupData.chequeStopPaymentSingle;
                 break;
-            case ReceiptTypeModule.Receipts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL:
+            case Receipts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL:
                 global.data = MockupData.chequeStopPaymentSingleCancel;
                 break;
-            case ReceiptTypeModule.Receipts.DPS_ACCOUNT:
+            case Receipts.DPS_ACCOUNT:
                 global.data = MockupData.dpsAccount;
                 break;
-            case ReceiptTypeModule.Receipts.FIXED_DEPOSIT:
+            case Receipts.FIXED_DEPOSIT:
                 global.data = MockupData.fixedDeposit;
                 break;
-            case ReceiptTypeModule.Receipts.FUND_TRANSFER:
+            case Receipts.FUND_TRANSFER:
                 global.data = MockupData.fundTransfer;
                 break;
-            case ReceiptTypeModule.Receipts.MINI_STATEMENT:
+            case Receipts.MINI_STATEMENT:
                 global.data = MockupData.miniStatement;
                 break;
-            case ReceiptTypeModule.Receipts.REMITTANCE_DISBURSEMENT:
+            case Receipts.REMITTANCE_DISBURSEMENT:
                 global.data = MockupData.remittanceDisbursement;
                 break;
-            case ReceiptTypeModule.Receipts.REMITTANCE_REQUEST:
+            case Receipts.REMITTANCE_REQUEST:
                 global.data = MockupData.remittanceRequest;
                 break;
-            case ReceiptTypeModule.Receipts.ACCOUNT_OPENING:
+            case Receipts.ACCOUNT_OPENING:
                 global.data = MockupData.accountOpeningRequest;
                 break;
         }

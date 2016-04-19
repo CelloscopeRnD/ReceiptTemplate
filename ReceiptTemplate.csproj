@@ -129,7 +129,7 @@
     <TypeScriptCompile Include="scripts\label-text.ts" />
     <TypeScriptCompile Include="scripts\mockup-data.ts" />
     <TypeScriptCompile Include="scripts\receipt-helper.ts" />
-    <TypeScriptCompile Include="scripts\receipt-type.ts" />
+    <TypeScriptCompile Include="scripts\receipts.ts" />
     <Content Include="style_sheets\agrani\styles.css" />
     <Content Include="style_sheets\city\styles.css" />
     <Content Include="templates\agrani\template.html" />
