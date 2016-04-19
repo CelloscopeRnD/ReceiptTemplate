@@ -10,21 +10,23 @@ var global,
 global = window;
 
 global.onload = function () {
-    let url = global.location.search;
-    url = url.replace("?", ''); // remove the ?
-    if (!url) {
-        url = receipt;
-        global.data = JSON.parse(global.stringData);
-    } else {
-        ReceiptHelper.setData(parseInt(url));
-    }
 
-    ReceiptHelper.addStyleSheet(`../../style_sheets/${BankConstants.sub_folder}/styles.css`); ReceiptHelper.addStyleSheet(`file:///android_asset/${BankConstants.sub_folder}/styles.css`);
     let receiptHelper: ReceiptHelper;
     if (BankConstants.bank == Banks.City) {
         receiptHelper = new CityReceiptHelper();
     } else {
         receiptHelper = new AgraniReceiptHelper();
     }
+
+    let url = global.location.search;
+    url = url.replace("?", ''); // remove the ?
+    if (!url) {
+        url = receipt;
+        global.data = JSON.parse(global.stringData);
+    } else {
+        receiptHelper.setData(parseInt(url));
+    }
+
+    ReceiptHelper.addStyleSheet(`../../style_sheets/${BankConstants.sub_folder}/styles.css`); ReceiptHelper.addStyleSheet(`file:///android_asset/${BankConstants.sub_folder}/styles.css`);
     receiptHelper.replaceToken(parseInt(url));
 }
