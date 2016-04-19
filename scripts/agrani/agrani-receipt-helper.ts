@@ -552,6 +552,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         ];
         this.replaceTableData(tableData);
+        this.replaceMinistatementTableData(data.statement);
         ReceiptHelper.addClassText("availableBalance", data.availableBalance);
     }
     setRemittanceRequest() {
@@ -639,6 +640,45 @@ class AgraniReceiptHelper extends ReceiptHelper {
                 }
                 tableBody.appendChild(row);
             }
+            table.appendChild(tableBody);
+        }
+    }
+
+    replaceMinistatementTableData(tableData) {
+        const tables = document.getElementsByClassName('miniStatementTabel');
+        for (let i = 0; i < tables.length; i += 1) {
+            const table = <HTMLTableElement>tables[i];
+            var tableBody = document.createElement('tbody');
+
+            for (const rowData of tableData) {
+                let count = 0;
+                let row: HTMLTableRowElement;
+                let cell: HTMLTableCellElement;
+                for (const cellData of rowData) {
+                    count += 1;
+                    if (count < 3) {
+                        row = document.createElement('tr');
+                        tableBody.appendChild(row);
+                        cell = document.createElement('td');
+                        cell.appendChild(document.createTextNode(cellData));
+                        row.appendChild(cell);
+                        cell = document.createElement('td');
+                        row.appendChild(cell);
+                    }
+                    else if (count == 3) {
+                        row = document.createElement('tr');
+                        tableBody.appendChild(row);
+                        cell = document.createElement('td');
+                        cell.appendChild(document.createTextNode(cellData));
+                        row.appendChild(cell);
+                    } else {
+                        cell = document.createElement('td');
+                        cell.appendChild(document.createTextNode(cellData));
+                        row.appendChild(cell);
+                    }
+                }
+            }
+
             table.appendChild(tableBody);
         }
     }

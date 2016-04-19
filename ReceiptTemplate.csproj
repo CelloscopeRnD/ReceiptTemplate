@@ -136,6 +136,7 @@
     <TypeScriptCompile Include="scripts\receipts.ts" />
     <Content Include="style_sheets\agrani\styles.css" />
     <Content Include="style_sheets\city\styles.css" />
+    <Content Include="templates\agrani\miniStatementTemplate.html" />
     <Content Include="templates\agrani\template.html" />
     <Content Include="templates\index.html" />
     <Content Include="templates\city\miniStatementTemplate.html" />

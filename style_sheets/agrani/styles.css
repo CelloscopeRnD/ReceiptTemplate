@@ -55,6 +55,11 @@ table, th, td {
     vertical-align: top;
 }
 
+    table.miniStatementTabel {
+        width: 100%;
+        font-weight: bold;
+    }
+
 tr {
     line-height: 15px;
 }
@@ -62,6 +67,10 @@ tr {
 td:nth-child(3) {
     max-width: 170px;
     font-weight: bold;
+}
+
+table.miniStatementTabel td:last-child {
+    text-align: right;
 }
 
 .qr {
