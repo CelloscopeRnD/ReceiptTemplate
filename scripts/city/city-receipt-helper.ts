@@ -1,5 +1,6 @@
 ﻿/// <reference path="../receipt-helper.ts" />
 /// <reference path="city-mockup-data.ts" />
+/// <reference path="city-json-contracts.ts" />
 
 class CityReceiptHelper extends ReceiptHelper {
     setMockData(receipt) {
@@ -708,7 +709,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setMiniStatement() {
         ReceiptHelper.addClassText("title", LabelText.accountStatement);
 
-        let data = <JsonContracts.MINI_STATEMENT>global.data;
+        let data = <CityJsonContracts.MINI_STATEMENT>global.data;
 
         ReceiptHelper.addClassText("userIdLabel", LabelText.userText);
         ReceiptHelper.addClassText("userId", data.user);

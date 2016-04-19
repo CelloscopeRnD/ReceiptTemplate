@@ -59,10 +59,10 @@ tr {
     line-height: 15px;
 }
 
-    td:nth-child(3) {
-        max-width: 170px;
-        font-weight: bold;
-    }
+td:nth-child(3) {
+    max-width: 170px;
+    font-weight: bold;
+}
 
 .qr {
     width: 50%;
@@ -81,4 +81,8 @@ tr {
 
 .poweredbycelloscope {
     width: 50%;
+}
+
+.bold {
+    font-weight: bold;
 }

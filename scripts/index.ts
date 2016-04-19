@@ -22,5 +22,4 @@ window.onload = function myfunction() {
             window.location.href = `http://${window.location.host}/templates/${BankConstants.sub_folder}/${BankConstants.general_template}?${formSelect.value}`;
         }
     }
-
 }

@@ -1,5 +1,6 @@
 ﻿/// <reference path="../receipt-helper.ts" />
 /// <reference path="agrani-mockup-data.ts" />
+/// <reference path="agrani-json-contracts.ts" />
 
 class AgraniReceiptHelper extends ReceiptHelper {
     setMockData(receipt) {
@@ -532,13 +533,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setMiniStatement() {
         ReceiptHelper.addClassText("title", LabelText.accountStatement);
 
-        let data = <JsonContracts.MINI_STATEMENT>global.data;
+        let data = <AgraniJsonContracts.MINI_STATEMENT>global.data;
         const tableData = [
             [LabelText.userText, data.user],
             [LabelText.agentNameText, data.agentName],
             [LabelText.addressText, data.boothAddress],
-            [LabelText.emptyText, LabelText.emptyText],
-
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.accountNameText, data.accountName],
@@ -553,6 +552,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         ];
         this.replaceTableData(tableData);
+        ReceiptHelper.addClassText("availableBalance", data.availableBalance);
     }
     setRemittanceRequest() {
         ReceiptHelper.addClassText("title", LabelText.inwardForeignRemittanceRequestTextEnglish);
@@ -617,8 +617,6 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
     replaceTableData(tableData) {
         const tables = document.getElementsByClassName('dataTabel');
-
-
         for (let i = 0; i < tables.length; i += 1) {
             const table = <HTMLTableElement>tables[i];
             var tableBody = document.createElement('tbody');

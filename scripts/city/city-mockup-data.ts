@@ -1,5 +1,5 @@
 ﻿class CityMockupData extends MockupData {
-    static miniStatement: JsonContracts.MINI_STATEMENT = {
+    static miniStatement: CityJsonContracts.MINI_STATEMENT = {
         "user": "26160101 (NAME OF USER)",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
