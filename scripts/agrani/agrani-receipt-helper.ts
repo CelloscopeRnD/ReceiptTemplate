@@ -255,7 +255,6 @@ class AgraniReceiptHelper extends ReceiptHelper {
             [LabelText.receiverAccountNoText, data.receiverAccountNumber],
             [LabelText.transferAmountText, data.transferAmount],
             [LabelText.customerIdText, data.customerId],
-            [LabelText.customerIdText, data.customerId],
             [LabelText.mobileNoText, data.mobileNo],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
