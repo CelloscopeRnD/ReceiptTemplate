@@ -100,3 +100,7 @@ table.miniStatementTabel td:last-child {
 .bold {
     font-weight: bold;
 }
+
+.complain {
+    font-size: 11pt;
+}

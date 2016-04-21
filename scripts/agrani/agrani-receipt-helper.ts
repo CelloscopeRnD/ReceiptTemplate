@@ -654,7 +654,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
         for (let i = 0; i < tables.length; i += 1) {
             const table = <HTMLTableElement>tables[i];
 
-            const borderString = '2px solid gray';
+            const borderString = '3px solid black';
             const bottomRowIndex = 5;
             const bottomRow = <HTMLTableRowElement>table.rows[bottomRowIndex];
             for (let i = 0; i < 3; i += 1) {
