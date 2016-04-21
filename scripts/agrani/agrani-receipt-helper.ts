@@ -140,6 +140,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
             //[LabelText.addressText, data.customerAddress]
         ];
         this.replaceTableData(tableData);
+
+        this.setTableBorder();
     }
     setCashWithdraw() {
         ReceiptHelper.addClassText("title", LabelText.cashWithdrawText);
@@ -171,6 +173,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
             //[LabelText.addressText, data.customerAddress]
         ];
         this.replaceTableData(tableData);
+
+        this.setTableBorder();
     }
     setDPSAccount() {
         ReceiptHelper.addClassText("title", LabelText.generalDPSAccountText);
@@ -267,6 +271,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
             //[LabelText.addressText, data.customerAddress]
         ];
         this.replaceTableData(tableData);
+
+        this.setTableBorder();
     }
     setAccountOpening() {
         let data = <JsonContracts.ACCOUNT_OPENING>global.data;
@@ -640,6 +646,39 @@ class AgraniReceiptHelper extends ReceiptHelper {
                 tableBody.appendChild(row);
             }
             table.appendChild(tableBody);
+        }
+    }
+
+    setTableBorder() {
+        const tables = document.getElementsByClassName('dataTabel');
+        for (let i = 0; i < tables.length; i += 1) {
+            const table = <HTMLTableElement>tables[i];
+
+            const borderString = '2px solid gray';
+            const bottomRowIndex = 5;
+            const bottomRow = <HTMLTableRowElement>table.rows[bottomRowIndex];
+            for (let i = 0; i < 3; i += 1) {
+                const cell = (<HTMLTableCellElement>bottomRow.cells[i]);
+                cell.style.borderBottom = borderString;
+                if (i == 0) {
+                    cell.style.borderLeft = borderString;
+                }
+                else if (i === 2) {
+                    cell.style.borderRight = borderString;
+                }
+            }
+            const topRowIndex = 4;
+            const topRow = <HTMLTableRowElement>table.rows[topRowIndex];
+            for (let i = 0; i < 3; i += 1) {
+                const cell = (<HTMLTableCellElement>topRow.cells[i]);
+                cell.style.borderTop = borderString;
+                if (i == 0) {
+                    cell.style.borderLeft = borderString;
+                }
+                else if (i === 2) {
+                    cell.style.borderRight = borderString;
+                }
+            }
         }
     }
 
