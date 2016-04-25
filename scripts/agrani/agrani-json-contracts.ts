@@ -2,6 +2,8 @@
     export interface MINI_STATEMENT {
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         accountNumber: string,
@@ -37,6 +39,8 @@
     export interface ACCOUNT_BALANCE {
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         accountNumber: string,
@@ -67,6 +71,8 @@
         accountName: string,
         accountNumber: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         balanceAmount: string,
         balanceAmountInWords: string,
         boothAddress: string,
@@ -117,6 +123,8 @@
         accountName: string,
         accountNumber: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         balanceAmount: string,
         balanceAmountInWords: string,
         boothAddress: string,
@@ -167,6 +175,8 @@
         accountName: string,
         accountNumber: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         balanceAmount: string,
         balanceAmountInWords: string,
         boothAddress: string,
@@ -216,6 +226,8 @@
     export interface CASH_DEPOSIT {
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         accountNumber: string,
@@ -246,6 +258,8 @@
     export interface CASH_WITHDRAW {
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         accountNumber: string,
@@ -277,6 +291,8 @@
         accountName: string,
         accountNumber: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         balanceAmount: string,
         balanceAmountInWords: string,
         boothAddress: string,
@@ -327,6 +343,8 @@
         accountName: string,
         accountNumber: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         balanceAmount: string,
         balanceAmountInWords: string,
         boothAddress: string,
@@ -377,6 +395,8 @@
         accountName: string,
         accountNumber: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         balanceAmount: string,
         balanceAmountInWords: string,
         boothAddress: string,
@@ -427,6 +447,8 @@
         accountName: string,
         accountNumber: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         balanceAmount: string,
         balanceAmountInWords: string,
         boothAddress: string,
@@ -477,6 +499,8 @@
         accountName: string,
         accountNumber: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         balanceAmount: string,
         balanceAmountInWords: string,
         boothAddress: string,
@@ -527,6 +551,8 @@
         accountName: string,
         accountNumber: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         balanceAmount: string,
         balanceAmountInWords: string,
         boothAddress: string,
@@ -576,6 +602,8 @@
     export interface DPS_ACCOUNT {
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         customerId: string,
@@ -605,6 +633,8 @@
     export interface FIXED_DEPOSIT {
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         customerId: string,
@@ -636,6 +666,8 @@
     export interface FUND_TRANSFER {
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         senderAccountNumber: string,
@@ -668,6 +700,8 @@
     export interface REMITTANCE_DISBURSEMENT {
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         recipientName: string,
@@ -698,6 +732,8 @@
     export interface REMITTANCE_REQUEST {
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         recipientName: string,
@@ -730,6 +766,8 @@
 
         user: string,
         agentName: string,
+        agentId: string,
+        traceId: string,
         boothAddress: string,
 
         accountNumber: string,

@@ -2,6 +2,8 @@
     static miniStatement: AgraniJsonContracts.MINI_STATEMENT = {
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "accountNumber": "2802183726001",
@@ -37,6 +39,8 @@
     static accountBalance: AgraniJsonContracts.ACCOUNT_BALANCE = {
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "accountNumber": "2802183726001",
@@ -68,6 +72,8 @@
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
+        "agentId": "123456",
+        "traceId": "123456",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
         "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
@@ -124,6 +130,8 @@
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
+        "agentId": "123456",
+        "traceId": "123456",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
         "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
@@ -180,6 +188,8 @@
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
+        "agentId": "123456",
+        "traceId": "123456",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
         "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
@@ -235,6 +245,8 @@
     static cashDeposit: AgraniJsonContracts.CASH_DEPOSIT = {
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "accountNumber": "2802183726001",
@@ -265,6 +277,8 @@
     static cashWithdraw: AgraniJsonContracts.CASH_WITHDRAW = {
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "accountNumber": "2802183726001",
@@ -296,6 +310,8 @@
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
+        "agentId": "123456",
+        "traceId": "123456",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
         "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
@@ -352,6 +368,8 @@
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
+        "agentId": "123456",
+        "traceId": "123456",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
         "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
@@ -408,6 +426,8 @@
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
+        "agentId": "123456",
+        "traceId": "123456",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
         "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
@@ -464,6 +484,8 @@
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
+        "agentId": "123456",
+        "traceId": "123456",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
         "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
@@ -520,6 +542,8 @@
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
+        "agentId": "123456",
+        "traceId": "123456",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
         "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
@@ -576,6 +600,8 @@
         "accountName": "MD Arif Gazi",
         "accountNumber": "2802183726001",
         "agentName": "BADRUL ALOM",
+        "agentId": "123456",
+        "traceId": "123456",
         "balanceAmount": "BDT 80,550.00",
         "balanceAmountInWords": "EIGHTY THOUSAND FIVE HUNDRED FIFTY ONLY",
         "boothAddress": "VAIRAB BAZAR, CHOWDHURYR HAT, SONAGAZI",
@@ -631,6 +657,8 @@
     static dpsAccount: AgraniJsonContracts.DPS_ACCOUNT = {
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "customerId": "CB2183726",
@@ -660,6 +688,8 @@
     static fixedDeposit: AgraniJsonContracts.FIXED_DEPOSIT = {
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "customerId": "CB2183726",
@@ -692,6 +722,8 @@
     static fundTransfer: AgraniJsonContracts.FUND_TRANSFER = {
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "senderAccountNumber": "2001158500126",
@@ -724,6 +756,8 @@
     static remittanceDisbursement: AgraniJsonContracts.REMITTANCE_DISBURSEMENT = {
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "recipientName": "JAMAL UDDIN",
@@ -753,6 +787,8 @@
     static remittanceRequest: AgraniJsonContracts.REMITTANCE_REQUEST = {
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "recipientName": "JAMAL UDDIN",
@@ -784,6 +820,8 @@
 
         "user": "26160101",
         "agentName": "NAME OF AGENT",
+        "agentId": "123456",
+        "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
         "accountNumber": "2802183726001",

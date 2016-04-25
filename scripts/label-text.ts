@@ -19,6 +19,7 @@
     static addressLine3Text = "সিটি ব্যাংক  সেন্টার ১৩৬";
     static addressLine4Text = "গুলশান এভিনিউ; ঢাকা-১২১২";
     static addressText = "ঠিকানা";
+    static agentIdText = "এজেন্টের আইডি";
     static agentNameText = "এজেন্টের নাম";
     static amountText = "পরিমান";
     static atmDebitCardCancelText = "এটিএম / ডেবিট কার্ড বাতিলকরন";
@@ -39,6 +40,7 @@
     static colonText = ":";
     static customerIdText = "গ্রাহক আইডি";
     static customerNameText = "গ্রাহকের নাম";
+    static dateText = "তারিখ";
     static depositAmountText = "জমার পরিমান";
     static depositDateText = "জমার তারিখ";
     static emptyText = "";
@@ -61,6 +63,7 @@
     static receiverAccountNameText = "প্রাপকের হিসাবের নাম";
     static senderAccountNoText = "প্রেরকের হিসাব নম্বর";
     static senderAccountNameText = "প্রেরকের হিসাবের নাম";
+    static traceIdText = "ট্রেস আইডি";
     static transferAmountText = "ট্রান্সফারের পরিমান";
     static transactionIdText = "লেনদেন আইডি";
     static userText = "ইউজার";
