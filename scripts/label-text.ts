@@ -20,6 +20,7 @@
     static addressLine4Text = "গুলশান এভিনিউ; ঢাকা-১২১২";
     static addressText = "ঠিকানা";
     static agentNameText = "এজেন্টের নাম";
+    static amountText = "পরিমান";
     static atmDebitCardCancelText = "এটিএম / ডেবিট কার্ড বাতিলকরন";
     static atmDebitCardDeliveryText = "এটিএম / ডেবিট কার্ড হস্তান্তর";
     static atmDebitCardRequestText = "এটিএম / ডেবিটি কার্ডের অনুরোধ";

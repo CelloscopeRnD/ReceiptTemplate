@@ -2,7 +2,7 @@
 
 class MockupData {
     static accountBalance: JsonContracts.ACCOUNT_BALANCE = {
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
@@ -200,7 +200,7 @@ class MockupData {
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     static cashDeposit: JsonContracts.CASH_DEPOSIT = {
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
@@ -230,7 +230,7 @@ class MockupData {
         "photo": ""
     };
     static cashWithdraw: JsonContracts.CASH_WITHDRAW = {
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
@@ -596,7 +596,7 @@ class MockupData {
         "withdrawsAmountInWords": "THREE THOUSAND SEVEN TAKA FIFTY PAISA ONLY"
     };
     static dpsAccount: JsonContracts.DPS_ACCOUNT = {
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
@@ -625,7 +625,7 @@ class MockupData {
         "transactionDate": "19-JAN-2016"
     };
     static fixedDeposit: JsonContracts.FIXED_DEPOSIT = {
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
@@ -657,7 +657,7 @@ class MockupData {
         "transactionDate": "19-JAN-2016"
     };
     static fundTransfer: JsonContracts.FUND_TRANSFER = {
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
@@ -689,7 +689,7 @@ class MockupData {
         "photo": ""
     };
     static remittanceDisbursement: JsonContracts.REMITTANCE_DISBURSEMENT = {
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
@@ -718,7 +718,7 @@ class MockupData {
         "photo": ""
     };
     static remittanceRequest: JsonContracts.REMITTANCE_REQUEST = {
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
@@ -749,7 +749,7 @@ class MockupData {
     static accountOpeningRequest: JsonContracts.ACCOUNT_OPENING = {
         "productName": "সিটি এজেন্ট সঞ্চয়ী হিসাব",
 
-        "user": "26160101(NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 

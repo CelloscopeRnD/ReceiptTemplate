@@ -13,7 +13,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     }
     replaceToken(receipt) {
         ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.png`, `../../images/${BankConstants.sub_folder}/logo.png`);
-        ReceiptHelper.addImage("qr", "qr.png", "../../images/qr.png");
+        //ReceiptHelper.addImage("qr", "qr.png", "../../images/qr.png");
         ReceiptHelper.addImage("agraniDoer", `file:///android_asset/${BankConstants.sub_folder}/agranidoer.png`, `../../images/${BankConstants.sub_folder}/agranidoer.png`);
         ReceiptHelper.addImage("poweredbycelloscope", `file:///android_asset/${BankConstants.sub_folder}/poweredbycelloscope.png`, `../../images/${BankConstants.sub_folder}/poweredbycelloscope.png`);
 
@@ -86,8 +86,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
         let data = <JsonContracts.ACCOUNT_BALANCE>global.data;
         const tableData = [
             [LabelText.userText, data.user],
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.balanceDateText, data.balanceDate],
@@ -95,12 +95,12 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.balanceAmountText, data.balanceAmount],
+            [LabelText.amountText, data.balanceAmount],
             [LabelText.inWordsText, data.inWords],
             [LabelText.chargeAndVatText, data.chargeAndVat],
             [LabelText.emptyText, LabelText.emptyText],
@@ -116,8 +116,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
         const data = <JsonContracts.CASH_DEPOSIT>global.data;
         const tableData = [
             [LabelText.userText, data.user],
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.depositDateText, data.depositDate],
@@ -126,12 +126,12 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.inWordsText, data.inWords],
             [LabelText.chargeAndVatText, data.chargeAndVat],
             [LabelText.emptyText, LabelText.emptyText],
@@ -149,8 +149,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
         let data = <JsonContracts.CASH_WITHDRAW>global.data;
         const tableData = [
             [LabelText.userText, data.user],
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.withdrawDateText, data.withdrawDate],
@@ -159,12 +159,12 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.withdrawAmountText, data.withdrawAmount],
+            [LabelText.amountText, data.withdrawAmount],
             [LabelText.inWordsText, data.inWords],
             [LabelText.chargeAndVatText, data.chargeAndVat],
             [LabelText.emptyText, LabelText.emptyText],
@@ -182,8 +182,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
         let data = <JsonContracts.DPS_ACCOUNT>global.data;
         const tableData = [
             [LabelText.userText, data.user],
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.emptyText, LabelText.emptyText],
@@ -191,8 +191,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
             [LabelText.accountNameText, data.accountName],
             [LabelText.linkAccountNumberText, data.linkAccountNumber],
             [LabelText.customerNameText, data.customerName],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
 
@@ -213,8 +213,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
         let data = <JsonContracts.FIXED_DEPOSIT>global.data;
         const tableData = [
             [LabelText.userText, data.user],
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.accountOpeningDateText, data.transactionDate],
@@ -222,9 +222,9 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.linkAccountNumberText, data.linkAccountNumber],
-            [LabelText.customerIdText, data.customerId],
+            //[LabelText.customerIdText, data.customerId],
             [LabelText.customerNameText, data.customerName],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
 
@@ -247,8 +247,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
         let data = <JsonContracts.FUND_TRANSFER>global.data;
         const tableData = [
             [LabelText.userText, data.user],
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.fundTransferDateText, data.fundTransferDate],
@@ -257,9 +257,9 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.senderAccountNoText, data.senderAccountNumber],
             [LabelText.receiverAccountNoText, data.receiverAccountNumber],
-            [LabelText.transferAmountText, data.transferAmount],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            [LabelText.amountText, data.transferAmount],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
 
@@ -280,8 +280,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + data.productName);
         const tableData = [
             [LabelText.userText, data.user],
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             //[LabelText.emptyText, data.disclaimer],
@@ -290,8 +290,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.gendertText, data.gender],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
@@ -312,8 +312,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
         let data = <JsonContracts.ATM_DEBIT_CARD_REQUEST>global.data;
 
         const tableData = [
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.transactionIdText, data.transactionCode],
@@ -321,11 +321,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate]
@@ -337,8 +337,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         let data = <JsonContracts.ATM_DEBIT_CARD_DELIVERY>global.data;
         const tableData = [
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.transactionIdText, data.transactionCode],
@@ -346,11 +346,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate]
@@ -362,8 +362,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         let data = <JsonContracts.ATM_DEBIT_CARD_CANCEL>global.data;
         const tableData = [
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.transactionIdText, data.transactionCode],
@@ -371,11 +371,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate],
@@ -388,8 +388,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         let data = <JsonContracts.CHEQUE_BOOK_REQUISITION>global.data;
         const tableData = [
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.transactionIdText, data.transactionCode],
@@ -397,11 +397,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate]
@@ -413,8 +413,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         let data = <JsonContracts.CHEQUE_BOOK_DELIVERY>global.data;
         const tableData = [
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.transactionIdText, data.transactionCode],
@@ -422,11 +422,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate]
@@ -438,8 +438,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         let data = <JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE>global.data;
         const tableData = [
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.transactionIdText, data.transactionCode],
@@ -447,11 +447,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate]
@@ -463,8 +463,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         let data = <JsonContracts.CHEQUE_STOP_PAYMENT_RANGE>global.data;
         const tableData = [
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.transactionIdText, data.transactionCode],
@@ -472,11 +472,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate]
@@ -488,8 +488,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         let data = <JsonContracts.CHEQUE_STOP_PAYMENT_RANGE>global.data;
         const tableData = [
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.transactionIdText, data.transactionCode],
@@ -497,11 +497,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate],
@@ -514,8 +514,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
         let data = <JsonContracts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL>global.data;
         const tableData = [
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.transactionIdText, data.transactionCode],
@@ -523,11 +523,11 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.depositAmountText, data.depositAmount],
+            [LabelText.amountText, data.depositAmount],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate]
@@ -541,14 +541,14 @@ class AgraniReceiptHelper extends ReceiptHelper {
         let data = <AgraniJsonContracts.MINI_STATEMENT>global.data;
         const tableData = [
             [LabelText.userText, data.user],
-            [LabelText.agentNameText, data.agentName],
-            [LabelText.addressText, data.boothAddress],
+            //[LabelText.agentNameText, data.agentName],
+            //[LabelText.addressText, data.boothAddress],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            [LabelText.customerIdText, data.customerId],
-            [LabelText.mobileNoText, data.mobileNo],
+            //[LabelText.customerIdText, data.customerId],
+            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
 
@@ -655,7 +655,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
             const table = <HTMLTableElement>tables[i];
 
             const borderString = '3px solid black';
-            const bottomRowIndex = 5;
+            const bottomRowIndex = 3;
             const bottomRow = <HTMLTableRowElement>table.rows[bottomRowIndex];
             for (let i = 0; i < 3; i += 1) {
                 const cell = (<HTMLTableCellElement>bottomRow.cells[i]);
@@ -667,7 +667,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
                     cell.style.borderRight = borderString;
                 }
             }
-            const topRowIndex = 4;
+            const topRowIndex = 2;
             const topRow = <HTMLTableRowElement>table.rows[topRowIndex];
             for (let i = 0; i < 3; i += 1) {
                 const cell = (<HTMLTableCellElement>topRow.cells[i]);

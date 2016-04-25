@@ -1,6 +1,6 @@
 ﻿class AgrainMockupData extends MockupData {
     static miniStatement: AgraniJsonContracts.MINI_STATEMENT = {
-        "user": "26160101 (NAME OF USER)",
+        "user": "26160101",
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
