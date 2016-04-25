@@ -10,7 +10,7 @@
     }
 
     .main {
-        width: 272px;
+        width: auto;
         /* border-right: 1px dotted black;*/
     }
 }
