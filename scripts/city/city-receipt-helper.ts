@@ -4,8 +4,61 @@
 
 class CityReceiptHelper extends ReceiptHelper {
     setMockData(receipt) {
-        super.setMockData(receipt);
         switch (receipt) {
+            case Receipts.ACCOUNT_BALANCE:
+                global.data = CityMockupData.accountBalance;
+                break;
+            case Receipts.ATM_DEBIT_CARD_CANCEL:
+                global.data = CityMockupData.atmDebitCardCancel;
+                break;
+            case Receipts.ATM_DEBIT_CARD_DELIVERY:
+                global.data = CityMockupData.atmDebitCardDelivery;
+                break;
+            case Receipts.ATM_DEBIT_CARD_REQUEST:
+                global.data = CityMockupData.atmDebitCardRequest;
+                break;
+            case Receipts.CASH_DEPOSIT:
+                global.data = CityMockupData.cashDeposit;
+                break;
+            case Receipts.CASH_WITHDRAW:
+                global.data = CityMockupData.cashWithdraw;
+                break;
+            case Receipts.CHEQUE_BOOK_DELIVERY:
+                global.data = CityMockupData.chequeBookDelivery;
+                break;
+            case Receipts.CHEQUE_BOOK_REQUISITION:
+                global.data = CityMockupData.chequeBookRequisition;
+                break;
+            case Receipts.CHEQUE_STOP_PAYMENT_RANGE:
+                global.data = CityMockupData.chequeStopPaymentRange;
+                break;
+            case Receipts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL:
+                global.data = CityMockupData.chequeStopPaymentRangeCancel;
+                break;
+            case Receipts.CHEQUE_STOP_PAYMENT_SINGLE:
+                global.data = CityMockupData.chequeStopPaymentSingle;
+                break;
+            case Receipts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL:
+                global.data = CityMockupData.chequeStopPaymentSingleCancel;
+                break;
+            case Receipts.DPS_ACCOUNT:
+                global.data = CityMockupData.dpsAccount;
+                break;
+            case Receipts.FIXED_DEPOSIT:
+                global.data = CityMockupData.fixedDeposit;
+                break;
+            case Receipts.FUND_TRANSFER:
+                global.data = CityMockupData.fundTransfer;
+                break;
+            case Receipts.REMITTANCE_DISBURSEMENT:
+                global.data = CityMockupData.remittanceDisbursement;
+                break;
+            case Receipts.REMITTANCE_REQUEST:
+                global.data = CityMockupData.remittanceRequest;
+                break;
+            case Receipts.ACCOUNT_OPENING:
+                global.data = CityMockupData.accountOpeningRequest;
+                break;
             case Receipts.MINI_STATEMENT:
                 global.data = CityMockupData.miniStatement;
                 break;
@@ -87,7 +140,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setAccountBalance() {
         ReceiptHelper.addClassText("title", LabelText.accountBalanceText);
 
-        let data = <JsonContracts.ACCOUNT_BALANCE>global.data;
+        let data = <CityJsonContracts.ACCOUNT_BALANCE>global.data;
 
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
         ReceiptHelper.addClassText("agentName", data.agentName);
@@ -127,7 +180,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setCashDeposit() {
         ReceiptHelper.addClassText("title", LabelText.cashDepositText);
 
-        let data = <JsonContracts.CASH_DEPOSIT>global.data;
+        let data = <CityJsonContracts.CASH_DEPOSIT>global.data;
 
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
         ReceiptHelper.addClassText("agentName", data.agentName);
@@ -167,7 +220,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setCashWithdraw() {
         ReceiptHelper.addClassText("title", LabelText.cashWithdrawText);
 
-        let data = <JsonContracts.CASH_WITHDRAW>global.data;
+        let data = <CityJsonContracts.CASH_WITHDRAW>global.data;
 
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
         ReceiptHelper.addClassText("agentName", data.agentName);
@@ -208,7 +261,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setDPSAccount() {
         ReceiptHelper.addClassText("title", LabelText.generalDPSAccountText);
 
-        let data = <JsonContracts.DPS_ACCOUNT>global.data;
+        let data = <CityJsonContracts.DPS_ACCOUNT>global.data;
 
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
         ReceiptHelper.addClassText("agentName", data.agentName);
@@ -249,7 +302,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setFixedDeposit() {
         ReceiptHelper.addClassText("title", LabelText.fixedDepositText);
 
-        let data = <JsonContracts.FIXED_DEPOSIT>global.data;
+        let data = <CityJsonContracts.FIXED_DEPOSIT>global.data;
 
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
         ReceiptHelper.addClassText("agentName", data.agentName);
@@ -291,7 +344,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setFundTransfer() {
         ReceiptHelper.addClassText("title", LabelText.fundTransferText);
 
-        let data = <JsonContracts.FUND_TRANSFER>global.data;
+        let data = <CityJsonContracts.FUND_TRANSFER>global.data;
 
         ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
         ReceiptHelper.addClassText("agentName", data.agentName);
@@ -331,7 +384,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.doRowSpan("fourthTable", 3, 2);
     }
     setAccountOpening() {
-        let data = <JsonContracts.ACCOUNT_OPENING>global.data;
+        let data = <CityJsonContracts.ACCOUNT_OPENING>global.data;
 
         ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + data.productName);
 
@@ -750,7 +803,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setRemittanceRequest() {
         ReceiptHelper.addClassText("title", LabelText.inwardForeignRemittanceRequestTextEnglish);
 
-        let data = <JsonContracts.REMITTANCE_REQUEST>global.data;
+        let data = <CityJsonContracts.REMITTANCE_REQUEST>global.data;
         //ReceiptHelper.addClassText("userIdLabel", labelText.userTextEnglish);
         //ReceiptHelper.addClassText("userId", data.user);
         //ReceiptHelper.addClassText("agentNameLabel", labelText.agentNameTextEnglish);
@@ -787,7 +840,7 @@ class CityReceiptHelper extends ReceiptHelper {
     setRemittanceDisbursement() {
         ReceiptHelper.addClassText("title", LabelText.inwardForeignRemittanceDisbursementTextEnglish);
 
-        let data = <JsonContracts.REMITTANCE_DISBURSEMENT>global.data;
+        let data = <CityJsonContracts.REMITTANCE_DISBURSEMENT>global.data;
         //ReceiptHelper.addClassText("userIdLabel", labelText.userTextEnglish);
         //ReceiptHelper.addClassText("userId", data.user);
         //ReceiptHelper.addClassText("agentNameLabel", labelText.agentNameTextEnglish);

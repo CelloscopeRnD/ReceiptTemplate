@@ -4,8 +4,61 @@
 
 class AgraniReceiptHelper extends ReceiptHelper {
     setMockData(receipt) {
-        super.setMockData(receipt);
         switch (receipt) {
+            case Receipts.ACCOUNT_BALANCE:
+                global.data = AgrainMockupData.accountBalance;
+                break;
+            case Receipts.ATM_DEBIT_CARD_CANCEL:
+                global.data = AgrainMockupData.atmDebitCardCancel;
+                break;
+            case Receipts.ATM_DEBIT_CARD_DELIVERY:
+                global.data = AgrainMockupData.atmDebitCardDelivery;
+                break;
+            case Receipts.ATM_DEBIT_CARD_REQUEST:
+                global.data = AgrainMockupData.atmDebitCardRequest;
+                break;
+            case Receipts.CASH_DEPOSIT:
+                global.data = AgrainMockupData.cashDeposit;
+                break;
+            case Receipts.CASH_WITHDRAW:
+                global.data = AgrainMockupData.cashWithdraw;
+                break;
+            case Receipts.CHEQUE_BOOK_DELIVERY:
+                global.data = AgrainMockupData.chequeBookDelivery;
+                break;
+            case Receipts.CHEQUE_BOOK_REQUISITION:
+                global.data = AgrainMockupData.chequeBookRequisition;
+                break;
+            case Receipts.CHEQUE_STOP_PAYMENT_RANGE:
+                global.data = AgrainMockupData.chequeStopPaymentRange;
+                break;
+            case Receipts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL:
+                global.data = AgrainMockupData.chequeStopPaymentRangeCancel;
+                break;
+            case Receipts.CHEQUE_STOP_PAYMENT_SINGLE:
+                global.data = AgrainMockupData.chequeStopPaymentSingle;
+                break;
+            case Receipts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL:
+                global.data = AgrainMockupData.chequeStopPaymentSingleCancel;
+                break;
+            case Receipts.DPS_ACCOUNT:
+                global.data = AgrainMockupData.dpsAccount;
+                break;
+            case Receipts.FIXED_DEPOSIT:
+                global.data = AgrainMockupData.fixedDeposit;
+                break;
+            case Receipts.FUND_TRANSFER:
+                global.data = AgrainMockupData.fundTransfer;
+                break;
+            case Receipts.REMITTANCE_DISBURSEMENT:
+                global.data = AgrainMockupData.remittanceDisbursement;
+                break;
+            case Receipts.REMITTANCE_REQUEST:
+                global.data = AgrainMockupData.remittanceRequest;
+                break;
+            case Receipts.ACCOUNT_OPENING:
+                global.data = AgrainMockupData.accountOpeningRequest;
+                break;
             case Receipts.MINI_STATEMENT:
                 global.data = AgrainMockupData.miniStatement;
                 break;
@@ -83,7 +136,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setAccountBalance() {
         ReceiptHelper.addClassText("title", LabelText.accountBalanceText);
 
-        let data = <JsonContracts.ACCOUNT_BALANCE>global.data;
+        let data = <AgraniJsonContracts.ACCOUNT_BALANCE>global.data;
         const tableData = [
             [LabelText.userText, data.user],
             //[LabelText.agentNameText, data.agentName],
@@ -113,7 +166,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setCashDeposit() {
         ReceiptHelper.addClassText("title", LabelText.cashDepositText);
 
-        const data = <JsonContracts.CASH_DEPOSIT>global.data;
+        const data = <AgraniJsonContracts.CASH_DEPOSIT>global.data;
         const tableData = [
             [LabelText.userText, data.user],
             //[LabelText.agentNameText, data.agentName],
@@ -146,7 +199,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setCashWithdraw() {
         ReceiptHelper.addClassText("title", LabelText.cashWithdrawText);
 
-        let data = <JsonContracts.CASH_WITHDRAW>global.data;
+        let data = <AgraniJsonContracts.CASH_WITHDRAW>global.data;
         const tableData = [
             [LabelText.userText, data.user],
             //[LabelText.agentNameText, data.agentName],
@@ -179,7 +232,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setDPSAccount() {
         ReceiptHelper.addClassText("title", LabelText.generalDPSAccountText);
 
-        let data = <JsonContracts.DPS_ACCOUNT>global.data;
+        let data = <AgraniJsonContracts.DPS_ACCOUNT>global.data;
         const tableData = [
             [LabelText.userText, data.user],
             //[LabelText.agentNameText, data.agentName],
@@ -210,7 +263,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setFixedDeposit() {
         ReceiptHelper.addClassText("title", LabelText.fixedDepositText);
 
-        let data = <JsonContracts.FIXED_DEPOSIT>global.data;
+        let data = <AgraniJsonContracts.FIXED_DEPOSIT>global.data;
         const tableData = [
             [LabelText.userText, data.user],
             //[LabelText.agentNameText, data.agentName],
@@ -244,7 +297,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setFundTransfer() {
         ReceiptHelper.addClassText("title", LabelText.fundTransferText);
 
-        let data = <JsonContracts.FUND_TRANSFER>global.data;
+        let data = <AgraniJsonContracts.FUND_TRANSFER>global.data;
         const tableData = [
             [LabelText.userText, data.user],
             //[LabelText.agentNameText, data.agentName],
@@ -275,7 +328,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
         this.setTableBorder();
     }
     setAccountOpening() {
-        let data = <JsonContracts.ACCOUNT_OPENING>global.data;
+        let data = <AgraniJsonContracts.ACCOUNT_OPENING>global.data;
 
         ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + data.productName);
         const tableData = [
@@ -309,7 +362,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setATMDebitCardRequest() {
         ReceiptHelper.addClassText("title", LabelText.atmDebitCardRequestText);
 
-        let data = <JsonContracts.ATM_DEBIT_CARD_REQUEST>global.data;
+        let data = <AgraniJsonContracts.ATM_DEBIT_CARD_REQUEST>global.data;
 
         const tableData = [
             //[LabelText.agentNameText, data.agentName],
@@ -335,7 +388,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setATMDebitCardDelivery() {
         ReceiptHelper.addClassText("title", LabelText.atmDebitCardDeliveryText);
 
-        let data = <JsonContracts.ATM_DEBIT_CARD_DELIVERY>global.data;
+        let data = <AgraniJsonContracts.ATM_DEBIT_CARD_DELIVERY>global.data;
         const tableData = [
             //[LabelText.agentNameText, data.agentName],
             //[LabelText.addressText, data.boothAddress],
@@ -360,7 +413,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setATMDebitCardCancel() {
         ReceiptHelper.addClassText("title", LabelText.atmDebitCardCancelText);
 
-        let data = <JsonContracts.ATM_DEBIT_CARD_CANCEL>global.data;
+        let data = <AgraniJsonContracts.ATM_DEBIT_CARD_CANCEL>global.data;
         const tableData = [
             //[LabelText.agentNameText, data.agentName],
             //[LabelText.addressText, data.boothAddress],
@@ -386,7 +439,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setChequeBookRequisition() {
         ReceiptHelper.addClassText("title", LabelText.chequeBookRequisitionText);
 
-        let data = <JsonContracts.CHEQUE_BOOK_REQUISITION>global.data;
+        let data = <AgraniJsonContracts.CHEQUE_BOOK_REQUISITION>global.data;
         const tableData = [
             //[LabelText.agentNameText, data.agentName],
             //[LabelText.addressText, data.boothAddress],
@@ -411,7 +464,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setChequeBookDelivery() {
         ReceiptHelper.addClassText("title", LabelText.chequeBookDeliveryText);
 
-        let data = <JsonContracts.CHEQUE_BOOK_DELIVERY>global.data;
+        let data = <AgraniJsonContracts.CHEQUE_BOOK_DELIVERY>global.data;
         const tableData = [
             //[LabelText.agentNameText, data.agentName],
             //[LabelText.addressText, data.boothAddress],
@@ -436,7 +489,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setChequeStopPaymentSingle() {
         ReceiptHelper.addClassText("title", LabelText.chequeStopPaymentSingleText);
 
-        let data = <JsonContracts.CHEQUE_STOP_PAYMENT_SINGLE>global.data;
+        let data = <AgraniJsonContracts.CHEQUE_STOP_PAYMENT_SINGLE>global.data;
         const tableData = [
             //[LabelText.agentNameText, data.agentName],
             //[LabelText.addressText, data.boothAddress],
@@ -461,7 +514,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setChequeStopPaymentRange() {
         ReceiptHelper.addClassText("title", LabelText.chequeStopPaymentRangeText);
 
-        let data = <JsonContracts.CHEQUE_STOP_PAYMENT_RANGE>global.data;
+        let data = <AgraniJsonContracts.CHEQUE_STOP_PAYMENT_RANGE>global.data;
         const tableData = [
             //[LabelText.agentNameText, data.agentName],
             //[LabelText.addressText, data.boothAddress],
@@ -486,7 +539,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setChequeStopPaymentSingleCancel() {
         ReceiptHelper.addClassText("title", LabelText.chequeStopPaymentRangeText);
 
-        let data = <JsonContracts.CHEQUE_STOP_PAYMENT_RANGE>global.data;
+        let data = <AgraniJsonContracts.CHEQUE_STOP_PAYMENT_RANGE>global.data;
         const tableData = [
             //[LabelText.agentNameText, data.agentName],
             //[LabelText.addressText, data.boothAddress],
@@ -512,7 +565,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setChequeStopPaymentRangeCancel() {
         ReceiptHelper.addClassText("title", LabelText.chequeStopPaymentSingleCancelText);
 
-        let data = <JsonContracts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL>global.data;
+        let data = <AgraniJsonContracts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL>global.data;
         const tableData = [
             //[LabelText.agentNameText, data.agentName],
             //[LabelText.addressText, data.boothAddress],
@@ -563,7 +616,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setRemittanceRequest() {
         ReceiptHelper.addClassText("title", LabelText.inwardForeignRemittanceRequestTextEnglish);
 
-        let data = <JsonContracts.REMITTANCE_REQUEST>global.data;
+        let data = <AgraniJsonContracts.REMITTANCE_REQUEST>global.data;
         const tableData = [
             [LabelText.userTextEnglish, data.user],
             [LabelText.agentNameTextEnglish, data.agentName],
@@ -593,7 +646,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
     setRemittanceDisbursement() {
         ReceiptHelper.addClassText("title", LabelText.inwardForeignRemittanceDisbursementTextEnglish);
 
-        let data = <JsonContracts.REMITTANCE_DISBURSEMENT>global.data;
+        let data = <AgraniJsonContracts.REMITTANCE_DISBURSEMENT>global.data;
         const tableData = [
             [LabelText.userTextEnglish, data.user],
             [LabelText.agentNameTextEnglish, data.agentName],

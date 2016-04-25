@@ -1,68 +1,9 @@
 ﻿/// <reference path="receipts.ts" />
-/// <reference path="mockup-data.ts" />
 /// <reference path="label-text.ts" />
 /// <reference path="bank-constants.ts" />
 
 class ReceiptHelper {
-    setMockData(receipt) {
-        switch (receipt) {
-            case Receipts.ACCOUNT_BALANCE:
-                global.data = MockupData.accountBalance;
-                break;
-            case Receipts.ATM_DEBIT_CARD_CANCEL:
-                global.data = MockupData.atmDebitCardCancel;
-                break;
-            case Receipts.ATM_DEBIT_CARD_DELIVERY:
-                global.data = MockupData.atmDebitCardDelivery;
-                break;
-            case Receipts.ATM_DEBIT_CARD_REQUEST:
-                global.data = MockupData.atmDebitCardRequest;
-                break;
-            case Receipts.CASH_DEPOSIT:
-                global.data = MockupData.cashDeposit;
-                break;
-            case Receipts.CASH_WITHDRAW:
-                global.data = MockupData.cashWithdraw;
-                break;
-            case Receipts.CHEQUE_BOOK_DELIVERY:
-                global.data = MockupData.chequeBookDelivery;
-                break;
-            case Receipts.CHEQUE_BOOK_REQUISITION:
-                global.data = MockupData.chequeBookRequisition;
-                break;
-            case Receipts.CHEQUE_STOP_PAYMENT_RANGE:
-                global.data = MockupData.chequeStopPaymentRange;
-                break;
-            case Receipts.CHEQUE_STOP_PAYMENT_RANGE_CANCEL:
-                global.data = MockupData.chequeStopPaymentRangeCancel;
-                break;
-            case Receipts.CHEQUE_STOP_PAYMENT_SINGLE:
-                global.data = MockupData.chequeStopPaymentSingle;
-                break;
-            case Receipts.CHEQUE_STOP_PAYMENT_SINGLE_CANCEL:
-                global.data = MockupData.chequeStopPaymentSingleCancel;
-                break;
-            case Receipts.DPS_ACCOUNT:
-                global.data = MockupData.dpsAccount;
-                break;
-            case Receipts.FIXED_DEPOSIT:
-                global.data = MockupData.fixedDeposit;
-                break;
-            case Receipts.FUND_TRANSFER:
-                global.data = MockupData.fundTransfer;
-                break;
-            case Receipts.REMITTANCE_DISBURSEMENT:
-                global.data = MockupData.remittanceDisbursement;
-                break;
-            case Receipts.REMITTANCE_REQUEST:
-                global.data = MockupData.remittanceRequest;
-                break;
-            case Receipts.ACCOUNT_OPENING:
-                global.data = MockupData.accountOpeningRequest;
-                break;
-        }
-    }
-
+    setMockData(receipt) { }
     replaceToken(receipt) { }
     setAccountBalance() { }
     setCashDeposit() { }
