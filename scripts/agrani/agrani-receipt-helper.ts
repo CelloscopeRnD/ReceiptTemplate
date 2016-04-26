@@ -62,6 +62,8 @@ class AgraniReceiptHelper extends ReceiptHelper {
             case Receipts.MINI_STATEMENT:
                 global.data = AgrainMockupData.miniStatement;
                 break;
+            case Receipts.ACCOUNT_ACTIVATION:
+                global.data = AgrainMockupData.accountActivation;
         }
     }
     replaceToken(receipt) {
@@ -127,6 +129,9 @@ class AgraniReceiptHelper extends ReceiptHelper {
                 break;
             case 19:
                 this.setRemittanceDisbursement();
+                break;
+            case 20:
+                this.setAccountActivation();
                 break;
             default:
                 break;
@@ -672,6 +677,36 @@ class AgraniReceiptHelper extends ReceiptHelper {
             [LabelText.printDateTextEnglish, data.printDate]
         ];
         this.replaceTableData(tableData);
+    }
+
+    setAccountActivation() {
+        ReceiptHelper.addClassText("title", LabelText.activationText);
+
+        let data = <AgraniJsonContracts.ACCOUNT_ACTIVATION>global.data;
+        const tableData = [
+            [LabelText.userText, data.user],
+            [LabelText.agentIdText, data.agentId],
+            [LabelText.emptyText, LabelText.emptyText],
+
+            [LabelText.dateText, data.activationDate],
+            [LabelText.transactionIdText, data.transactionCode],
+            [LabelText.traceIdText, data.traceId],
+            [LabelText.emptyText, LabelText.emptyText],
+
+            [LabelText.accountNameText, data.accountName],
+            [LabelText.accountNumberText, data.accountNumber],
+            [LabelText.accountTypeText, data.accountType],
+            [LabelText.mobileNoText, data.mobileNo],
+            [LabelText.amountText, data.initialDepositAmount],
+            [LabelText.inWordsText, data.inWords],
+            [LabelText.emptyText, LabelText.emptyText],
+
+            [LabelText.printDateText, data.printDate]
+        ];
+        this.replaceTableData(tableData);
+
+        this.setTableBorder();
+        ReceiptHelper.addClassText("cardReceive", LabelText.cardReceiveText);
     }
 
     replaceTableData(tableData) {

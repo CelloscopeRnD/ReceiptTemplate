@@ -797,4 +797,21 @@
         },
         photo: string
     };
+    export interface ACCOUNT_ACTIVATION {
+        user: string,
+        agentId: string,
+
+        activationDate: string,
+        transactionCode: string,
+        traceId: string,
+
+        accountName: string,
+        accountNumber: string,
+        accountType: string,
+        mobileNo: string,
+        initialDepositAmount: string,
+        inWords: string,
+
+        printDate: string,
+    };
 }

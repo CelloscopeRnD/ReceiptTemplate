@@ -7,6 +7,7 @@
     static linkAccountNumberLabelId = "linkAccountNumberLabel";
     static linkAccountNumberId = "linkAccountNumber";
 
+    static activationText = "এ্যাকটিভেশন";
     static accountNumberText = "হিসাব নম্বর";
     static accountNameText = "হিসাবের নাম";
     static accountBalanceText = "ব্যালেন্স";
@@ -27,6 +28,7 @@
     static atmDebitCardRequestText = "এটিএম / ডেবিটি কার্ডের অনুরোধ";
     static balanceAmountText = "ব্যালেন্সের পরিমান";
     static balanceDateText = "ব্যালেন্সের তারিখ";
+    static cardReceiveText = "আপনার অগ্রণী দুয়ার কার্ডটি বুঝে নিন";
     static chargeAndVatText = "চার্জ+ভ্যাট";
     static cashDepositText = "নগদ জমা";
     static cashWithdrawText = "নগদ উত্তোলন";

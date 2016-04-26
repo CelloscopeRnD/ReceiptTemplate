@@ -851,4 +851,21 @@
         },
         "photo": ""
     };
+    static accountActivation: AgraniJsonContracts.ACCOUNT_ACTIVATION = {
+        "user": "26160101",
+        "agentId": "123456",
+
+        "activationDate": "15-MAR-2016",
+        "transactionCode": "73970008",
+        "traceId": "123456",
+
+        "accountName": "JAMAL UDDIN",
+        "accountNumber": "2802183726001",
+        "accountType": "SAVINGS ACCOUNT",
+        "mobileNo": "01915067740",
+        "initialDepositAmount": "BDT 1,200.00",
+        "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
+
+        "printDate": "15-MAR-2016 01:00:57 PM"
+    };
 }
