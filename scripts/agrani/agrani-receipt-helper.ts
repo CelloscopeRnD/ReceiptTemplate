@@ -654,14 +654,14 @@ class AgraniReceiptHelper extends ReceiptHelper {
         let data = <AgraniJsonContracts.REMITTANCE_DISBURSEMENT>global.data;
         const tableData = [
             [LabelText.userTextEnglish, data.user],
-            [LabelText.agentIdText, data.agentId],
+            [LabelText.agentIdTextEnglish, data.agentId],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.recipientNameTextEnglish, data.recipientName],
             [LabelText.exchangeHouseNameEnglish, data.exchangeHouse],
             [LabelText.pinNoTextEnglish, data.pin],
-            //[LabelText.mobileNoTextEnglish, data.mobileNo],
-            [LabelText.traceIdText, data.traceId],
+            [LabelText.transactionIdTextEnglish, data.transactionCode],
+            [LabelText.traceIdTextEnglish, data.traceId],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.senderNameTextEnglish, data.senderName],

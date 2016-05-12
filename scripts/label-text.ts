@@ -105,6 +105,8 @@
     static recipientNameTextEnglish = "Recipient Name";
     static senderCountryTextEnglish = "Sender Country";
     static senderNameTextEnglish = "Sender Name";
-    static transactionIdTextEnglish = "Transaction Id";
+    static transactionIdTextEnglish = "Transaction ID";
     static userTextEnglish = "User";
+    static traceIdTextEnglish = "Trace ID";
+    static agentIdTextEnglish = "Agent ID";
 }

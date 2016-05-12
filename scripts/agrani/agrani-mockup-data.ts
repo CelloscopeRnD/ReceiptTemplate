@@ -757,6 +757,7 @@
         "user": "26160101",
         "agentName": "NAME OF AGENT",
         "agentId": "123456",
+        "transactionCode": "73970008",
         "traceId": "123456",
         "boothAddress": "Outlet Name + District, Upzilla",
 
