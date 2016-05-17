@@ -356,12 +356,12 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.initialDepositText, data.initialDeposit],
             [LabelText.inWordsText, data.inWords],
-            [LabelText.chargeAndVatText, data.chargeAndVat],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.printDateText, data.printDate]
         ];
         this.replaceTableData(tableData);
+        this.setTableBorder();
     }
 
     setATMDebitCardRequest() {

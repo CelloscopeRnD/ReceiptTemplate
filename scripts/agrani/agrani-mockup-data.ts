@@ -817,7 +817,7 @@
         "photo": ""
     };
     static accountOpeningRequest: AgraniJsonContracts.ACCOUNT_OPENING = {
-        "productName": "সিটি এজেন্ট সঞ্চয়ী হিসাব",
+        "productName": "Savings",
 
         "user": "26160101",
         "agentName": "NAME OF AGENT",
@@ -837,7 +837,6 @@
 
         "initialDeposit": "BDT 1,200.00",
         "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
-        "chargeAndVat": "BDT 10.00 + 1.50",
 
         "accountOpeningDate": "15-MAR-2016",
         "printDate": "15-MAR-2016 01:00:57 PM",

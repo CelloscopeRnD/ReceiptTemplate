@@ -783,7 +783,6 @@
 
         initialDeposit: string,
         inWords: string,
-        chargeAndVat: string,
 
         accountOpeningDate: string,
         printDate: string,
