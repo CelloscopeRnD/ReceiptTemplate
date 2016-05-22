@@ -3,6 +3,7 @@
     static accountNumberId = "accountNumber";
     static accountTypeId = "accountType";
     static customerAddressId = "customerAddress";
+    static accountMnemonicText = "হিসাব নিমোনিক";
     static linkAccountNumberColonId = "linkAccountNumberColon";
     static linkAccountNumberLabelId = "linkAccountNumberLabel";
     static linkAccountNumberId = "linkAccountNumber";
@@ -38,6 +39,7 @@
     static chequeStopPaymentRangeCancelText = "চেক স্টপ পেমেন্ট - রেঞ্জ নির্দেশনা বাতিলকরন";
     static chequeStopPaymentRangeText = "চেক স্টপ পেমেন্ট নির্দেশনা - রেঞ্জ";
     static chequeStopPaymentSingleText = "চেক স্টপ পেমেন্ট নির্দেশনা - সিঙ্গেল";
+    static customerMnemonicText = "গ্রাহক নিমোনিক";
     static fixedDepositText = "সিটি এজেন্ট ফিক্সড ডিপোজিট";
     static colonText = ":";
     static customerIdText = "গ্রাহক আইডি";

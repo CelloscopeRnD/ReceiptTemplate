@@ -341,20 +341,22 @@ class AgraniReceiptHelper extends ReceiptHelper {
             [LabelText.agentIdText, data.agentId],
             [LabelText.emptyText, LabelText.emptyText],
 
-            //[LabelText.emptyText, data.disclaimer],
+           
             [LabelText.dateText, data.accountOpeningDate],
             [LabelText.traceIdText, data.traceId],
             [LabelText.emptyText, LabelText.emptyText],
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            //[LabelText.customerIdText, data.customerId],
-            //[LabelText.mobileNoText, data.mobileNo],
-            [LabelText.gendertText, data.gender],
+
+
+
+            [LabelText.customerMnemonicText, data.customerMnemonic],
+            [LabelText.accountMnemonicText, data.accountMnemonic],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.emptyText, LabelText.emptyText],
 
-            [LabelText.initialDepositText, data.initialDeposit],
+            [LabelText.depositAmountText, data.initialDeposit],
             [LabelText.inWordsText, data.inWords],
             [LabelText.emptyText, LabelText.emptyText],
 

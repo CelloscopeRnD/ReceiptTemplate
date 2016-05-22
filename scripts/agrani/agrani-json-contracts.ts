@@ -778,7 +778,9 @@
         disclaimer: string,
 
         accountName: string,
-        gender: string,
+        customerMnemonic: string,
+        accountMnemonic: string,
+
         mobileNo: string,
 
         initialDeposit: string,
@@ -796,6 +798,7 @@
             pin: string
         },
         photo: string
+
     };
     export interface ACCOUNT_ACTIVATION {
         user: string,

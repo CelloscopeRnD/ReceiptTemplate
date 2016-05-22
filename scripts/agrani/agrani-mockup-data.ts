@@ -832,7 +832,8 @@
         "disclaimer": "DISCLAIMER:",
 
         "accountName": "JAMAL UDDIN",
-        "gender": "Male",
+        "customerMnemonic": "D000000007",
+        "accountMnemonic": "D0000007D",
         "mobileNo": "01915067740",
 
         "initialDeposit": "BDT 1,200.00",
