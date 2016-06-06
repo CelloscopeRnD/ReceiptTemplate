@@ -167,6 +167,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
             //[LabelText.addressText, data.customerAddress]
         ];
         this.replaceTableData(tableData);
+        this.hideOthersCopy();
     }
     setCashDeposit() {
         ReceiptHelper.addClassText("title", LabelText.cashDepositText);
@@ -341,7 +342,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
             [LabelText.agentIdText, data.agentId],
             [LabelText.emptyText, LabelText.emptyText],
 
-           
+
             [LabelText.dateText, data.accountOpeningDate],
             [LabelText.traceIdText, data.traceId],
             [LabelText.emptyText, LabelText.emptyText],
@@ -784,6 +785,12 @@ class AgraniReceiptHelper extends ReceiptHelper {
                 }
             }
         }
+    }
+
+    hideOthersCopy() {
+        const copies = document.getElementsByClassName('main');
+        (<HTMLDivElement>copies[1]).style.display = 'none';
+        (<HTMLDivElement>copies[2]).style.display = 'none';
     }
 
     replaceMinistatementTableData(tableData) {
