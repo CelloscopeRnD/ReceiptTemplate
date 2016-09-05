@@ -1,7 +1,7 @@
 ﻿/// <reference path="bank-constants.ts" />
 /// <reference path="receipts.ts" />
 
-//tsc -out index.js index.js
+//tsc -out index.js index.ts
 
 window.onload = function myfunction() {
     document.getElementsByTagName("h1")[0].innerHTML = BankConstants.bank_name;

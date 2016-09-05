@@ -1,20 +1,14 @@
 ﻿namespace AgraniJsonContracts {
     export interface MINI_STATEMENT {
         user: string,
-        agentName: string,
         agentId: string,
-        traceId: string,
-        boothAddress: string,
-
-        accountNumber: string,
-        customerId: string,
-        accountType: string,
-
-        chargeAndVat: string,
 
         accountName: string,
-        customerAddress: string,
-        mobileNo: string,
+        accountNumber: string,
+        accountType: string,
+        traceId: string,
+
+        chargeAndVat: string,
 
         statement: [
             [string, string, string, string],
@@ -24,17 +18,23 @@
             [string, string, string, string]
         ],
 
-        availableBalance: string,
+        availableBalance: string
 
-        requestId: {
-            ac: string,
-            trt: string,
-            amt: string,
-            tr: string,
-            trace: string,
-            pin: string
-        },
-        photo: string
+
+        //agentName: string,
+        //boothAddress: string,
+        //customerId: string,
+        //customerAddress: string,
+        //mobileNo: string,
+        //requestId: {
+        //    ac: string,
+        //    trt: string,
+        //    amt: string,
+        //    tr: string,
+        //    trace: string,
+        //    pin: string
+        //},
+        //photo: string
     };
     export interface ACCOUNT_BALANCE {
         user: string,

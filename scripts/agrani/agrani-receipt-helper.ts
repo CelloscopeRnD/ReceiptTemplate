@@ -607,18 +607,16 @@ class AgraniReceiptHelper extends ReceiptHelper {
 
             [LabelText.accountNameText, data.accountName],
             [LabelText.accountNumberText, data.accountNumber],
-            //[LabelText.customerIdText, data.customerId],
-            //[LabelText.mobileNoText, data.mobileNo],
             [LabelText.accountTypeText, data.accountType],
             [LabelText.traceIdText, data.traceId],
-            [LabelText.emptyText, LabelText.emptyText],
-
-            [LabelText.chargeAndVatText, data.chargeAndVat],
-            [LabelText.emptyText, LabelText.emptyText],
-
+            [LabelText.emptyText, LabelText.emptyText]
+            //[LabelText.chargeAndVatText, data.chargeAndVat],
+            //[LabelText.emptyText, LabelText.emptyText],
         ];
         this.replaceTableData(tableData);
+        console.dir(tableData);
         this.replaceMinistatementTableData(data.statement);
+        ReceiptHelper.addClassText("chargeAndVat", data.chargeAndVat);
         ReceiptHelper.addClassText("availableBalance", data.availableBalance);
     }
     setRemittanceRequest() {

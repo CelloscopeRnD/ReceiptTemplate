@@ -1,21 +1,15 @@
 ﻿class AgrainMockupData {
     static miniStatement: AgraniJsonContracts.MINI_STATEMENT = {
         "user": "26160101",
-        "agentName": "NAME OF AGENT",
         "agentId": "123456",
-        "traceId": "123456",
-        "boothAddress": "Outlet Name + District, Upzilla",
-
-        "accountNumber": "2802183726001",
-        "customerId": "CB2183726",
-        "accountType": "SAVINGS ACCOUNT",
-
-        "chargeAndVat": "BDT 10.00 + 1.50",
 
         "accountName": "JAMAL UDDIN Agrani",
-        "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
-        "mobileNo": "01915067740",
+        "accountNumber": "2802183726001",
+        "accountType": "SAVINGS ACCOUNT",
+        "traceId": "123456",
 
+        "chargeAndVat": "BDT 10.00 + 1.50",
+        
         "statement": [
             ["22-AUG-2015", "6598792141508220823344", "Cash Deposit", "(+500.00)"],
             ["22-AUG-2015", "7373822120150822054523", "Cash Withdrawal", "(-1.50)"],
@@ -24,17 +18,22 @@
             ["22-AUG-2015", "2233468794150822082323", "Cash Withdrawal", "(-566.00)"]
         ],
 
-        "availableBalance": "Tk 4704.00",
+        "availableBalance": "Tk 4704.00"
 
-        "requestId": {
-            "ac": "1234567890123",
-            "trt": "IFR",
-            "amt": "900",
-            "tr": "CB1234567",
-            "trace": "2132141234567123",
-            "pin": "1234"
-        },
-        "photo": ""
+        //"boothAddress": "Outlet Name + District, Upzilla",
+        //"customerId": "CB2183726",
+        //"agentName": "NAME OF AGENT",
+        //"customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
+        //"mobileNo": "01915067740",
+        //"requestId": {
+        //    "ac": "1234567890123",
+        //    "trt": "IFR",
+        //    "amt": "900",
+        //    "tr": "CB1234567",
+        //    "trace": "2132141234567123",
+        //    "pin": "1234"
+        //},
+        //"photo": ""
     };
     static accountBalance: AgraniJsonContracts.ACCOUNT_BALANCE = {
         "user": "26160101",
