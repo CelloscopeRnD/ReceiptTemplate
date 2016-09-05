@@ -18,7 +18,8 @@
             ["22-AUG-2015", "2233468794150822082323", "Cash Withdrawal", "(-566.00)"]
         ],
 
-        "availableBalance": "Tk 4704.00"
+        "availableBalance": "Tk 4704.00",
+        "openingBalance": "Tk 500.00"
 
         //"boothAddress": "Outlet Name + District, Upzilla",
         //"customerId": "CB2183726",

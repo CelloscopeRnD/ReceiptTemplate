@@ -616,6 +616,7 @@ class AgraniReceiptHelper extends ReceiptHelper {
         this.replaceTableData(tableData);
         console.dir(tableData);
         this.replaceMinistatementTableData(data.statement);
+        ReceiptHelper.addClassText("openingBalance", data.openingBalance);
         ReceiptHelper.addClassText("chargeAndVat", data.chargeAndVat);
         ReceiptHelper.addClassText("availableBalance", data.availableBalance);
     }

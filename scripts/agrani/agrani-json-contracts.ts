@@ -18,7 +18,8 @@
             [string, string, string, string]
         ],
 
-        availableBalance: string
+        availableBalance: string,
+        openingBalance: string
 
 
         //agentName: string,
