@@ -27,11 +27,14 @@
     static atmDebitCardCancelText = "এটিএম / ডেবিট কার্ড বাতিলকরন";
     static atmDebitCardDeliveryText = "এটিএম / ডেবিট কার্ড হস্তান্তর";
     static atmDebitCardRequestText = "এটিএম / ডেবিটি কার্ডের অনুরোধ";
+    static bearerNameText = "বাহকের নাম";
+    static bearerMobileNoText = "বাহকের মোবাইল নং";
     static balanceAmountText = "ব্যালেন্সের পরিমান";
     static balanceDateText = "ব্যালেন্সের তারিখ";
     static cardReceiveText = "আপনার অগ্রণী দুয়ার কার্ডটি বুঝে নিন";
     static chargeAndVatText = "চার্জ+ভ্যাট";
     static cashDepositText = "নগদ জমা";
+    static cashDepositBearerText = "নগদ জমা(বাহক)";
     static cashWithdrawText = "নগদ উত্তোলন";
     static chequeBookDeliveryText = "চেক বই হস্তান্তর";
     static chequeBookRequisitionText = "চেক বই প্রদানের অনুরোধ";

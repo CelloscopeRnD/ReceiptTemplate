@@ -761,4 +761,37 @@
         },
         photo: string
     };
+    export interface CASH_DEPOSIT_BEARER {
+        user: string,
+        agentName: string,
+        boothAddress: string,
+
+        accountNumber: string,
+        customerId: string,
+        accountType: string,
+
+        accountName: string,
+        customerAddress: string,
+        mobileNo: string,
+
+        depositAmount: string,
+        inWords: string,
+        chargeAndVat: string;
+        depositDate: string,
+        transactionCode: string,
+        printDate: string,
+
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
+        photo: string,
+        bearerName: string,
+        bearerMobileNo: string,
+        bearerPhoto: string
+    };
 }

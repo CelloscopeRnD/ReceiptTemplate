@@ -815,4 +815,37 @@
         },
         "photo": ""
     };
+    static cashDepositBearer: CityJsonContracts.CASH_DEPOSIT_BEARER = {
+        "user": "26160101",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
+        "accountNumber": "2802183726001",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
+
+        "accountName": "JAMAL UDDIN",
+        "customerAddress": "VILL-CHANDAL VOUGH, PO-NISHATNAGARPS-TURAGDHAKA",
+        "mobileNo": "01915067740",
+
+        "depositAmount": "BDT 1,200.00",
+        "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
+        "chargeAndVat": "BDT 10.00 + 1.50",
+        "depositDate": "15-MAR-2016",
+        "transactionCode": "73970008",
+        "printDate": "15-MAR-2016 01:00:57 PM",
+
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
+        "photo": "",
+        "bearerMobileNo": "0191506774",
+        "bearerName": "Md. Ahsan Habi Rocky",
+        "bearerPhoto": ""
+    };
 }

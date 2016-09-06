@@ -62,6 +62,9 @@ class CityReceiptHelper extends ReceiptHelper {
             case Receipts.MINI_STATEMENT:
                 global.data = CityMockupData.miniStatement;
                 break;
+            case Receipts.CASH_DEPOSIT_BEARER:
+                global.data = CityMockupData.cashDepositBearer;
+                break;
         }
     }
     replaceToken(receipt) {
@@ -132,6 +135,9 @@ class CityReceiptHelper extends ReceiptHelper {
                 break;
             case 19:
                 this.setRemittanceDisbursement();
+                break;
+            case 21:
+                this.setCashDepositBearer();
                 break;
             default:
                 break;
@@ -875,6 +881,48 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
+    }
+
+    setCashDepositBearer() {
+        ReceiptHelper.addImage("bearerPhoto", "photo.png", "../../images/photo.png");
+        ReceiptHelper.addClassText("title", LabelText.cashDepositBearerText);
+
+        let data = <CityJsonContracts.CASH_DEPOSIT_BEARER>global.data;
+
+        ReceiptHelper.addClassText("agentNameLabel", LabelText.agentNameText);
+        ReceiptHelper.addClassText("agentName", data.agentName);
+        ReceiptHelper.addClassText("userIdLabel", LabelText.userText);
+        ReceiptHelper.addClassText("userId", data.user);
+        ReceiptHelper.addClassText("boothAddressLabel", LabelText.addressText);
+        ReceiptHelper.addClassText("boothAddress", data.boothAddress);
+
+
+        ReceiptHelper.addClassText(LabelText.accountNoLabelId, LabelText.accountNumberText);
+        ReceiptHelper.addClassText("accountNumberColon", ":");
+        ReceiptHelper.addClassText(LabelText.accountNumberId, data.accountNumber);
+        ReceiptHelper.addClassText("customerIdLabel", LabelText.customerIdText);
+        ReceiptHelper.addClassText("customerIdColon", ":");
+        ReceiptHelper.addClassText("customerId", data.customerId);
+        ReceiptHelper.addClassText("accountTypeLabel", LabelText.accountTypeText);
+        ReceiptHelper.addClassText("accountTypeColon", ":");
+        ReceiptHelper.addClassText(LabelText.accountTypeId, data.accountType);
+
+        ReceiptHelper.addClassText("customerNameLabel", LabelText.accountNameText);
+        ReceiptHelper.addClassText("customerName", data.accountName);
+        ReceiptHelper.addClassText("mobileNoLabel", LabelText.mobileNoText);
+        ReceiptHelper.addClassText("mobileNo", data.mobileNo);
+        ReceiptHelper.addClassText("customerAddressLabel", LabelText.addressText);
+        ReceiptHelper.addClassText(LabelText.customerAddressId, data.customerAddress);
+
+        var tableData = [
+            [[LabelText.depositAmountText, data.depositAmount], [LabelText.depositDateText, data.depositDate]],
+            [[LabelText.inWordsText, data.inWords], [LabelText.transactionIdText, data.transactionCode]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, data.printDate]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.bearerNameText, data.bearerName]],
+            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.bearerMobileNoText, data.bearerMobileNo]]
+        ];
+        this.replaceTableData(tableData);
+        ReceiptHelper.doRowSpan("fourthTable", 1, 2);
     }
 
     replaceTableData(tableData) {

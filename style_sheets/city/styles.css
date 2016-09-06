@@ -94,9 +94,9 @@ body {
     text-align: center;
 }
 
-.customerPhoto {
+.customerPhoto , .bearerPhoto{
     width: .75in;
-    height: .75in;
+    max-height: .75in;
     float: left;
     padding: 5px 0 5px 0;
     filter: gray;
