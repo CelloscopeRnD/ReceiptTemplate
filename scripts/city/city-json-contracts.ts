@@ -607,13 +607,15 @@
         agentName: string,
         boothAddress: string,
 
+        accountNumber: string,
         customerId: string,
         accountType: string,
         linkAccountNumber: string,
+        disclaimer: string;
 
         accountName: string,
-        customerAddress: string,
-        customerName: string,
+        gender: string,
+        chargeAndVat: string,
         depositAmount: string,
         maturityAmount: string,
         maturityDate: string,

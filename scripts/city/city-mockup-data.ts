@@ -1,4 +1,4 @@
-﻿class CityMockupData{
+﻿class CityMockupData {
     static miniStatement: CityJsonContracts.MINI_STATEMENT = {
         "user": "26160101 (NAME OF USER)",
         "agentName": "NAME OF AGENT",
@@ -662,14 +662,16 @@
         "agentName": "NAME OF AGENT",
         "boothAddress": "Outlet Name + District, Upzilla",
 
+        "accountNumber": "2802183726001(accountID)",
         "customerId": "CB2183726",
         "accountType": "TERM DEPOSIT",
         "linkAccountNumber": "2005246987526",
+        "disclaimer": "DISCLAIMER:",
 
 
         "accountName": "MD Arif Gazi",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerName": "Md. Arif Gazi",
+        "gender": "Male",
+        "chargeAndVat": "BDT 10.00 + 1.50",
         "depositAmount": "BDT 3,000.00",
         "maturityAmount": "BDT 2,26,047.00",
         "maturityDate": "19-JAN-2021",
