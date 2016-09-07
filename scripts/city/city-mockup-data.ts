@@ -638,15 +638,20 @@
         "linkAccountNumber": "2005246987526",
 
         "accountName": "MD Arif Gazi",
-        "customerAddress": "GREEN GADEN BUILDING, FLAT- D4, HOUSE- 12, ROAD- 10, BLOCK- C, MIRPUR, PS- MIRPUR, DHAKA",
-        "customerName": "Md. Arif Gazi",
+        "mobileNo": "01617877595",
+        "gender": "Male",
+
+        "schemeName": "Deposit Scheme",
         "depositAmount": "BDT 3,000.00",
         "maturityAmount": "BDT 2,26,047.00",
+        "productTenor": "5 Years",
+        "chargeAndVat": "BDT 10.00 + 1.50",
+
+        "transactionDate": "19-JAN-2016",
+        "openingDate": "15-Mar-2016",
         "maturityDate": "19-JAN-2021",
-        "mobileNo": "01617877595",
         "photo": "",
         "printDate": "19-JAN-2016 13:13:15 PM",
-        "productTenor": "5 Years",
         "requestId": {
             "ac": "1234567890123",
             "trt": "IFR",
@@ -654,8 +659,7 @@
             "tr": "CB1234567",
             "trace": "2132141234567123",
             "pin": "1234"
-        },
-        "transactionDate": "19-JAN-2016"
+        }
     };
     static fixedDeposit: CityJsonContracts.FIXED_DEPOSIT = {
         "user": "26160101",

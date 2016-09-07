@@ -55,6 +55,7 @@
     static fundTransferText = "ফান্ড ট্রান্সফার";
     static gendertText = "লিঙ্গ";
     static generalDPSAccountText = "সাধারন ডিপিএস হিসাব";
+    static cityAgentDPSAccountText = "সিটি এজেন্ট ডিপিএস";
     static initialDepositText = "প্রারম্ভিক জমার পরিমান";
     static inWordsText = "কথায়";
     static linkAccountNumberText = "লিংক হিসাব নম্বর";
@@ -62,12 +63,15 @@
     static maturityDateText = "মেয়াদান্তের তারিখ";
     static mobileNoText = "মোবাইল নং";
     static monthlyDepositText = "মাসিক জমা";
+    static monthlyDepositAmountText = "মাসিক জমার পরিমান";
+    static openingDateText = "আরম্ভের তারিখ";
     static profitRateText = "মুনাফার হার";
     static printDateText = "প্রিন্টের তারিখ";
     static principalAmountText = "আসল টাকার পরিমান";
     static productTenorText = "মেয়াদ";
     static receiverAccountNoText = "প্রাপকের হিসাব নম্বর";
     static receiverAccountNameText = "প্রাপকের হিসাবের নাম";
+    static schemeNameText = "স্কিমের নাম";
     static senderAccountNoText = "প্রেরকের হিসাব নম্বর";
     static senderAccountNameText = "প্রেরকের হিসাবের নাম";
     static traceIdText = "ট্রেস আইডি";

@@ -265,7 +265,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.doRowSpan("fourthTable", 1, 2);
     }
     setDPSAccount() {
-        ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + LabelText.generalDPSAccountText);
+        ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + LabelText.cityAgentDPSAccountText);
 
         let data = <CityJsonContracts.DPS_ACCOUNT>global.data;
 
@@ -293,15 +293,15 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("customerName", data.accountName);
         ReceiptHelper.addClassText("mobileNoLabel", LabelText.mobileNoText);
         ReceiptHelper.addClassText("mobileNo", data.mobileNo);
-        ReceiptHelper.addClassText("customerAddressLabel", LabelText.addressText);
-        ReceiptHelper.addClassText(LabelText.customerAddressId, data.customerAddress);
+        ReceiptHelper.addClassText("customerAddressLabel", LabelText.gendertText);
+        ReceiptHelper.addClassText(LabelText.customerAddressId, data.gender);
 
         var tableData = [
-            [[LabelText.accountNameText, data.accountName], [LabelText.productTenorText, data.productTenor]],
-            [[LabelText.accountOpeningDateText, data.transactionDate], [LabelText.maturityDateText, data.maturityDate]],
-            [[LabelText.monthlyDepositText, data.depositAmount], [LabelText.printDateText, data.printDate]],
-            [[LabelText.maturityAmountText, data.maturityAmount], [LabelText.emptyText, LabelText.emptyText]],
-            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
+            [[LabelText.schemeNameText, data.schemeName], [LabelText.accountOpeningDateText, data.transactionDate]],
+            [[LabelText.monthlyDepositAmountText, data.depositAmount], [LabelText.openingDateText, data.openingDate]],
+            [[LabelText.maturityAmountText, data.maturityAmount], [LabelText.maturityDateText, data.maturityDate]],
+            [[LabelText.productTenorText, data.productTenor], [LabelText.printDateText, data.printDate]],
+            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
     }

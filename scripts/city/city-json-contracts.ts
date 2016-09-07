@@ -583,14 +583,19 @@
         linkAccountNumber: string,
 
         accountName: string,
-        customerAddress: string,
-        customerName: string,
+        mobileNo: string,
+        gender: string,
+
+        schemeName: string,
         depositAmount: string,
         maturityAmount: string,
-        maturityDate: string,
-        mobileNo: string,
-        printDate: string,
         productTenor: string,
+        chargeAndVat: string,
+
+        transactionDate: string,
+        openingDate: string,
+        maturityDate: string,
+        printDate: string,
         requestId: {
             ac: string,
             trt: string,
@@ -599,7 +604,6 @@
             trace: string,
             pin: string
         },
-        transactionDate: string,
         photo: string
     };
     export interface FIXED_DEPOSIT {
