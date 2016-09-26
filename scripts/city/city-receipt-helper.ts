@@ -65,13 +65,13 @@ class CityReceiptHelper extends ReceiptHelper {
             case Receipts.CASH_DEPOSIT_BEARER:
                 global.data = CityMockupData.cashDepositBearer;
                 break;
-            case Receipts.ACCOUNT_OPENINT_JOINT_CUSTOMER:
+            case Receipts.ACCOUNT_OPENING_JOINT_CUSTOMER:
                 global.data = CityMockupData.accountOpeningJointCustomerRequest;
                 break;
-            case Receipts.ACCOUNT_OPENINT_CORPORATE_CUSTOMER:
+            case Receipts.ACCOUNT_OPENING_CORPORATE_CUSTOMER:
                 global.data = CityMockupData.accountOpeningCorporateRequest;
                 break;
-            case Receipts.ACCOUNT_OPENINT_MINOR_CUSTOMER:
+            case Receipts.ACCOUNT_OPENING_MINOR_CUSTOMER:
                 global.data = CityMockupData.accountOpeningMinorRequest;
                 break;
         }
