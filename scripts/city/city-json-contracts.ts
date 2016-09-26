@@ -798,4 +798,106 @@
         bearerMobileNo: string,
         bearerPhoto: string
     };
+    export interface ACCOUNT_OPENING_JOINT_CUSTOMER {
+        productName: string,
+
+        user: string,
+        agentName: string,
+        boothAddress: string,
+
+        accountNumber: string,
+        customerId: string,
+        accountType: string,
+
+        disclaimer: string,
+
+        accountName: string,
+        gender: string,
+        mobileNo: string,
+
+        initialDeposit: string,
+        inWords: string,
+        chargeAndVat: string,
+
+        accountOpeningDate: string,
+        printDate: string,
+
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
+        photo: string
+    };
+    export interface ACCOUNT_OPENING_CORPORATE_CUSTOMER {
+        productName: string,
+
+        user: string,
+        agentName: string,
+        boothAddress: string,
+
+        accountNumber: string,
+        customerId: string,
+        accountType: string,
+
+        disclaimer: string,
+
+        accountName: string,
+        gender: string,
+        mobileNo: string,
+
+        initialDeposit: string,
+        inWords: string,
+        chargeAndVat: string,
+
+        accountOpeningDate: string,
+        printDate: string,
+
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
+        photo: string
+    };
+    export interface ACCOUNT_OPENING_MINOR_CUSTOMER {
+        productName: string,
+
+        user: string,
+        agentName: string,
+        boothAddress: string,
+
+        accountNumber: string,
+        customerId: string,
+        accountType: string,
+
+        disclaimer: string,
+
+        accountName: string,
+        gender: string,
+        mobileNo: string,
+
+        initialDeposit: string,
+        inWords: string,
+        chargeAndVat: string,
+
+        accountOpeningDate: string,
+        printDate: string,
+
+        requestId: {
+            ac: string,
+            trt: string,
+            amt: string,
+            tr: string,
+            trace: string,
+            pin: string
+        },
+        photo: string
+    };
 }

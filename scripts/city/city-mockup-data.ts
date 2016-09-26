@@ -852,4 +852,109 @@
         "bearerName": "Md. Ahsan Habi Rocky",
         "bearerPhoto": ""
     };
+
+    static accountOpeningJointCustomerRequest: CityJsonContracts.ACCOUNT_OPENING_JOINT_CUSTOMER = {
+        "productName": "সিটি এজেন্ট জয়েন্ট কাস্টমার",
+
+        "user": "26160101",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
+        "accountNumber": "2802183726001",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
+
+        "disclaimer": "DISCLAIMER:",
+
+        "accountName": "JAMAL UDDIN",
+        "gender": "Male",
+        "mobileNo": "01915067740",
+
+        "initialDeposit": "BDT 1,200.00",
+        "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
+        "chargeAndVat": "BDT 10.00 + 1.50",
+
+        "accountOpeningDate": "15-MAR-2016",
+        "printDate": "15-MAR-2016 01:00:57 PM",
+
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
+        "photo": ""
+    };
+
+    static accountOpeningCorporateRequest: CityJsonContracts.ACCOUNT_OPENING_CORPORATE_CUSTOMER = {
+        "productName": "সিটি এজেন্ট কর্পোরেট কাস্টমার",
+
+        "user": "26160101",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
+        "accountNumber": "2802183726001",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
+
+        "disclaimer": "DISCLAIMER:",
+
+        "accountName": "JAMAL UDDIN",
+        "gender": "Male",
+        "mobileNo": "01915067740",
+
+        "initialDeposit": "BDT 1,200.00",
+        "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
+        "chargeAndVat": "BDT 10.00 + 1.50",
+
+        "accountOpeningDate": "15-MAR-2016",
+        "printDate": "15-MAR-2016 01:00:57 PM",
+
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
+        "photo": ""
+    };
+
+    static accountOpeningMinorRequest: CityJsonContracts.ACCOUNT_OPENING_MINOR_CUSTOMER = {
+        "productName": "সিটি এজেন্ট মাইনর কাস্টমার",
+
+        "user": "26160101",
+        "agentName": "NAME OF AGENT",
+        "boothAddress": "Outlet Name + District, Upzilla",
+
+        "accountNumber": "2802183726001",
+        "customerId": "CB2183726",
+        "accountType": "SAVINGS ACCOUNT",
+
+        "disclaimer": "DISCLAIMER:",
+
+        "accountName": "JAMAL UDDIN",
+        "gender": "Male",
+        "mobileNo": "01915067740",
+
+        "initialDeposit": "BDT 1,200.00",
+        "inWords": "ONE THOUSAND TWO HUNDRED TAKA ONLY",
+        "chargeAndVat": "BDT 10.00 + 1.50",
+
+        "accountOpeningDate": "15-MAR-2016",
+        "printDate": "15-MAR-2016 01:00:57 PM",
+
+        "requestId": {
+            "ac": "1234567890123",
+            "trt": "IFR",
+            "amt": "900",
+            "tr": "CB1234567",
+            "trace": "2132141234567123",
+            "pin": "1234"
+        },
+        "photo": ""
+    };
 }
