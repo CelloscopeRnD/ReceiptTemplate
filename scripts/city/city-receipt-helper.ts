@@ -77,16 +77,6 @@ class CityReceiptHelper extends ReceiptHelper {
         }
     }
     replaceToken(receipt) {
-        ReceiptHelper.addImage("agent_banking_logo", `file:///android_asset/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`, `../../images/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`);
-        ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.gif`, `../../images/${BankConstants.sub_folder}/logo.gif`);
-        ReceiptHelper.addImage("qr", "qr.png", "../../images/qr.png");
-        ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
-
-        ReceiptHelper.addClassText("addressLine1Label", LabelText.addressLine1Text);
-        ReceiptHelper.addClassText("addressLine2Label", LabelText.addressLine2Text);
-        ReceiptHelper.addClassText("addressLine3Label", LabelText.addressLine3Text);
-        ReceiptHelper.addClassText("addressLine4Label", LabelText.addressLine4Text);
-
         switch (receipt) {
             case 1:
                 this.setAccountBalance();
@@ -160,6 +150,15 @@ class CityReceiptHelper extends ReceiptHelper {
             default:
                 break;
         }
+        ReceiptHelper.addImage("agent_banking_logo", `file:///android_asset/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`, `../../images/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`);
+        ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.gif`, `../../images/${BankConstants.sub_folder}/logo.gif`);
+        ReceiptHelper.addImage("qr", "qr.png", "../../images/qr.png");
+        ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
+
+        ReceiptHelper.addClassText("addressLine1Label", LabelText.addressLine1Text);
+        ReceiptHelper.addClassText("addressLine2Label", LabelText.addressLine2Text);
+        ReceiptHelper.addClassText("addressLine3Label", LabelText.addressLine3Text);
+        ReceiptHelper.addClassText("addressLine4Label", LabelText.addressLine4Text);
     }
     setAccountBalance() {
         ReceiptHelper.addClassText("title", LabelText.accountBalanceText);
@@ -196,7 +195,8 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.inWordsText, data.inWords], [LabelText.transactionIdText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, data.printDate]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
-            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
+            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
         ReceiptHelper.doRowSpan("fourthTable", 1, 2);
@@ -236,7 +236,8 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.inWordsText, data.inWords], [LabelText.transactionIdText, data.transactionCode]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, data.printDate]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
-            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
+            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
         ReceiptHelper.doRowSpan("fourthTable", 1, 2);
@@ -277,7 +278,8 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.inWordsText, data.inWords], [LabelText.transactionIdText, data.transactionCode]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, data.printDate]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
-            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
+            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
         ReceiptHelper.doRowSpan("fourthTable", 1, 2);
@@ -319,7 +321,8 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.monthlyDepositAmountText, data.depositAmount], [LabelText.openingDateText, data.openingDate]],
             [[LabelText.maturityAmountText, data.maturityAmount], [LabelText.maturityDateText, data.maturityDate]],
             [[LabelText.productTenorText, data.productTenor], [LabelText.printDateText, data.printDate]],
-            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
+            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
     }
@@ -358,11 +361,12 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText(LabelText.customerAddressId, data.gender);
 
         var tableData = [
-            
+
             [[LabelText.principalAmountText, data.principalAmount], [LabelText.accountOpeningDateText, data.transactionDate]],
             [[LabelText.profitRateText, data.profitRate], [LabelText.maturityAmountText, data.maturityAmount]],
             [[LabelText.productTenorText, data.productTenor], [LabelText.printDateText, data.printDate]],
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.maturityDateText, data.maturityDate]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -403,7 +407,8 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.transferAmountText, data.transferAmount], [LabelText.printDateText, data.printDate]],
             [[LabelText.inWordsText, data.inWords], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
-            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]]
+            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
 
@@ -446,6 +451,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.inWordsText, data.inWords], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, data.printDate]],
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -484,6 +490,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.cardTypeText, global.data.cardType], [LabelText.requestIdText, global.data.requestId]],
             [[LabelText.cardBrandText, global.data.cardBrand], [LabelText.printDateText, global.data.printDate]],
             [[LabelText.cardTitleText, global.data.accountName], [LabelText.chargeAndVatText, global.data.charge]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -521,6 +528,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.cardTypeText, global.data.cardType], [LabelText.requestIdText, global.data.requestId]],
             [[LabelText.cardBrandText, global.data.cardBrand], [LabelText.printDateText, global.data.printDate]],
             [[LabelText.cardTitleText, global.data.accountName], [LabelText.cardNumberText, global.data.cardNumber]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -558,6 +566,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.cardTypeText, global.data.cardType], [LabelText.requestIdText, global.data.requestId]],
             [[LabelText.cardBrandText, global.data.cardBrand], [LabelText.printDateText, global.data.printDate]],
             [[LabelText.cardTitleText, global.data.accountName], [LabelText.cardNumberText, global.data.cardNumber]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -594,6 +603,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.accountNameText, global.data.accountName], [LabelText.requestReceiveTimeText, global.data.transactionDate]],
             [[LabelText.noOfLeaveText, global.data.noOfLeave], [LabelText.requestIdText, global.data.requestId]],
             [[LabelText.chargeAndVatText, global.data.charge], [LabelText.printDateText, global.data.printDate]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
@@ -632,6 +642,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.noOfLeaveText, global.data.noOfLeave], [LabelText.requestIdText, global.data.requestId]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, global.data.printDate]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -669,6 +680,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.chequeLeafNumberText, global.data.chequeLeafNumber], [LabelText.requestIdText, global.data.requestId]],
             [[LabelText.amountOfTkText, global.data.chequeAmount], [LabelText.printDateText, global.data.printDate]],
             [[LabelText.chargeAndVatText, global.data.charge], [LabelText.chequeLostReasonText, global.data.chequeLostReason]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -706,6 +718,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.chequeLeafNumberText, global.data.chequeLeafNumber], [LabelText.requestIdText, global.data.requestId]],
             [[LabelText.chargeAndVatText, global.data.charge], [LabelText.printDateText, global.data.printDate]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.chequeLostReasonText, global.data.chequeLostReason]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -743,6 +756,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.chequeLeafNumberText, global.data.chequeLeafNumber], [LabelText.requestIdText, global.data.requestId]],
             [[LabelText.amountOfTkText, global.data.chequeAmount], [LabelText.printDateText, global.data.printDate]],
             [[LabelText.chargeAndVatText, global.data.charge], [LabelText.retrieveFromText, global.data.retrieveFrom]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -780,6 +794,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.chequeLeafNumberText, global.data.chequeLeafNumber], [LabelText.requestIdText, global.data.requestId]],
             [[LabelText.chargeAndVatText, global.data.charge], [LabelText.printDateText, global.data.printDate]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.retrieveFromText, global.data.retrieveFrom]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -859,6 +874,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.senderCountryTextEnglish, data.senderCountry], [LabelText.iDNumberTextEnglish, data.idNumber]],
             [[LabelText.approximateAmountTextEnglish, data.actualPayableAmount], [LabelText.printDateTextEnglish, data.printDate]],
             [[LabelText.amountInWordsTextEnglish, data.amountInWords], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -896,6 +912,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.senderCountryTextEnglish, data.senderCountry], [LabelText.iDNumberTextEnglish, data.idNumber]],
             [[LabelText.actualPayableAmountTextEnglish, data.actualPayableAmount], [LabelText.printDateTextEnglish, data.printDate]],
             [[LabelText.amountInWordsTextEnglish, data.amountInWords], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -937,12 +954,21 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.inWordsText, data.inWords], [LabelText.transactionIdText, data.transactionCode]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, data.printDate]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.bearerNameText, data.bearerName]],
-            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.bearerMobileNoText, data.bearerMobileNo]]
+            [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.bearerMobileNoText, data.bearerMobileNo]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
         ReceiptHelper.doRowSpan("fourthTable", 1, 2);
     }
     setAccountOpeningJointCustomer() {
+        var main = document.getElementsByClassName('main')[0];
+        var div = document.createElement('div');
+        div.className += ' main';
+
+        div.innerHTML = main.innerHTML;
+        document.getElementsByTagName('body')[0].appendChild(div);
+
+
         let data = <CityJsonContracts.ACCOUNT_OPENING>global.data;
 
         ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + data.productName);
@@ -979,9 +1005,13 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.inWordsText, data.inWords], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, data.printDate]],
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
+
+
+
     }
     setAccountOpeningCorporateCustomer() {
         let data = <CityJsonContracts.ACCOUNT_OPENING>global.data;
@@ -1020,6 +1050,7 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.inWordsText, data.inWords], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, data.printDate]],
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
@@ -1061,26 +1092,30 @@ class CityReceiptHelper extends ReceiptHelper {
             [[LabelText.inWordsText, data.inWords], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.printDateText, data.printDate]],
             [[LabelText.chargeAndVatText, data.chargeAndVat], [LabelText.emptyText, LabelText.emptyText]],
+            [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]],
             [[LabelText.emptyText, LabelText.emptyText], [LabelText.emptyText, LabelText.emptyText]]
         ];
         this.replaceTableData(tableData);
     }
 
     replaceTableData(tableData) {
-        var fourthTable = <HTMLTableElement>document.getElementsByClassName('fourthTable')[0];
-        for (var i = 0; i < fourthTable.rows.length; i++) {
-            let row = <HTMLTableRowElement>fourthTable.rows[i];
-            for (var j = 0; j < row.cells.length; j++) {
-                var text = tableData[i][j / 3][0];
-                var value = tableData[i][j / 3][1];
-                if (text) {
-                    row.cells[j].innerHTML = text;
-                    row.cells[++j].innerHTML = LabelText.colonText;
-                } else {
-                    row.cells[j].innerHTML = LabelText.emptyText;
-                    row.cells[++j].innerHTML = LabelText.emptyText;
+        var fourthTables = document.getElementsByClassName('fourthTable');
+        for (let index = 0; index < fourthTables.length; index++) {
+            var fourthTable = <HTMLTableElement>fourthTables[index];
+            for (var i = 0; i < fourthTable.rows.length; i++) {
+                let row = <HTMLTableRowElement>fourthTable.rows[i];
+                for (var j = 0; j < row.cells.length; j++) {
+                    var text = tableData[i][j / 3][0];
+                    var value = tableData[i][j / 3][1];
+                    if (text) {
+                        row.cells[j].innerHTML = text;
+                        row.cells[++j].innerHTML = LabelText.colonText;
+                    } else {
+                        row.cells[j].innerHTML = LabelText.emptyText;
+                        row.cells[++j].innerHTML = LabelText.emptyText;
+                    }
+                    row.cells[++j].innerHTML = value;
                 }
-                row.cells[++j].innerHTML = value;
             }
         }
     }
