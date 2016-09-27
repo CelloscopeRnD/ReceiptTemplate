@@ -830,7 +830,7 @@
             trace: string,
             pin: string
         },
-        photo: string
+        photos: string[]
     };
     export interface ACCOUNT_OPENING_CORPORATE_CUSTOMER {
         productName: string,
@@ -864,7 +864,7 @@
             trace: string,
             pin: string
         },
-        photo: string
+        photos: string[]
     };
     export interface ACCOUNT_OPENING_MINOR_CUSTOMER {
         productName: string,
@@ -898,6 +898,6 @@
             trace: string,
             pin: string
         },
-        photo: string
+        photos: string[]
     };
 }

@@ -885,7 +885,7 @@
             "trace": "2132141234567123",
             "pin": "1234"
         },
-        "photo": ""
+        "photos": ["", ""]
     };
 
     static accountOpeningCorporateRequest: CityJsonContracts.ACCOUNT_OPENING_CORPORATE_CUSTOMER = {
@@ -920,7 +920,7 @@
             "trace": "2132141234567123",
             "pin": "1234"
         },
-        "photo": ""
+        "photos": ["", ""]
     };
 
     static accountOpeningMinorRequest: CityJsonContracts.ACCOUNT_OPENING_MINOR_CUSTOMER = {
@@ -955,6 +955,6 @@
             "trace": "2132141234567123",
             "pin": "1234"
         },
-        "photo": ""
+        "photos": ["", ""]
     };
 }
