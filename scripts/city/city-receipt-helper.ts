@@ -961,15 +961,21 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.doRowSpan("fourthTable", 1, 2);
     }
     setAccountOpeningJointCustomer() {
-        var main = document.getElementsByClassName('main')[0];
-        var div = document.createElement('div');
-        div.className += ' main';
+        const data = <CityJsonContracts.ACCOUNT_OPENING_JOINT_CUSTOMER>global.data;
+        const main = document.getElementsByClassName('main')[0];
+        const body = document.getElementsByTagName('body')[0];
 
-        div.innerHTML = main.innerHTML;
-        document.getElementsByTagName('body')[0].appendChild(div);
+        for (let i = 0; i < data.accountNames.length - 1; i++) {
+            const div = document.createElement('div');
+            div.className += ' main';
+            div.innerHTML = main.innerHTML;
+            body.appendChild(div);
+        }
 
-
-        let data = <CityJsonContracts.ACCOUNT_OPENING>global.data;
+        var elements = document.getElementsByClassName('customerName');
+        for (let i = 0; i < data.accountNames.length; i++) {
+            elements[i].innerHTML = data.accountNames[i];
+        }
 
         ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + data.productName);
 
@@ -994,7 +1000,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("disclaimerLabel", data.disclaimer);
 
         ReceiptHelper.addClassText("customerNameLabel", LabelText.accountNameText);
-        ReceiptHelper.addClassText("customerName", data.accountName);
+        //ReceiptHelper.addClassText("customerName", data.accountNames[i]);
         ReceiptHelper.addClassText("mobileNoLabel", LabelText.mobileNoText);
         ReceiptHelper.addClassText("mobileNo", data.mobileNo);
         ReceiptHelper.addClassText("customerAddressLabel", LabelText.gendertText);
@@ -1010,11 +1016,23 @@ class CityReceiptHelper extends ReceiptHelper {
         ];
         this.replaceTableData(tableData);
 
-
-
     }
     setAccountOpeningCorporateCustomer() {
-        let data = <CityJsonContracts.ACCOUNT_OPENING>global.data;
+        let data = <CityJsonContracts.ACCOUNT_OPENING_CORPORATE_CUSTOMER>global.data;
+        //const main = document.getElementsByClassName('main')[0];
+        //const body = document.getElementsByTagName('body')[0];
+
+        //for (let i = 0; i < data.accountNames.length - 1; i++) {
+        //    const div = document.createElement('div');
+        //    div.className += ' main';
+        //    div.innerHTML = main.innerHTML;
+        //    body.appendChild(div);
+        //}
+
+        //var elements = document.getElementsByClassName('customerName');
+        //for (let i = 0; i < data.accountNames.length; i++) {
+        //    elements[i].innerHTML = data.accountNames[i];
+        //}
 
         ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + data.productName);
 
@@ -1039,7 +1057,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("disclaimerLabel", data.disclaimer);
 
         ReceiptHelper.addClassText("customerNameLabel", LabelText.accountNameText);
-        ReceiptHelper.addClassText("customerName", data.accountName);
+        //ReceiptHelper.addClassText("customerName", data.accountName);
         ReceiptHelper.addClassText("mobileNoLabel", LabelText.mobileNoText);
         ReceiptHelper.addClassText("mobileNo", data.mobileNo);
         ReceiptHelper.addClassText("customerAddressLabel", LabelText.gendertText);
@@ -1056,7 +1074,21 @@ class CityReceiptHelper extends ReceiptHelper {
         this.replaceTableData(tableData);
     }
     setAccountOpeningMinorCustomer() {
-        let data = <CityJsonContracts.ACCOUNT_OPENING>global.data;
+        let data = <CityJsonContracts.ACCOUNT_OPENING_MINOR_CUSTOMER>global.data;
+        //const main = document.getElementsByClassName('main')[0];
+        //const body = document.getElementsByTagName('body')[0];
+
+        //for (let i = 0; i < data.accountNames.length - 1; i++) {
+        //    const div = document.createElement('div');
+        //    div.className += ' main';
+        //    div.innerHTML = main.innerHTML;
+        //    body.appendChild(div);
+        //}
+
+        //var elements = document.getElementsByClassName('customerName');
+        //for (let i = 0; i < data.accountNames.length; i++) {
+        //    elements[i].innerHTML = data.accountNames[i];
+        //}
 
         ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + data.productName);
 
@@ -1081,7 +1113,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addClassText("disclaimerLabel", data.disclaimer);
 
         ReceiptHelper.addClassText("customerNameLabel", LabelText.accountNameText);
-        ReceiptHelper.addClassText("customerName", data.accountName);
+        //ReceiptHelper.addClassText("customerName", data.accountName);
         ReceiptHelper.addClassText("mobileNoLabel", LabelText.mobileNoText);
         ReceiptHelper.addClassText("mobileNo", data.mobileNo);
         ReceiptHelper.addClassText("customerAddressLabel", LabelText.gendertText);

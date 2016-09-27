@@ -866,7 +866,7 @@
 
         "disclaimer": "DISCLAIMER:",
 
-        "accountName": "JAMAL UDDIN",
+        "accountNames": ["JAMAL UDDIN", "Anis Bulbul"],
         "gender": "Male",
         "mobileNo": "01915067740",
 
@@ -901,7 +901,7 @@
 
         "disclaimer": "DISCLAIMER:",
 
-        "accountName": "JAMAL UDDIN",
+        "accountNames": ["JAMAL UDDIN", "Anis Bulbul"],
         "gender": "Male",
         "mobileNo": "01915067740",
 
@@ -936,7 +936,7 @@
 
         "disclaimer": "DISCLAIMER:",
 
-        "accountName": "JAMAL UDDIN",
+        "accountNames": ["JAMAL UDDIN", "Anis Bulbul"],
         "gender": "Male",
         "mobileNo": "01915067740",
 

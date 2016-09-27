@@ -811,7 +811,7 @@
 
         disclaimer: string,
 
-        accountName: string,
+        accountNames: string[],
         gender: string,
         mobileNo: string,
 
@@ -845,7 +845,7 @@
 
         disclaimer: string,
 
-        accountName: string,
+        accountNames: string[],
         gender: string,
         mobileNo: string,
 
@@ -879,7 +879,7 @@
 
         disclaimer: string,
 
-        accountName: string,
+        accountNames: string[],
         gender: string,
         mobileNo: string,
 
