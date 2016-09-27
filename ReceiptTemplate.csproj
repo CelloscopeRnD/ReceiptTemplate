@@ -60,6 +60,8 @@
     <Content Include="images\barcode.jpg" />
     <Content Include="images\city\AGENT-BANKING-LOGO_Small.png" />
     <Content Include="images\city\agent_banking_logo.png" />
+    <Content Include="images\photo2.png" />
+    <Content Include="images\photo1.png" />
     <Content Include="images\photo.png" />
     <Content Include="images\qr.png" />
     <Content Include="readme.txt" />
