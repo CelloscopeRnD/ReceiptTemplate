@@ -80,63 +80,83 @@ class CityReceiptHelper extends ReceiptHelper {
         switch (receipt) {
             case 1:
                 this.setAccountBalance();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 2:
                 this.setCashDeposit();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 3:
                 this.setCashWithdraw();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 4:
                 this.setDPSAccount();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 5:
                 this.setFixedDeposit();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 6:
                 this.setFundTransfer();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 7:
                 this.setAccountOpening();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 8:
                 this.setATMDebitCardRequest();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 9:
                 this.setATMDebitCardDelivery();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 10:
                 this.setATMDebitCardCancel();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 11:
                 this.setChequeBookRequisition();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 12:
                 this.setChequeBookDelivery();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 13:
                 this.setChequeStopPaymentSingle();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 14:
                 this.setChequeStopPaymentRange();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 15:
                 this.setChequeStopPaymentSingleCancel();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 16:
                 this.setChequeStopPaymentRangeCancel();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 17:
                 this.setMiniStatement();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 18:
                 this.setRemittanceRequest();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 19:
                 this.setRemittanceDisbursement();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 21:
                 this.setCashDepositBearer();
+                ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
                 break;
             case 22:
                 this.setAccountOpeningJointCustomer();
@@ -153,7 +173,7 @@ class CityReceiptHelper extends ReceiptHelper {
         ReceiptHelper.addImage("agent_banking_logo", `file:///android_asset/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`, `../../images/${BankConstants.sub_folder}/AGENT-BANKING-LOGO_Small.png`);
         ReceiptHelper.addImage("logo", `file:///android_asset/${BankConstants.sub_folder}/logo.gif`, `../../images/${BankConstants.sub_folder}/logo.gif`);
         ReceiptHelper.addImage("qr", "qr.png", "../../images/qr.png");
-        ReceiptHelper.addImage("customerPhoto", "photo.png", "../../images/photo.png");
+       
 
         ReceiptHelper.addClassText("addressLine1Label", LabelText.addressLine1Text);
         ReceiptHelper.addClassText("addressLine2Label", LabelText.addressLine2Text);
@@ -973,8 +993,16 @@ class CityReceiptHelper extends ReceiptHelper {
         }
 
         var elements = document.getElementsByClassName('customerName');
+        var photos = document.getElementsByClassName('customerPhoto');
         for (let i = 0; i < data.accountNames.length; i++) {
             elements[i].innerHTML = data.accountNames[i];
+            var imageElement = <HTMLImageElement>photos[i];
+            if (imageElement.src != null) {
+                imageElement.src = `photo${i+1}.png`;
+                imageElement.onerror = function (ele) {
+                    (<HTMLImageElement>ele.srcElement).src = `../../images/photo${i+1}.png`;
+                }
+            }
         }
 
         ReceiptHelper.addClassText("title", LabelText.accountOpeningRequest + data.productName);
